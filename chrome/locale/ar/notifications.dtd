@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "صوت تنبيه البريد الجديد">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "إعداد صوت التنبيه للبريد الجديد">
+<!ENTITY preview.label "استمع للصوت">
+<!ENTITY preview.accesskey "س">
+<!ENTITY systemsound.label "استخدام صوت النظام">
+<!ENTITY systemsound.accesskey "ظ">
+<!ENTITY customsound.label "ملف wav مُخصّص">
+<!ENTITY customsound.accesskey "خ">
+<!ENTITY browse.label "تصفّح...">
+<!ENTITY browse.accesskey "ص">

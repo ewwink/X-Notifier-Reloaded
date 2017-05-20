@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Hangjelzés új levél érkezésekor">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Hangjelzés beállítása új levél érkezéséhez">
+<!ENTITY preview.label "Hang meghallgatása">
+<!ENTITY preview.accesskey "h">
+<!ENTITY systemsound.label "A rendszer &quot;Új levél&quot; hangjelzése">
+<!ENTITY systemsound.accesskey "r">
+<!ENTITY customsound.label "Egyedi .wav fájl">
+<!ENTITY customsound.accesskey "W">
+<!ENTITY browse.label "Tallózás...">
+<!ENTITY browse.accesskey "T">

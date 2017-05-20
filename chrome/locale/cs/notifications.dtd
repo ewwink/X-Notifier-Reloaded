@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Zvuk pro oznámení nové pošty">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Nastavení zvuku pro oznámení nové pošty">
+<!ENTITY preview.label "Přehrát zvuk">
+<!ENTITY preview.accesskey "z">
+<!ENTITY systemsound.label "Systémové oznámení o nové poště">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Vlastní soubor .WAV">
+<!ENTITY customsound.accesskey "V">
+<!ENTITY browse.label "Procházet...">
+<!ENTITY browse.accesskey "P">

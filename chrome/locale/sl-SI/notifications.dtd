@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Zvok za novo pošto">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Prilagodi zvok za novo pošto">
+<!ENTITY preview.label "Predvajaj zvok">
+<!ENTITY preview.accesskey "d">
+<!ENTITY systemsound.label "Sistemski zvok za novo pošto">
+<!ENTITY systemsound.accesskey "s">
+<!ENTITY customsound.label "Datoteka .wav po meri">
+<!ENTITY customsound.accesskey "D">
+<!ENTITY browse.label "Prebrskaj ...">
+<!ENTITY browse.accesskey "b">

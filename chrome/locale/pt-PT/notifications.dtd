@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Novo som">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Configurar som">
+<!ENTITY preview.label "Ouvir">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "Som de Sistema">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Escolher ficheiro .wav">
+<!ENTITY customsound.accesskey "C">
+<!ENTITY browse.label "Abrir...">
+<!ENTITY browse.accesskey "A">

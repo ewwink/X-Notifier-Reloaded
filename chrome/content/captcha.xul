@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://xnotifier/locale/overlay.dtd">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    title="&captcha-title;"
+    onload="onLoad()"
+    buttons="accept,cancel"
+    ondialogaccept="return onAccept()">
+  <script type="application/x-javascript" src="chrome://xnotifier/content/captcha.js"/>
+  <groupbox style="padding:10px;">
+    <caption label="&captcha-title;"/>
+    <description id="host" value="&host;"/>
+    <description id="user" value="&username;"/>
+    <image id="secimage" width="290" height="80"/>
+    <hbox align="center" style="margin:10px">
+      <label id="lb1" value="&captcha-text;"/>
+      <label id="lb2" value="&verification-code;" collapsed="true"/>
+      <textbox id="secword"/>
+    </hbox>
+  </groupbox>
+</dialog>

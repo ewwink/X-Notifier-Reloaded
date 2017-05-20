@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Som para novas mensagens">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Configurar Som para Novas Mensagens">
+<!ENTITY preview.label "Ouvir o Som">
+<!ENTITY preview.accesskey "O">
+<!ENTITY systemsound.label "Som do Sistema para Nova Mensagem">
+<!ENTITY systemsound.accesskey "S">
+<!ENTITY customsound.label "Arquivo .wav Personalizado">
+<!ENTITY customsound.accesskey "P">
+<!ENTITY browse.label "Navegar...">
+<!ENTITY browse.accesskey "N">

@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Cek Sekarang">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Enable">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier window">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier sidebar">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Opsi">
+<!ENTITY options-key "p">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Pengaturan Webmail Notifier">
+<!ENTITY accounts "Accounts">
+<!ENTITY username "Username">
+<!ENTITY url "URL">
+<!ENTITY password "Sandi">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Check interval">
+<!ENTITY check-interval1 "minutes">
+<!ENTITY check-onstartup "Check on startup">
+<!ENTITY host "Host">
+<!ENTITY default "Default">
+<!ENTITY add "Tambah">
+<!ENTITY delete "Hapus">
+<!ENTITY import "Import">
+<!ENTITY export "Ekspor">
+<!ENTITY export-passwd "Enter password for exported file">
+<!ENTITY enter-passwd "Enter password :">
+<!ENTITY reenter-passwd "Re-enter password :">
+<!ENTITY autologin "Aktifkan login otomatis">
+<!ENTITY autologin-default "Auto login default account">
+<!ENTITY multisession "Use multiple login">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Server">
+<!ENTITY locale "Locale">
+<!ENTITY inbox-only "Hanya kotak masuk">
+<!ENTITY include-spam "Include spam">
+<!ENTITY show-folders "Tampilkan folder2">
+<!ENTITY show-labels "Tampilkan label">
+<!ENTITY auto-open "Open automatically">
+<!ENTITY general "Umum">
+<!ENTITY reset-counter "Reset counter when opening messages">
+<!ENTITY default-check-interval0 "Default check interval">
+<!ENTITY default-check-interval1 "minutes">
+<!ENTITY msg-open "Buka Mail">
+<!ENTITY new-tab "Buka di tab baru">
+<!ENTITY new-window "Buka di jendela baru">
+<!ENTITY reuse-tab "Reuse opened tab">
+<!ENTITY reload-tab "Reload the tab">
+<!ENTITY new-message-arrive "Ketika pesan baru datang">
+<!ENTITY show-notification "Tampilkan jendela peringatan">
+<!ENTITY auto-hide-notification "Auto hide notification">
+<!ENTITY play-sound "Putar berkas suara">
+<!ENTITY scripts "Skrip">
+<!ENTITY get-scripts "Get scripts">
+<!ENTITY advanced "Lanjut...">
+<!ENTITY interface "Antarmuka">
+<!ENTITY show-statusbar-icon "Tampilkan ikon pada statusbar">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "Buka jendela X-notifier ketika Firefox dijalankan">
+<!ENTITY popup-menu "Popup Menu">
+<!ENTITY show-captcha-dialog "Tampilkan jendela verifikasi">
+<!ENTITY captcha-title "X-notifier - Verifikasi untuk Masuk">
+<!ENTITY captcha-text "Teks diatas">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Buka">
+<!ENTITY none "None">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

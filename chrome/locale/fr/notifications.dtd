@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Avertissement sonore pour nouveau message">
+<!ENTITY window.width "34em">
+<!ENTITY soundNotification.caption "Configurer le son émis lors de l'arrivée d'un nouveau message">
+<!ENTITY preview.label "Écouter le son">
+<!ENTITY preview.accesskey "c">
+<!ENTITY systemsound.label "Son système pour nouveau message">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Utiliser le fichier son (.wav) suivant :">
+<!ENTITY customsound.accesskey "U">
+<!ENTITY browse.label "Parcourir…">
+<!ENTITY browse.accesskey "P">

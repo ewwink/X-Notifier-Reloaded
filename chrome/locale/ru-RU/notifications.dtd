@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Звуковое уведомление">
+<!ENTITY window.width "30ед.">
+<!ENTITY soundNotification.caption "Настроить звуковое уведомление">
+<!ENTITY preview.label "Прослушать">
+<!ENTITY preview.accesskey "П">
+<!ENTITY systemsound.label "Системный звук">
+<!ENTITY systemsound.accesskey "С">
+<!ENTITY customsound.label "Выбрать файл .wav">
+<!ENTITY customsound.accesskey "В">
+<!ENTITY browse.label "Обзор...">
+<!ENTITY browse.accesskey "О">

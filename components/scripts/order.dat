@@ -1,0 +1,14 @@
+var order={
+  gmail:"\x1f01",
+  yahoo:"\x1f02",
+  hotmail:"\x1f03",
+  aol:"\x1f04",
+  daum:"\x1f11",
+  naver:"\x1f12",
+  nate:"\x1f13",
+  rss:"\x1f21",
+  pop3:"\x1f22",
+  imap:"\x1f23",
+  scripts:"\ufffe",
+  app_forums:"\uffff"
+}

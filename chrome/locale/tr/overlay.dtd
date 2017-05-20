@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Şimdi Kontrol Et">
+<!ENTITY check-now-key "K">
+<!ENTITY enable "Enable">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier window">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier sidebar">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Ayarlar">
+<!ENTITY options-key "S">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier Seçenekleri">
+<!ENTITY accounts "Hesapları">
+<!ENTITY username "Kullanıcı Adı">
+<!ENTITY url "URL">
+<!ENTITY password "Şifre">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Check interval">
+<!ENTITY check-interval1 "minutes">
+<!ENTITY check-onstartup "Check on startup">
+<!ENTITY host "Sunucu">
+<!ENTITY default "Varsayılan">
+<!ENTITY add "Ekle">
+<!ENTITY delete "Sil">
+<!ENTITY import "Al">
+<!ENTITY export "Ver">
+<!ENTITY export-passwd "Enter password for exported file">
+<!ENTITY enter-passwd "Enter password :">
+<!ENTITY reenter-passwd "Re-enter password :">
+<!ENTITY autologin "Otomatik Giriş Yap">
+<!ENTITY autologin-default "Auto login default account">
+<!ENTITY multisession "Use multiple login">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Server">
+<!ENTITY locale "Locale">
+<!ENTITY inbox-only "Sadece gelen kutusu için uyar">
+<!ENTITY include-spam "Include spam">
+<!ENTITY show-folders "Klasörleri göster">
+<!ENTITY show-labels "Etiketleri göster">
+<!ENTITY auto-open "Open automatically">
+<!ENTITY general "Genel">
+<!ENTITY reset-counter "Reset counter when opening messages">
+<!ENTITY default-check-interval0 "Default check interval">
+<!ENTITY default-check-interval1 "minutes">
+<!ENTITY msg-open "Postaları Aç">
+<!ENTITY new-tab "Yeni sekmede">
+<!ENTITY new-window "Yeni pencerede">
+<!ENTITY reuse-tab "Reuse opened tab">
+<!ENTITY reload-tab "Reload the tab">
+<!ENTITY new-message-arrive "Yeni bir posta alındığında">
+<!ENTITY show-notification "Uyarı penceresi göster">
+<!ENTITY auto-hide-notification "Auto hide notification">
+<!ENTITY play-sound "Ses çal">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Get scripts">
+<!ENTITY advanced "Gelişmiş...">
+<!ENTITY interface "Arayüz">
+<!ENTITY show-statusbar-icon "Durum çubuğu simgesini göster">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "Firefox başladığında X-notifier penceresini aç">
+<!ENTITY popup-menu "Popup Menu">
+<!ENTITY show-captcha-dialog "Giriş doğrulama penceresini göster">
+<!ENTITY captcha-title "X-notifier - Giriş doğrulama">
+<!ENTITY captcha-text "Üstte gördüğünüz metin">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Aç">
+<!ENTITY none "None">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

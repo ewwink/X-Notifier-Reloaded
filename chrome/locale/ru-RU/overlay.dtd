@@ -1,0 +1,75 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Проверить">
+<!ENTITY check-now-key "П">
+<!ENTITY enable "Включить">
+<!ENTITY enable-key "В">
+<!ENTITY xnotifier-window "Окно программы">
+<!ENTITY xnotifier-window-key "О">
+<!ENTITY xnotifier-sidebar "Боковая панель">
+<!ENTITY xnotifier-sidebar-key "Б">
+<!ENTITY xnotifier-toolbar "Панель инструментов">
+<!ENTITY options "Настройки">
+<!ENTITY options-key "Н">
+<!ENTITY help "Справка">
+<!ENTITY help-key "С">
+<!ENTITY options-title "Настройки X-notifier">
+<!ENTITY accounts "Почтовые аккаунты">
+<!ENTITY username "Пользователь">
+<!ENTITY url "URL-адрес">
+<!ENTITY password "Пароль">
+<!ENTITY alias "Псевдоним">
+<!ENTITY check-interval0 "Интервал проверки">
+<!ENTITY check-interval1 "минут">
+<!ENTITY check-onstartup "Проверять при запуске">
+<!ENTITY host "Домен">
+<!ENTITY default "По умолч.">
+<!ENTITY add "Добавить">
+<!ENTITY delete "Удалить">
+<!ENTITY import "Импорт">
+<!ENTITY export "Экспорт">
+<!ENTITY export-passwd "Введите пароль для экспортируемого файла">
+<!ENTITY enter-passwd "Введите пароль:">
+<!ENTITY reenter-passwd "Повторите пароль:">
+<!ENTITY autologin "Разрешить автологин">
+<!ENTITY autologin-default "Аккаунт для автологина по умолчанию">
+<!ENTITY multisession "Использовать множественный вход">
+<!ENTITY keep-session "Сохранять сессию для ссылок">
+<!ENTITY server "Сервер">
+<!ENTITY locale "Локаль">
+<!ENTITY inbox-only "Уведомлять только о входящих">
+<!ENTITY include-spam "Включая спам">
+<!ENTITY show-folders "Показывать папки">
+<!ENTITY show-labels "Показывать ярлыки">
+<!ENTITY auto-open "Открывать автоматически">
+<!ENTITY general "Основные">
+<!ENTITY reset-counter "Сбрасывать счётчик при открытии сообщений">
+<!ENTITY default-check-interval0 "Стандартный интервал проверки">
+<!ENTITY default-check-interval1 "минут">
+<!ENTITY msg-open "Открывать почту">
+<!ENTITY new-tab "В новой вкладке">
+<!ENTITY new-window "В новом окне">
+<!ENTITY reuse-tab "Использовать уже открытую вкладку">
+<!ENTITY reload-tab "Обновить вкладку">
+<!ENTITY new-message-arrive "При поступлении новых сообщений">
+<!ENTITY show-notification "Показывать уведомления">
+<!ENTITY auto-hide-notification "Автоматически скрывать уведомления">
+<!ENTITY play-sound "Проигрывать звук">
+<!ENTITY scripts "Скрипты">
+<!ENTITY get-scripts "Получить скрипты">
+<!ENTITY advanced "Дополнительно...">
+<!ENTITY interface "Вид">
+<!ENTITY show-statusbar-icon "Показывать значок в строке состояния">
+<!ENTITY show-tabmenu "Показывать меню вкладки">
+<!ENTITY startup-open-win "Открывать окно X-notifier при запуске">
+<!ENTITY popup-menu "Всплывающее меню">
+<!ENTITY show-captcha-dialog "Показывать окно проверки пароля">
+<!ENTITY captcha-title "X-notifier - Проверка пароля">
+<!ENTITY captcha-text "Текст сверху">
+<!ENTITY verification-code "Проверочный код">
+<!ENTITY open "Открыть">
+<!ENTITY bookmark "Добавить страницу в закладки">
+<!ENTITY none "Нет">
+<!ENTITY link "Ссылка">
+<!ENTITY show-text "Показывать текст">
+<!ENTITY customize "Настроить...">
+<!ENTITY xnsidebar.label "X-notifier">

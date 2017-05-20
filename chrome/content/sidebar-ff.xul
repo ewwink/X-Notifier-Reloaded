@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css" ?>
+<?xml-stylesheet href="chrome://browser/skin/places/places.css"?>
+<?xml-stylesheet href="chrome://xnotifier/content/xn-overlay.css"?>
+<?xul-overlay href="chrome://xnotifier/content/xn-overlay.xul"?>
+<!DOCTYPE page SYSTEM "chrome://xnotifier/locale/overlay.dtd">
+
+<page id="bookmarksPanel" title="&xnsidebar.label;"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <vbox id="placesView"/>
+</page>

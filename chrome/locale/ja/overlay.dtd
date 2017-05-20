@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "新着確認">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "有効">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier ウィンドウ">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier サイドバー">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier ツールバー">
+<!ENTITY options "オプション">
+<!ENTITY options-key "p">
+<!ENTITY help "ヘルプ">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier オプション">
+<!ENTITY accounts "アカウント">
+<!ENTITY username "ユーザ名">
+<!ENTITY url "URL">
+<!ENTITY password "パスワード">
+<!ENTITY alias "表示名">
+<!ENTITY check-interval0 "確認間隔">
+<!ENTITY check-interval1 "分">
+<!ENTITY check-onstartup "起動時に新着確認">
+<!ENTITY host "ホスト">
+<!ENTITY default "既定値">
+<!ENTITY add "追加">
+<!ENTITY delete "削除">
+<!ENTITY import "インポート">
+<!ENTITY export "エクスポート">
+<!ENTITY export-passwd "エクスポートしたファイルのパスワードを入力してください">
+<!ENTITY enter-passwd "パスワードを入力してください:">
+<!ENTITY reenter-passwd "パスワードを再入力してください:">
+<!ENTITY autologin "自動ログインを有効にする">
+<!ENTITY autologin-default "既定のアカウントに自動ログイン">
+<!ENTITY multisession "同時ログインを使用">
+<!ENTITY keep-session "リンクのセッションを保持">
+<!ENTITY server "サーバ">
+<!ENTITY locale "ローカル">
+<!ENTITY inbox-only "受信トレイのみ通知">
+<!ENTITY include-spam "迷惑メールを含める">
+<!ENTITY show-folders "フォルダを表示">
+<!ENTITY show-labels "ラベルを表示">
+<!ENTITY auto-open "自動で開く">
+<!ENTITY general "基本設定">
+<!ENTITY reset-counter "メールを開いたとき未読数をリセット">
+<!ENTITY default-check-interval0 "デフォルトの確認間隔">
+<!ENTITY default-check-interval1 "分">
+<!ENTITY msg-open "メールを開く">
+<!ENTITY new-tab "新しいタブを開く">
+<!ENTITY new-window "新しいウィンドウを開く">
+<!ENTITY reuse-tab "開かれているタブを再利用">
+<!ENTITY reload-tab "タブを再読込">
+<!ENTITY new-message-arrive "新着メッセージがあるとき">
+<!ENTITY show-notification "アラートを表示">
+<!ENTITY auto-hide-notification "通知を自動で隠す">
+<!ENTITY play-sound "サウンドを再生">
+<!ENTITY scripts "スクリプト">
+<!ENTITY get-scripts "スクリプトを取得">
+<!ENTITY advanced "詳細...">
+<!ENTITY interface "インタフェース">
+<!ENTITY show-statusbar-icon "ステータスバーにアイコンを表示">
+<!ENTITY show-tabmenu "タブ メニューを表示">
+<!ENTITY startup-open-win "起動時に X-notifier ウインドウを開く">
+<!ENTITY popup-menu "ポップアップ メニュー">
+<!ENTITY show-captcha-dialog "ログイン検証ウィンドウを表示">
+<!ENTITY captcha-title "X-notifier - ログイン検証">
+<!ENTITY captcha-text "上記のテキストを入力">
+<!ENTITY verification-code "検証コード">
+<!ENTITY open "開く">
+<!ENTITY none "なし">
+<!ENTITY link "リンク">
+<!ENTITY show-text "テキストを表示">
+<!ENTITY customize "カスタマイズ...">
+<!ENTITY xnsidebar.label "X-notifier">

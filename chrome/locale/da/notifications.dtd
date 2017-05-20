@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Ny mail-lyd">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Indstil lyd for ny mail">
+<!ENTITY preview.label "Afspil lyd">
+<!ENTITY preview.accesskey "A">
+<!ENTITY systemsound.label "Systemets 'ny mail'-lyd">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Selvvalgt .wav-fil">
+<!ENTITY customsound.accesskey "S">
+<!ENTITY browse.label "Gennemse…">
+<!ENTITY browse.accesskey "G">

@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Dźwięk nowej wiadomości">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Skonfiguruj dźwięk nowej wiadomości">
+<!ENTITY preview.label "Odsłuchaj">
+<!ENTITY preview.accesskey "h">
+<!ENTITY systemsound.label "Dźwięk systemowy">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Plik .wav">
+<!ENTITY customsound.accesskey "l">
+<!ENTITY browse.label "Przeglądaj...">
+<!ENTITY browse.accesskey "r">

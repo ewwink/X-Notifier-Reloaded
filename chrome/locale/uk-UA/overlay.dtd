@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Перевірити">
+<!ENTITY check-now-key "П">
+<!ENTITY enable "Увімкнути">
+<!ENTITY enable-key "в">
+<!ENTITY xnotifier-window "Вікно X-notifier">
+<!ENTITY xnotifier-window-key "В">
+<!ENTITY xnotifier-sidebar "Бічна панель X-notifier">
+<!ENTITY xnotifier-sidebar-key "Б">
+<!ENTITY xnotifier-toolbar "Панель інструментів X-notifier">
+<!ENTITY options "Параметри">
+<!ENTITY options-key "а">
+<!ENTITY help "Допомога">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Налаштування X-notifier">
+<!ENTITY accounts "Облікові записи">
+<!ENTITY username "Ім'я користувача">
+<!ENTITY url "URL">
+<!ENTITY password "Пароль">
+<!ENTITY alias "Ім'я запису">
+<!ENTITY check-interval0 "Інтервал перевірки">
+<!ENTITY check-interval1 "хвилин">
+<!ENTITY check-onstartup "Перевіряти при запуску">
+<!ENTITY host "Хост">
+<!ENTITY default "Основна">
+<!ENTITY add "Додати">
+<!ENTITY delete "Видалити">
+<!ENTITY import "Імпорт">
+<!ENTITY export "Експорт">
+<!ENTITY export-passwd "Введіть пароль для файлу, що експортується">
+<!ENTITY enter-passwd "Введіть пароль:">
+<!ENTITY reenter-passwd "Повторіть пароль:">
+<!ENTITY autologin "Дозволити автоматичну реєстрацію">
+<!ENTITY autologin-default "Типовий запуск при автореєстрації">
+<!ENTITY multisession "Дозволити одночасний доступ до записів">
+<!ENTITY keep-session "Утримувати сесії для посилань">
+<!ENTITY server "Сервер">
+<!ENTITY locale "Локаль">
+<!ENTITY inbox-only "Повідомляти тільки про Вхідні">
+<!ENTITY include-spam "Включаючи спам">
+<!ENTITY show-folders "Показувати теки">
+<!ENTITY show-labels "Показувати мітки">
+<!ENTITY auto-open "Відкривати автоматично">
+<!ENTITY general "Загальні">
+<!ENTITY reset-counter "Скинути лічильник при відкритті пошти">
+<!ENTITY default-check-interval0 "Типовий інтервал перевірки">
+<!ENTITY default-check-interval1 "хвилин">
+<!ENTITY msg-open "Відкривати пошту...">
+<!ENTITY new-tab "у новій вкладці">
+<!ENTITY new-window "у новому вікні">
+<!ENTITY reuse-tab "Знову використовувати відкриту вкладку">
+<!ENTITY reload-tab "Перезавантажувати вкладку">
+<!ENTITY new-message-arrive "Коли приходять нові листи...">
+<!ENTITY show-notification "показувати спливаюче повідомлення">
+<!ENTITY auto-hide-notification "автоматично ховати повідомлення">
+<!ENTITY play-sound "програвати мелодію">
+<!ENTITY scripts "Скрипти">
+<!ENTITY get-scripts "Отримати скрипти">
+<!ENTITY advanced "Додатково...">
+<!ENTITY interface "Інтерфейс">
+<!ENTITY show-statusbar-icon "Показувати значок поточного стану">
+<!ENTITY show-tabmenu "Показувати меню вкладок">
+<!ENTITY startup-open-win "Відкривати вікно X-notifier при запуску Firefox">
+<!ENTITY popup-menu "Спливаюче меню">
+<!ENTITY show-captcha-dialog "Показувати вікно входу для користувачів">
+<!ENTITY captcha-title "X-notifier - Вхід для користувачів">
+<!ENTITY captcha-text "Текст, що зверху">
+<!ENTITY verification-code "Код підтвердження">
+<!ENTITY open "Відкрити">
+<!ENTITY none "Жодного">
+<!ENTITY link "Посилання">
+<!ENTITY show-text "Показувати текст">
+<!ENTITY customize "Налаштувати...">
+<!ENTITY xnsidebar.label "X-notifier">

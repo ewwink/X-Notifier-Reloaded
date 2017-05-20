@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Ljud för ny e-post">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Konfigurera ljud för ny e-post">
+<!ENTITY preview.label "Spela upp">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "Systemets standardljud">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Använd följande .wav-fil">
+<!ENTITY customsound.accesskey "C">
+<!ENTITY browse.label "Bläddra...">
+<!ENTITY browse.accesskey "B">

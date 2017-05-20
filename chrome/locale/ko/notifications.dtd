@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title        "새 메일 알림 소리">
+<!ENTITY window.width                     "30em">
+<!ENTITY soundNotification.caption        "새 메일 소리 설정">
+<!ENTITY preview.label                    "미리 듣기">
+<!ENTITY preview.accesskey                "v">
+<!ENTITY systemsound.label                "시스템 소리">
+<!ENTITY systemsound.accesskey            "y">
+<!ENTITY customsound.label                "사용자 .wav 파일">
+<!ENTITY customsound.accesskey            "C">
+<!ENTITY browse.label                     "찾아보기...">
+<!ENTITY browse.accesskey                 "B">

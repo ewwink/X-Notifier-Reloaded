@@ -1,0 +1,27 @@
+.placesTree{
+ margin:0px;
+}
+treechildren:-moz-tree-image{
+  padding-right: 2px;
+  margin: 0px 2px;
+  height:16px;
+}
+
+#col1{
+  text-align:right;
+  margin-right:2px;
+  font-weight:bold;
+}
+treechildren::-moz-tree-cell-text(logoff)
+{
+  color:GrayText;
+}
+treechildren::-moz-tree-cell-text(newMsg)
+{
+  font-weight:Bold;
+}
+treechildren::-moz-tree-image(src)
+{
+  width:16px;
+  height:16px;
+}

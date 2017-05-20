@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Проверка сега">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Активиране">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier прозорец">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier странична лента">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Настройки">
+<!ENTITY options-key "p">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier Настройки">
+<!ENTITY accounts "Регистрации">
+<!ENTITY username "Име">
+<!ENTITY url "URL">
+<!ENTITY password "Парола">
+<!ENTITY alias "Да се показва като">
+<!ENTITY check-interval0 "Интервал за проверка">
+<!ENTITY check-interval1 "минути">
+<!ENTITY check-onstartup "Проверка при стартиране">
+<!ENTITY host "Хост">
+<!ENTITY default "По подразбиране">
+<!ENTITY add "Добавяне">
+<!ENTITY delete "Изтриване">
+<!ENTITY import "Внасяне">
+<!ENTITY export "Изнасяне">
+<!ENTITY export-passwd "Парола за изнесения файл">
+<!ENTITY enter-passwd "Въведете парола :">
+<!ENTITY reenter-passwd "Въведете повторно паролата :">
+<!ENTITY autologin "Автоматично вписване">
+<!ENTITY autologin-default "Автоматично вписване с регистрацията по подразбиране">
+<!ENTITY multisession "Използване на множество регистрации">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Сървър">
+<!ENTITY locale "Локал">
+<!ENTITY inbox-only "Известяване само за входящата кутия">
+<!ENTITY include-spam "Include spam">
+<!ENTITY show-folders "Показване на папки">
+<!ENTITY show-labels "Показване на етикети">
+<!ENTITY auto-open "Автоматично отваряне">
+<!ENTITY general "Общи">
+<!ENTITY reset-counter "Нулиране на брояча при отваряне на пощата">
+<!ENTITY default-check-interval0 "Стандартен интервал за проверка">
+<!ENTITY default-check-interval1 "минути">
+<!ENTITY msg-open "Отваряне на пощите">
+<!ENTITY new-tab "В нов раздел">
+<!ENTITY new-window "В нов прозорец">
+<!ENTITY reuse-tab "Reuse opened tab">
+<!ENTITY reload-tab "Reload the tab">
+<!ENTITY new-message-arrive "Когато пристигне ново писмо">
+<!ENTITY show-notification "Показване на известяване">
+<!ENTITY auto-hide-notification "Автоматично скриване на известяването">
+<!ENTITY play-sound "Звуково известяване">
+<!ENTITY scripts "Сктиптове">
+<!ENTITY get-scripts "Още скриптове...">
+<!ENTITY advanced "Допълнителни...">
+<!ENTITY interface "Интерфейс">
+<!ENTITY show-statusbar-icon "Показване на иконка в статус-лентата">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "Отваряне на  X-notifier прозореца при стартиране">
+<!ENTITY popup-menu "Изскачащо меню">
+<!ENTITY show-captcha-dialog "Показване на прозорец за потвърждение на вписването">
+<!ENTITY captcha-title "X-notifier - Потвърждение на вписването">
+<!ENTITY captcha-text "Текстът който виждате горе">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Отваряне">
+<!ENTITY none "None">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

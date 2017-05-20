@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Âm báo Thư Mới">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Cấu hình Âm báo cho Thư Mới">
+<!ENTITY preview.label "Nghe thử Âm báo">
+<!ENTITY preview.accesskey "N">
+<!ENTITY systemsound.label "Âm báo Thư Mới của Hệ thống">
+<!ENTITY systemsound.accesskey "m">
+<!ENTITY customsound.label "Tập tin .wav tự chọn">
+<!ENTITY customsound.accesskey "T">
+<!ENTITY browse.label "Duyệt...">
+<!ENTITY browse.accesskey "D">

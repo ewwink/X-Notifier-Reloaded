@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<overlay>
+  <vbox id="multisession" collapsed="true">
+  </vbox>
+  <checkbox id="show-tabmenu" collapsed="true"/>  
+  <checkbox id="popup-menu-sidebar" collapsed="true"/>  
+</overlay>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://xnotifier/content/pref.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://xnotifier/locale/overlay.dtd">
+<prefwindow title="&options-title;"
+            id="xnotifier-pref"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      ondialogaccept="onAccept()"
+	    ondialogcancel="onCancel()"
+      ondialoghelp="onHelp()"
+      onload="onLoad()">
+  <script type="application/x-javascript" src="options.js"/>
+  <script type="application/x-javascript" src="aes.js"/>
+  <stringbundleset>
+    <stringbundle id="xnotifier-strings" src="chrome://xnotifier/locale/overlay.properties"/>
+  </stringbundleset>
+  <prefpane id="prefPane" helpTopic="help">
+    <preferences id="prefs">
+      <preference id="pref-checkOnStartup" name="extensions.xnotifier.checkOnStartup" type="bool"/>
+      <preference id="pref-autoLoginDefaultAccount" name="extensions.xnotifier.autoLoginDefaultAccount" type="bool"/>
+      <preference id="pref-multiSession" name="extensions.xnotifier.multiSession" type="bool"/>
+      <preference id="pref-keepSession" name="extensions.xnotifier.keepSession" type="bool"/>
+      <preference id="pref-interval" name="extensions.xnotifier.updateInterval" type="int"/>
+      <preference id="pref-openintab" name="extensions.xnotifier.openInTab" type="bool"/>
+      <preference id="pref-resetCounter" name="extensions.xnotifier.resetCounter" type="bool"/>
+      <preference id="pref-reuseTab" name="extensions.xnotifier.reuseTab" type="bool"/>
+      <preference id="pref-reloadTab" name="extensions.xnotifier.reloadTab" type="bool"/>
+      <preference id="pref-showNotification" name="extensions.xnotifier.showNotification" type="bool"/>
+      <preference id="pref-autoHideNotification" name="extensions.xnotifier.autoHideNotification" type="bool"/>
+      <preference id="pref-alertSound" name="extensions.xnotifier.alertSound" type="bool"/>
+      <preference id="pref-showStatusbarIcon" name="extensions.xnotifier.showStatusbarIcon" type="bool"/>
+      <preference id="pref-showTabMenu" name="extensions.xnotifier.showTabMenu" type="bool"/>
+      <preference id="pref-startupOpenXN" name="extensions.xnotifier.startupOpenXN" type="bool"/>
+      <preference id="pref-menuWindow" name="extensions.xnotifier.menuWindow" type="bool"/>
+      <preference id="pref-menuSidebar" name="extensions.xnotifier.menuSidebar" type="bool"/>
+      <preference id="pref-yahooCaptcha" name="extensions.xnotifier.yahoo.showCaptcha" type="bool"/>
+    </preferences>
+    <tabbox id="prefTabbox" persist="selectedIndex">
+      <tabs onselect="parentNode.setAttribute('selectedIndex', parentNode.selectedIndex)">
+        <tab label="&accounts;"/>
+        <tab label="&general;"/>
+      </tabs>
+      <tabpanels>
+        <tabpanel orient="horizontal">
+          <vbox>
+            <groupbox flex="1">
+              <vbox style="width:16em" flex="1">
+                <hbox>
+                <menulist id="xnotifier-hosts" flex="1" oncommand="customizeAdvancedView();checkIsNew();"/>
+                <button label="&scripts;" oncommand="main.showScripts();"/>
+                </hbox>
+                <grid>
+                  <columns>
+                    <column/>
+                    <column/>
+                  </columns>
+                  <rows>
+                    <row>
+                      <vbox>
+                        <label id="lb-username" value="&username;"/>
+                        <label id="lb-url" value="&url;" collapsed="true"/>
+                      </vbox>
+                      <textbox id="username" size="25" oninput="checkIsNew();"/>
+                    </row>
+                    <row id="pwd-box">
+                      <label value="&password;"/>
+                      <textbox type="password" id="password" oninput="setValue('password',this.value);" onkeydown="onPwdKeydown(event);"/>
+                    </row>
+                    <row id="server-box">
+                      <vbox>
+                      <label id="lb-server" value="&server;"/>
+                      <label id="lb-locale" value="&locale;" collapsed="true"/>
+                      </vbox>
+                      <textbox id="server" oninput="checkIsNew();"/>
+                    </row>
+                    <row>
+                      <label value=" "/>
+                      <label value=" "/>
+                    </row>
+                    <row>
+                      <label value="&alias;"/>
+                      <textbox id="alias" oninput="setValue('alias',this.value);"/>
+                    </row>
+                    <row id="link-box">
+                      <label value="&link;"/>
+                      <textbox id="link" oninput="setValue('link',this.value);"/>
+                    </row>
+                  </rows>
+                </grid>
+                  <checkbox id="inbox-only" label="&inbox-only;" oncommand="setValue('inboxOnly',this.checked)"/>
+                  <checkbox id="include-spam" label="&include-spam;" oncommand="setValue('includeSpam',this.checked?2:0)"/>
+                  <checkbox id="show-folders" label="&show-labels;" oncommand="setValue('showFolders',this.checked)"/>
+                  <label id="lb-show-folders" value="&show-folders;" collapsed="true"/>
+                  <label id="lb-show-labels" value="&show-labels;" collapsed="true"/>
+                  <checkbox id="auto-open" label="&auto-open;" oncommand="setValue('autoOpen',this.checked)"/>
+                  <hbox align="center">
+                    <label value="&check-interval0;"/>
+                    <textbox id="interval" type="number" min="-1" style="width:4em;" maxlength="4" oninput="setValue('interval',this.value);setColor(this);" oncommand="setValue('interval',this.value);setColor(this);"/>
+                    <label value="&check-interval1;"/>
+                  </hbox>
+                  <spacer flex="1"/>
+                <hbox>
+                  <spacer flex="1"/>
+                  <button id="btn-add" label="&add;" oncommand="onAdd()"/>
+                  <button id="btn-delete" label="&delete;" oncommand="onDelete()"/>
+                  <spacer flex="1"/>
+                </hbox>
+              </vbox>
+            </groupbox>
+            <groupbox id="yahoo" style="width:16em">
+              <checkbox id="yahoo-captcha" label="&show-captcha-dialog;" preference="pref-yahooCaptcha"/>
+            </groupbox>
+          </vbox>
+          <vbox>
+            <hbox flex="1">
+            <vbox>
+            <listbox id="xnotifier-accounts" onselect="onSelect(this.selectedIndex)" onkeydown="onKeyDown(event)" style="width:25em">
+              <listhead>
+                <listheader label=" "/>
+                <listheader label="&host;"/>
+                <listheader label="&username;"/>
+                <listheader label="&default;"/>
+              </listhead>
+              <listcols>
+                <listcol/>
+                <listcol/>
+                <listcol flex="1"/>
+                <listcol/>
+              </listcols>
+            </listbox>
+            <hbox>
+              <spacer flex="1"/>
+              <button label="&import;" oncommand="onImport()"/>
+              <button label="&export;" oncommand="onExport()"/>
+            </hbox>
+            </vbox>
+            <vbox>
+              <spacer flex="1"/>
+              <button label="▲" style="min-width: 1em;" oncommand="onMove(-1)"/>
+              <button label="▼" style="min-width: 1em;" oncommand="onMove(1)"/>
+              <spacer flex="1"/>
+            </vbox>
+            </hbox>
+            <groupbox>
+               <hbox align="center">
+                <label value="&default-check-interval0;"/>
+                <textbox id="updateInterval" type="number" min="0" style="width:4em;" maxlength="4" preference="pref-interval"/>
+                <label value="&default-check-interval1;" />
+               </hbox>
+               <checkbox label="&check-onstartup;" class="indent" preference="pref-checkOnStartup" />
+            </groupbox>
+            <groupbox>
+              <checkbox id="autologin" label="&autologin;" oncommand="toggleSubitem('autologin','autoLoginDefaultAccount');"/>
+              <checkbox id="autoLoginDefaultAccount" label="&autologin-default;" class="indent" preference="pref-autoLoginDefaultAccount" />
+              <vbox id="multisession">
+                <checkbox id="multiss" label="&multisession;" preference="pref-multiSession" oncommand="toggleSubitem('multiss','keepSession');"/>
+                <checkbox id="keepSession" label="&keep-session;" class="indent" preference="pref-keepSession" />
+              </vbox>
+            </groupbox>
+          </vbox>
+        </tabpanel>
+        <tabpanel orient="vertical">
+          <groupbox>
+            <checkbox label="&reset-counter;" preference="pref-resetCounter"/>
+          </groupbox>
+
+          <groupbox>
+            <caption label="&msg-open;"/>
+            <hbox>
+            <radiogroup preference="pref-openintab" flex="1">
+              <radio label="&new-tab;" value="true" selected="true"/>
+              <radio label="&new-window;" value="false"/>
+            </radiogroup>
+            <vbox preference="pref-openintab" flex="1">
+              <checkbox id="reuseTab" label="&reuse-tab;" preference="pref-reuseTab" oncommand="toggleSubitem('reuseTab','reloadTab');"/>
+              <checkbox id="reloadTab" label="&reload-tab;" class="indent" preference="pref-reloadTab" />
+            </vbox>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&new-message-arrive;"/>
+            <checkbox id="show-notification" label="&show-notification;" preference="pref-showNotification" oncommand="toggleSubitem('show-notification','auto-hide');"/>
+            <checkbox id="auto-hide" label="&auto-hide-notification;" class="indent" preference="pref-autoHideNotification" />
+            <hbox align="center" flex="1">
+              <checkbox preference="pref-alertSound" label="&play-sound;" flex="1"/>
+                <button label="&advanced;" oncommand="showAdvancedSound();"/>
+             </hbox>
+          </groupbox>
+          <hbox>
+          <groupbox flex="1">
+            <caption label="&interface;"/>
+            <checkbox label="&show-statusbar-icon;" preference="pref-showStatusbarIcon"/>
+            <checkbox id="show-tabmenu" label="&show-tabmenu;" preference="pref-showTabMenu"/>
+            <checkbox label="&startup-open-win;" preference="pref-startupOpenXN"/>
+          </groupbox>
+          <groupbox flex="1">
+            <caption label="&popup-menu;"/>
+            <checkbox label="&xnotifier-window;" preference="pref-menuWindow" />
+            <checkbox id="popup-menu-sidebar" label="&xnotifier-sidebar;" preference="pref-menuSidebar" />
+          </groupbox>
+          </hbox>
+          <spacer flex="1"/>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+  </prefpane>
+</prefwindow>

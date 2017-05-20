@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Geluid bij nieuw e-mailbericht">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Geluid bij nieuw e-mailbericht configureren">
+<!ENTITY preview.label "Voorbeeld">
+<!ENTITY preview.accesskey "V">
+<!ENTITY systemsound.label "Systeemgeluid bij nieuw e-mailbericht">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Aangepast .wav bestand">
+<!ENTITY customsound.accesskey "A">
+<!ENTITY browse.label "Bladeren…">
+<!ENTITY browse.accesskey "B">

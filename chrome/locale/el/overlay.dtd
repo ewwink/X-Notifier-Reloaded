@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Έλεγχος τώρα">
+<!ENTITY check-now-key "Ε">
+<!ENTITY enable "Ενεργοποίηση">
+<!ENTITY enable-key "Ν">
+<!ENTITY xnotifier-window "Παράθυρο του X-notifier">
+<!ENTITY xnotifier-window-key "Π">
+<!ENTITY xnotifier-sidebar "Πλευρική στήλη του X-notifier">
+<!ENTITY xnotifier-sidebar-key "Σ">
+<!ENTITY xnotifier-toolbar "Εργαλειοθήκη του X-notifier">
+<!ENTITY options "Επιλογές">
+<!ENTITY options-key "Λ">
+<!ENTITY help "Βοήθεια">
+<!ENTITY help-key "Β">
+<!ENTITY options-title "Επιλογές για το X-notifier">
+<!ENTITY accounts "Λογαριασμοί">
+<!ENTITY username "Όνομα χρήστη">
+<!ENTITY url "URL">
+<!ENTITY password "Κωδικός πρόσβασης">
+<!ENTITY alias "Ψευδώνυμο">
+<!ENTITY check-interval0 "Έλεγχος κάθε">
+<!ENTITY check-interval1 "λεπτά">
+<!ENTITY check-onstartup "Έλεγχος κατά την εκκίνηση">
+<!ENTITY host "Εταιρεία">
+<!ENTITY default "Προεπιλογή">
+<!ENTITY add "Προσθήκη">
+<!ENTITY delete "Διαγραφή">
+<!ENTITY import "Εισαγωγή">
+<!ENTITY export "Εξαγωγή">
+<!ENTITY export-passwd "Εισάγετε κωδικό πρόσβασης για το εξαγόμενο αρχείο">
+<!ENTITY enter-passwd "Εισάγετε κωδικό πρόσβασης :">
+<!ENTITY reenter-passwd "Εισάγετε ξανά τον κωδικό :">
+<!ENTITY autologin "Ενεργοποίηση αυτόματης σύνδεσης">
+<!ENTITY autologin-default "Προεπιλεγμένος λογαριασμός αυτόματης σύνδεσης">
+<!ENTITY multisession "Χρήση πολλαπλών συνδέσεων">
+<!ENTITY keep-session "Διατήρηση συνόδου για δεσμούς">
+<!ENTITY server "Εξυπηρετητής">
+<!ENTITY locale "Γλώσσα">
+<!ENTITY inbox-only "Ειδοποίηση μόνο εισερχομένων">
+<!ENTITY include-spam "Να περιλαμβάνονται τα spam">
+<!ENTITY show-folders "Εμφάνιση φακέλων">
+<!ENTITY show-labels "Εμφάνιση ετικετών">
+<!ENTITY auto-open "Άνοιγμα αυτόματα">
+<!ENTITY general "Γενικά">
+<!ENTITY reset-counter "Μηδενισμός μετρητή κατά το άνοιγμα μηνυμάτων">
+<!ENTITY default-check-interval0 "Προεπιλεγμένος χρόνος ελέγχου">
+<!ENTITY default-check-interval1 "λεπτά">
+<!ENTITY msg-open "Άνοιγμα μηνυμάτων">
+<!ENTITY new-tab "Σε νέα καρτέλα">
+<!ENTITY new-window "Σε νέο παράθυρο">
+<!ENTITY reuse-tab "Χρήση ήδη ανοιχτής καρτέλας">
+<!ENTITY reload-tab "Ανανέωση της καρτέλας">
+<!ENTITY new-message-arrive "Κατά την άφιξη νέων μηνυμάτων">
+<!ENTITY show-notification "Εμφάνιση ειδοποίησης">
+<!ENTITY auto-hide-notification "Απόκρυψη ειδοποίησης αυτόματα">
+<!ENTITY play-sound "Αναπαραγωγή ήχου">
+<!ENTITY scripts "Σενάρια">
+<!ENTITY get-scripts "Λήψη σεναρίων (scripts)">
+<!ENTITY advanced "Για προχωρημένους...">
+<!ENTITY interface "Διεπαφή">
+<!ENTITY show-statusbar-icon "Εμφάνιση εικονιδίου στη γραμμή κατάστασης">
+<!ENTITY show-tabmenu "Εμφάνιση στο μενού καρτελών">
+<!ENTITY startup-open-win "Άνοιγμα του παραθύρου X-notifier κατά την εκκίνηση του Firefox">
+<!ENTITY popup-menu "Αναδυόμενο μενού">
+<!ENTITY show-captcha-dialog "Εμφάνιση παραθύρου επαλήθευσης σύνδεσης">
+<!ENTITY captcha-title "X-notifier - Επαλήθευση σύνδεσης">
+<!ENTITY captcha-text "Κείμενο που βλέπετε από πάνω">
+<!ENTITY verification-code "Κωδικός επαλήθευσης">
+<!ENTITY open "Άνοιγμα">
+<!ENTITY none "Κανένα">
+<!ENTITY link "Δεσμός">
+<!ENTITY show-text "Εμφάνιση κειμένου">
+<!ENTITY customize "Προσαρμογή...">
+<!ENTITY xnsidebar.label "X-notifier">

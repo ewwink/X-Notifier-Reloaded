@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Tikrinti Dabar">
+<!ENTITY check-now-key "T">
+<!ENTITY enable "Įgalinti">
+<!ENTITY enable-key "Į">
+<!ENTITY xnotifier-window "WebPašto Pranešėjo langas">
+<!ENTITY xnotifier-window-key "l">
+<!ENTITY xnotifier-sidebar "WebPašto Pranešėjo šoninė juosta">
+<!ENTITY xnotifier-sidebar-key "j">
+<!ENTITY xnotifier-toolbar "WebPašto Pranešėjo Įrankių Juosta">
+<!ENTITY options "Nuostatos">
+<!ENTITY options-key "N">
+<!ENTITY help "Pagalba">
+<!ENTITY help-key "H">
+<!ENTITY options-title "WebPašto Pranešėjo Nuostatos">
+<!ENTITY accounts "Paskyros">
+<!ENTITY username "Vartotojas">
+<!ENTITY url "URL">
+<!ENTITY password "Slaptažodis">
+<!ENTITY alias "Pasirinktinis Adresas">
+<!ENTITY check-interval0 "Tikrinimo intervalas">
+<!ENTITY check-interval1 "minutės">
+<!ENTITY check-onstartup "Tikrinti paleisties metu">
+<!ENTITY host "Serveris">
+<!ENTITY default "Numatytas">
+<!ENTITY add "Pridėti">
+<!ENTITY delete "Pašalinti">
+<!ENTITY import "Importuoti">
+<!ENTITY export "Eksportuoti">
+<!ENTITY export-passwd "Įrašyti eksportuotam failui slaptažodį">
+<!ENTITY enter-passwd "Irašyti slaptažodį :">
+<!ENTITY reenter-passwd "Pakartoti slaptažodį :">
+<!ENTITY autologin "Leisti Automatinį Prisijungimą">
+<!ENTITY autologin-default "Numatytos paskyros automatinis prisijungimas">
+<!ENTITY multisession "Naudoti kelis prisijungimus">
+<!ENTITY keep-session "Nuorodas išlaikyti aktyvias">
+<!ENTITY server "Serveris">
+<!ENTITY locale "Vieta">
+<!ENTITY inbox-only "Pranešti tik Gautieji">
+<!ENTITY include-spam "Įtraukti šlamštą">
+<!ENTITY show-folders "Rodyti aplankus">
+<!ENTITY show-labels "Rodyti žymes">
+<!ENTITY auto-open "Atidaryti automatiškai">
+<!ENTITY general "Bendra">
+<!ENTITY reset-counter "Atveriant žinutes skaitiklį atstatyti">
+<!ENTITY default-check-interval0 "Numatytas tikrinimo intervalas">
+<!ENTITY default-check-interval1 "minutės">
+<!ENTITY msg-open "Skaityti Laiškus">
+<!ENTITY new-tab "Naujoje kortelėje">
+<!ENTITY new-window "Naujame lange">
+<!ENTITY reuse-tab "Pakartotinai atverti kortelę">
+<!ENTITY reload-tab "Perkrauti kortelę">
+<!ENTITY new-message-arrive "Kai gaunama nauja žinutė">
+<!ENTITY show-notification "Rodyti pranešimo langą">
+<!ENTITY auto-hide-notification "Automatinis pranešimo nerodymas">
+<!ENTITY play-sound "Groti garsą">
+<!ENTITY scripts "Skriptai">
+<!ENTITY get-scripts "Gauti skriptus">
+<!ENTITY advanced "Išsamiau...">
+<!ENTITY interface "Sąsaja">
+<!ENTITY show-statusbar-icon "Rodyti būsenos juostos paveikslėlį">
+<!ENTITY show-tabmenu "Rodyti lentelės meniu">
+<!ENTITY startup-open-win "WebPašto Pranešėjo langą atverti paleidžiant Firefox">
+<!ENTITY popup-menu "Iškylantis Meniu">
+<!ENTITY show-captcha-dialog "Rodyti prisijungimo patikros langą">
+<!ENTITY captcha-title "X-notifier - Prisijungimo patikrinimas">
+<!ENTITY captcha-text "Aukščiau matomas tekstas">
+<!ENTITY verification-code "Patvirtinimo kodas">
+<!ENTITY open "Skaityti">
+<!ENTITY none "Joks">
+<!ENTITY link "Nuoroda">
+<!ENTITY show-text "Rodyti tekstą">
+<!ENTITY customize "Pritaikyti">
+<!ENTITY xnsidebar.label "WebPašto Pranešėjas">

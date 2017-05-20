@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Kontroller nu">
+<!ENTITY check-now-key "K">
+<!ENTITY enable "Aktiver">
+<!ENTITY enable-key "A">
+<!ENTITY xnotifier-window "X-notifier-vindue">
+<!ENTITY xnotifier-window-key "v">
+<!ENTITY xnotifier-sidebar "X-notifier-sidebjælke">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier værktøjslinje">
+<!ENTITY options "Indstillinger">
+<!ENTITY options-key "I">
+<!ENTITY help "Hjælp">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier Indstillinger">
+<!ENTITY accounts "Konti">
+<!ENTITY username "Brugernavn">
+<!ENTITY url "URL">
+<!ENTITY password "Adgangskode">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Kontrolinterval">
+<!ENTITY check-interval1 "minutter">
+<!ENTITY check-onstartup "Kontroller ved opstart">
+<!ENTITY host "Vært">
+<!ENTITY default "Standard">
+<!ENTITY add "Tilføj">
+<!ENTITY delete "Slet">
+<!ENTITY import "Importer">
+<!ENTITY export "Eksporter">
+<!ENTITY export-passwd "Indtast adgangskode til eksporteret fil">
+<!ENTITY enter-passwd "Indtast adgangskode:">
+<!ENTITY reenter-passwd "Genindtast adgangskode:">
+<!ENTITY autologin "Aktiver auto-login">
+<!ENTITY autologin-default "Auto-login standardkonto">
+<!ENTITY multisession "Anvend flere login">
+<!ENTITY keep-session "Bevar session for links">
+<!ENTITY server "Server">
+<!ENTITY locale "Lokal">
+<!ENTITY inbox-only "Annoncer kun for indbakke">
+<!ENTITY include-spam "Inkluder spam">
+<!ENTITY show-folders "Vis mapper">
+<!ENTITY show-labels "Vis etiketter">
+<!ENTITY auto-open "Åbn automatisk">
+<!ENTITY general "Generelt">
+<!ENTITY reset-counter "Nulstil tæller når meddelelser åbnes">
+<!ENTITY default-check-interval0 "Standard kontrolinterval">
+<!ENTITY default-check-interval1 "minutter">
+<!ENTITY msg-open "Åbn mails">
+<!ENTITY new-tab "I et nyt faneblad">
+<!ENTITY new-window "I et nyt vindue">
+<!ENTITY reuse-tab "Genbrug åbnet faneblad">
+<!ENTITY reload-tab "Genindlæs fanebladet">
+<!ENTITY new-message-arrive "Når en meddelelse ankommer">
+<!ENTITY show-notification "Vis et beskedvindue">
+<!ENTITY auto-hide-notification "Skjul automatisk besked">
+<!ENTITY play-sound "Afspil en lyd">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Hent scripts">
+<!ENTITY advanced "Avanceret…">
+<!ENTITY interface "Grænseflade">
+<!ENTITY show-statusbar-icon "Vis statuslinjeikon">
+<!ENTITY show-tabmenu "Vis fanebladsmenu">
+<!ENTITY startup-open-win "Åbn X-notifier-vinduet når Firefox starter">
+<!ENTITY popup-menu "Pop op-menu">
+<!ENTITY show-captcha-dialog "Vis login-bekræftelsesvindue">
+<!ENTITY captcha-title "X-notifier - Login-bekræftelse">
+<!ENTITY captcha-text "Teksten ovenover">
+<!ENTITY verification-code "Bekræftelseskode">
+<!ENTITY open "Åbn">
+<!ENTITY none "Ingen">
+<!ENTITY link "Link">
+<!ENTITY show-text "Vis tekst">
+<!ENTITY customize "Tilpas…">
+<!ENTITY xnsidebar.label "X-notifier">

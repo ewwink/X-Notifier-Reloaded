@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Ստուգել">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Միացնել">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier-ի պատուհանը">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier-ի կողային վահանակը">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier-ի գործիքները">
+<!ENTITY options "Ընտրանքներ">
+<!ENTITY options-key "p">
+<!ENTITY help "Օգնություն">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier-ի ընտրանքները">
+<!ENTITY accounts "Փոստարկղեր">
+<!ENTITY username "Օգտվողի անունը">
+<!ENTITY url "URL">
+<!ENTITY password "Գաղտնաբառը">
+<!ENTITY alias "Մականունը">
+<!ENTITY check-interval0 "Ստուգելու դադարը">
+<!ENTITY check-interval1 "րոպե">
+<!ENTITY check-onstartup "Ստուգել բացելիս">
+<!ENTITY host "Հոսթը">
+<!ENTITY default "Հիմնականը">
+<!ENTITY add "Ավելացնել">
+<!ENTITY delete "Ջնջել">
+<!ENTITY import "Ներմուծել">
+<!ENTITY export "Արտածել">
+<!ENTITY export-passwd "Նշեք արտածվող ֆայլի գաղտնաբառը">
+<!ENTITY enter-passwd "Նշեք գաղտնաբառը.">
+<!ENTITY reenter-passwd "Կրկնեք գաղտնաբառը.">
+<!ENTITY autologin "Միացնել ինքնաշխատ մուտքը">
+<!ENTITY autologin-default "Միանգ. մուտք գործել հիմն. փոստարկղ">
+<!ENTITY multisession "Մի քանի մուտք միաժամանակ">
+<!ENTITY keep-session "Պահել աշխատաշրջանը հղումների համար">
+<!ENTITY server "Սպասարկիչում">
+<!ENTITY locale "Համակարգչային">
+<!ENTITY inbox-only "Տեղեկացնել միայն Մուտքայինները">
+<!ENTITY include-spam "Ներառյալ խլամը">
+<!ENTITY show-folders "Ցուցադրել թղթապանակները">
+<!ENTITY show-labels "Ցուցադրել տառերը">
+<!ENTITY auto-open "Նոր նամակի դեպքում միանգամից բացել">
+<!ENTITY general "Գլխավորը">
+<!ENTITY reset-counter "Նամակները բացելիս ետարկել հաշվիչը">
+<!ENTITY default-check-interval0 "Ստուգումների դադարը">
+<!ENTITY default-check-interval1 "րոպե">
+<!ENTITY msg-open "Բացել նամակները">
+<!ENTITY new-tab "Նոր էջում">
+<!ENTITY new-window "Նոր պատուհանում">
+<!ENTITY reuse-tab "Վերաօգտագործել բացված էջը">
+<!ENTITY reload-tab "Վերբեռնել էջը">
+<!ENTITY new-message-arrive "Նոր նամակների դեպքում">
+<!ENTITY show-notification "Ցուցադրել զգուշացման պատուհանը">
+<!ENTITY auto-hide-notification "Թաքցնել տեղեկացումը">
+<!ENTITY play-sound "Խաղարկել ձայն">
+<!ENTITY scripts "Գրվածքներ">
+<!ENTITY get-scripts "Բեռնել գրվածքներ">
+<!ENTITY advanced "Ընդլայնված...">
+<!ENTITY interface "Տեսքը">
+<!ENTITY show-statusbar-icon "Ցուցադրել պատկերը statusbar-ում">
+<!ENTITY show-tabmenu "Ցուցադրել էջի ընտրացանկը">
+<!ENTITY startup-open-win "Բացելիս ցուցադրել X-notifier-ի պատուհանը">
+<!ENTITY popup-menu "հայտնվող պատուհանի ընտրացանկը">
+<!ENTITY show-captcha-dialog "Ցուցադրել վավերացման պատուհանը">
+<!ENTITY captcha-title "X-notifier - Մուտքի վավերացում">
+<!ENTITY captcha-text "Ներքոնշյալ տեքստը">
+<!ENTITY verification-code "Վավերացման բանալին">
+<!ENTITY open "Բացել">
+<!ENTITY none "Ոչ մի">
+<!ENTITY link "Հղումը">
+<!ENTITY show-text "Ցուցադրել տեքստը">
+<!ENTITY customize "Կարգավորել...">
+<!ENTITY xnsidebar.label "X-notifier">

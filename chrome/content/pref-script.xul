@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"?>
+<!DOCTYPE window SYSTEM "chrome://xnotifier/locale/overlay.dtd">
+<dialog title="&scripts;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept"
+        onload="script.onLoad()">
+  <script type="application/x-javascript" src="chrome://xnotifier/content/pref-script.js"/>
+  <hbox>
+    <vbox>
+    <listbox id="xnotifier-scripts" >
+      <listcols>
+        <listcol flex="1"/>
+      </listcols>
+    </listbox>
+    <hbox>
+      <label value="&get-scripts;"
+        style="color:blue;cursor:pointer;text-decoration:underline"
+        onclick="script.onClickLink()"/>
+      <spacer/>
+    </hbox>      
+    </vbox>
+    <vbox>
+      <button label="&add;" oncommand="script.onAdd()"/>
+      <button label="&delete;" oncommand="script.onDelete()"/>
+    </vbox>
+  </hbox>
+</dialog>
+

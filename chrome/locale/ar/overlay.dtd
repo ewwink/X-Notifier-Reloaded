@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "تفقّد البريد الآن">
+<!ENTITY check-now-key "ق">
+<!ENTITY enable "تفعيل">
+<!ENTITY enable-key "ف">
+<!ENTITY xnotifier-window "نافذة منبه البريد">
+<!ENTITY xnotifier-window-key "ن">
+<!ENTITY xnotifier-sidebar "الشريط الجانبي لمنبه البريد">
+<!ENTITY xnotifier-sidebar-key "ج">
+<!ENTITY xnotifier-toolbar "شريط أدوات منبه البريد">
+<!ENTITY options "خيارات">
+<!ENTITY options-key "خ">
+<!ENTITY help "مُساعدة">
+<!ENTITY help-key "م">
+<!ENTITY options-title "خيارات منبه البريد">
+<!ENTITY accounts "الحسابات">
+<!ENTITY username "معرّف البريد">
+<!ENTITY url "URL">
+<!ENTITY password "كلمة السّر">
+<!ENTITY alias "الاسم المُستعار">
+<!ENTITY check-interval0 "تفقّد البريد كُل">
+<!ENTITY check-interval1 "دقائق/دقيقة">
+<!ENTITY check-onstartup "تفقّد عند بدء تشغيل فَيرفُكس">
+<!ENTITY host "المُضيف">
+<!ENTITY default "افتراضي">
+<!ENTITY add "أضف">
+<!ENTITY delete "احذف">
+<!ENTITY import "استيراد">
+<!ENTITY export "تصدير">
+<!ENTITY export-passwd "ادخل كلمة سر للملف المُصَدَّر">
+<!ENTITY enter-passwd "أدخل كلمة السّر:">
+<!ENTITY reenter-passwd "أعد إدخال كلمة السّر:">
+<!ENTITY autologin "تفعيل تسجيل الدخول التلقائي">
+<!ENTITY autologin-default "تسجيل دخول تلقائي للحسابات الافتراضية">
+<!ENTITY multisession "استخدام تسجيل الدخول المتعدد">
+<!ENTITY keep-session "احتفظ بروابط الجلسة">
+<!ENTITY server "الخادوم">
+<!ENTITY locale "المنطقة">
+<!ENTITY inbox-only "التنبيه عن البريد الوارد فقط">
+<!ENTITY include-spam "تضمين البريد الغير مرغوب به">
+<!ENTITY show-folders "إظهار المجلدات">
+<!ENTITY show-labels "إظهار التسميات">
+<!ENTITY auto-open "افتح تلقائياً">
+<!ENTITY general "عــام">
+<!ENTITY reset-counter "صفّر العداد عند فتح الرسائل">
+<!ENTITY default-check-interval0 "تفقّد الحسابات الافتراضية كُل">
+<!ENTITY default-check-interval1 "دقائق/دقيقة">
+<!ENTITY msg-open "افتح الرسائل">
+<!ENTITY new-tab "في لسان جديد">
+<!ENTITY new-window "في نافذة جديدة">
+<!ENTITY reuse-tab "إعادة استخدام اللسان المفتوح">
+<!ENTITY reload-tab "إعادة تحميل اللسان">
+<!ENTITY new-message-arrive "عند وصول رسالة جديدة">
+<!ENTITY show-notification "اعرض نافذة التنبيه">
+<!ENTITY auto-hide-notification "أخفِ التنبيهات تلقائيا">
+<!ENTITY play-sound "شغّل صوت تنبيه">
+<!ENTITY scripts "بروتوكولات إضافية">
+<!ENTITY get-scripts "احصل على بروتوكولات إضافية">
+<!ENTITY advanced "خيارات متقدمة...">
+<!ENTITY interface "الواجهة">
+<!ENTITY show-statusbar-icon "اعرض أيقونة شريط الإضافات">
+<!ENTITY show-tabmenu "اعرض قائمة اللسان">
+<!ENTITY startup-open-win "افتح نافذة منبه البريد عند بدء تشغيل فَيرفُكس">
+<!ENTITY popup-menu "أظهر في القائمة المنبثقة">
+<!ENTITY show-captcha-dialog "عرض نافذة تحقق الدخول">
+<!ENTITY captcha-title "منبه البريد - التحقق من تسجيل الدخول">
+<!ENTITY captcha-text "النص الذي تراه أعلاه">
+<!ENTITY verification-code "رمز التحقق">
+<!ENTITY open "افتح">
+<!ENTITY none "لاشيء">
+<!ENTITY link "رابط">
+<!ENTITY show-text "اعرض النص">
+<!ENTITY customize "خصّص...">
+<!ENTITY xnsidebar.label "منبه البريد">

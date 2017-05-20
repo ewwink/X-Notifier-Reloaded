@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "新着メール サウンド">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "新着メール サウンドを設定">
+<!ENTITY preview.label "サウンドをプレビュー">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "システムの新着メール サウンド">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "カスタム .wav ファイル">
+<!ENTITY customsound.accesskey "C">
+<!ENTITY browse.label "参照...">
+<!ENTITY browse.accesskey "B">

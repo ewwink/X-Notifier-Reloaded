@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Hämta nya meddelanden">
+<!ENTITY check-now-key "H">
+<!ENTITY enable "Aktivera">
+<!ENTITY enable-key "A">
+<!ENTITY xnotifier-window "X-notifier-fönstret">
+<!ENTITY xnotifier-window-key "f">
+<!ENTITY xnotifier-sidebar "X-notifier-sidofältet">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier-fältet">
+<!ENTITY options "Inställningar">
+<!ENTITY options-key "i">
+<!ENTITY help "Hjälp">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Inställningar för X-notifier">
+<!ENTITY accounts "Konton">
+<!ENTITY username "Användarnamn">
+<!ENTITY url "URL">
+<!ENTITY password "Lösenord">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Kontrollera var">
+<!ENTITY check-interval1 "minut">
+<!ENTITY check-onstartup "Kontrollera vid programstart">
+<!ENTITY host "Värd">
+<!ENTITY default "Standard">
+<!ENTITY add "Lägg till">
+<!ENTITY delete "Ta bort">
+<!ENTITY import "Importera">
+<!ENTITY export "Exportera">
+<!ENTITY export-passwd "Ange lösenord för exporterad fil">
+<!ENTITY enter-passwd "Ange lösenord:">
+<!ENTITY reenter-passwd "Upprepa lösenord:">
+<!ENTITY autologin "Tillåt auto-inloggning">
+<!ENTITY autologin-default "Logga automatiskt in på standardkontot">
+<!ENTITY multisession "Använd multiinloggning">
+<!ENTITY keep-session "Behåll sessionen för länkar">
+<!ENTITY server "Server">
+<!ENTITY locale "Språk">
+<!ENTITY inbox-only "Kontrollera endast inkorgen">
+<!ENTITY include-spam "Inkludera skräppost">
+<!ENTITY show-folders "Visa mappar">
+<!ENTITY show-labels "Visa etiketter">
+<!ENTITY auto-open "Öppna automatiskt">
+<!ENTITY general "Allmänt">
+<!ENTITY reset-counter "Nollställ räknare när meddelande öppnas">
+<!ENTITY default-check-interval0 "Standardsökintervall">
+<!ENTITY default-check-interval1 "minuter">
+<!ENTITY msg-open "Öppna e-brev">
+<!ENTITY new-tab "I en ny flik">
+<!ENTITY new-window "I ett nytt fönster">
+<!ENTITY reuse-tab "Återanvänd öppnad flik">
+<!ENTITY reload-tab "Uppdatera fliken">
+<!ENTITY new-message-arrive "När ett nytt e-brev kommer">
+<!ENTITY show-notification "Visa ett meddelandefönster">
+<!ENTITY auto-hide-notification "Göm meddelanden automatiskt">
+<!ENTITY play-sound "Spela upp ett ljud">
+<!ENTITY scripts "Skript">
+<!ENTITY get-scripts "Hämta skript">
+<!ENTITY advanced "Avancerat…">
+<!ENTITY interface "Gränssnitt">
+<!ENTITY show-statusbar-icon "Visa ikon i statusfältet">
+<!ENTITY show-tabmenu "Visa flikmeny">
+<!ENTITY startup-open-win "Öppna X-notifier-fönstret när Firefox startar">
+<!ENTITY popup-menu "Popup-menyn">
+<!ENTITY show-captcha-dialog "Visa inloggningsbekräftelsefönstret">
+<!ENTITY captcha-title "X-notifier - Inloggningsbekräftelse">
+<!ENTITY captcha-text "Texten härovanför">
+<!ENTITY verification-code "Verifikationskod">
+<!ENTITY open "Öppna">
+<!ENTITY none "Ingen">
+<!ENTITY link "Länk">
+<!ENTITY show-text "Visa text">
+<!ENTITY customize "Anpassa…">
+<!ENTITY xnsidebar.label "X-notifier">

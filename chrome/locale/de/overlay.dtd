@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Jetzt überprüfen">
+<!ENTITY check-now-key "J">
+<!ENTITY enable "Aktivieren">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier Fenster">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier Sidebar">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Optionen">
+<!ENTITY options-key "O">
+<!ENTITY help "Hilfe">
+<!ENTITY help-key "H">
+<!ENTITY options-title "WebMail Notifer Voreinstellungen">
+<!ENTITY accounts "Konten">
+<!ENTITY username "Benutzername">
+<!ENTITY url "URL">
+<!ENTITY password "Passwort">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Prüfintervall">
+<!ENTITY check-interval1 "Minuten">
+<!ENTITY check-onstartup "Beim Start überprüfen">
+<!ENTITY host "Host">
+<!ENTITY default "Standard">
+<!ENTITY add "Hinzufügen">
+<!ENTITY delete "Löschen">
+<!ENTITY import "Importieren">
+<!ENTITY export "Exportieren">
+<!ENTITY export-passwd "Passwort für die exportierte Datei eingeben:">
+<!ENTITY enter-passwd "Passwort eingeben:">
+<!ENTITY reenter-passwd "Passwort erneut eingeben:">
+<!ENTITY autologin "AutoLogin aktivieren">
+<!ENTITY autologin-default "Auto login default account">
+<!ENTITY multisession "Use multiple login">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Server">
+<!ENTITY locale "Locale">
+<!ENTITY inbox-only "Nur bei Inbox-Nachrichten benachrichtigen">
+<!ENTITY include-spam "Einschließlich Spam">
+<!ENTITY show-folders "Ordner anzeigen">
+<!ENTITY show-labels "Labels anzeigen">
+<!ENTITY auto-open "Automatisch öffnen">
+<!ENTITY general "Allgemein">
+<!ENTITY reset-counter "Beim Öffnen von Nachrichten Zähler zurücksetzen">
+<!ENTITY default-check-interval0 "Standardzeitabstand der Überprüfung">
+<!ENTITY default-check-interval1 "Minuten">
+<!ENTITY msg-open "Die Mails">
+<!ENTITY new-tab "In einem neuen Tab öffnen">
+<!ENTITY new-window "In einem neuen Fenster öffnen">
+<!ENTITY reuse-tab "Geöffnete Tabs verwenden">
+<!ENTITY reload-tab "Tab neu laden">
+<!ENTITY new-message-arrive "Beim Empfangen einer neue Nachricht">
+<!ENTITY show-notification "ein Benachrichtigungsfenster anzeigen">
+<!ENTITY auto-hide-notification "Benachrichtigung automatisch ausblenden">
+<!ENTITY play-sound "Einen Ton abspielen">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Get scripts">
+<!ENTITY advanced "Erweitert...">
+<!ENTITY interface "Interface">
+<!ENTITY show-statusbar-icon "Statusbaricon anzeigen">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "WebMail Notifer Fenster anzeigen wenn Firefox startet">
+<!ENTITY popup-menu "Popup Menu">
+<!ENTITY show-captcha-dialog "Loginbestätigungsfenster anzeigen">
+<!ENTITY captcha-title "WebMail Notifer - Loginüberprüfung">
+<!ENTITY captcha-text "Text den sie oben sehen">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Öffnen">
+<!ENTITY none "Keine">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

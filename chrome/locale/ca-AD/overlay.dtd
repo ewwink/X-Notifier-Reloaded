@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Comprova ara">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Activa">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "Finestra del X-notifier">
+<!ENTITY xnotifier-window-key "F">
+<!ENTITY xnotifier-sidebar "Barra lateral del X-notifier">
+<!ENTITY xnotifier-sidebar-key "l">
+<!ENTITY xnotifier-toolbar "Barra d'eines del Webmail Notifier">
+<!ENTITY options "Opcions">
+<!ENTITY options-key "p">
+<!ENTITY help "Ajuda">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Preferències del X-notifier">
+<!ENTITY accounts "Comptes">
+<!ENTITY username "Usuari">
+<!ENTITY url "URL">
+<!ENTITY password "Contrasenya">
+<!ENTITY alias "Àlies">
+<!ENTITY check-interval0 "Interval de comprovació">
+<!ENTITY check-interval1 "minuts">
+<!ENTITY check-onstartup "Comprova en arrancar">
+<!ENTITY host "Equip">
+<!ENTITY default "Predeterminat">
+<!ENTITY add "Afegeix">
+<!ENTITY delete "Elimina">
+<!ENTITY import "Importa">
+<!ENTITY export "Exporta">
+<!ENTITY export-passwd "Introduïu la contrasenya del fitxer exportat">
+<!ENTITY enter-passwd "Introduïu la contrasenya:">
+<!ENTITY reenter-passwd "Introduïu la contrasenya de nou:">
+<!ENTITY autologin "Habilita la connexió automàtica">
+<!ENTITY autologin-default "Compte predeterminat">
+<!ENTITY multisession "Connexió múltiple">
+<!ENTITY keep-session "Manté la sessió en els enllaços">
+<!ENTITY server "Servidor">
+<!ENTITY locale "Llengua">
+<!ENTITY inbox-only "Només la safata d'entrada">
+<!ENTITY include-spam "Inclou el correu brossa">
+<!ENTITY show-folders "Mostra les carpetes">
+<!ENTITY show-labels "Mostra les etiquetes">
+<!ENTITY auto-open "Obre automàticament">
+<!ENTITY general "General">
+<!ENTITY reset-counter "Inicialitza el comptador en obrir els missatges">
+<!ENTITY default-check-interval0 "Interval predeterminat">
+<!ENTITY default-check-interval1 "minuts">
+<!ENTITY msg-open "Obre els missatges a:">
+<!ENTITY new-tab "una nova pestanya">
+<!ENTITY new-window "una nova finestra">
+<!ENTITY reuse-tab "Reutilitza la pestanya oberta">
+<!ENTITY reload-tab "Torna a carregar la pestanya">
+<!ENTITY new-message-arrive "Quan arribi un nou missatge:">
+<!ENTITY show-notification "mostra una alerta">
+<!ENTITY auto-hide-notification "Amaga automàticament les notificacions">
+<!ENTITY play-sound "Reprodueix un so">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Obté els scripts">
+<!ENTITY advanced "Avançat...">
+<!ENTITY interface "Interfície">
+<!ENTITY show-statusbar-icon "Mostra la icona a la barra d'estat">
+<!ENTITY show-tabmenu "Mostra el menú de pestanyes">
+<!ENTITY startup-open-win "Obre la finestra del X-notifier quan s'engegui el Firefox">
+<!ENTITY popup-menu "Menú emergent">
+<!ENTITY show-captcha-dialog "Mostra la finestra de verificació de connexió">
+<!ENTITY captcha-title "X-notifier - Verificació de connexió">
+<!ENTITY captcha-text "El text que veieu a sobre">
+<!ENTITY verification-code "Codi de verificació">
+<!ENTITY open "Obre">
+<!ENTITY none "Cap">
+<!ENTITY link "Enllaç">
+<!ENTITY show-text "Mostra el text">
+<!ENTITY customize "Personalitza...">
+<!ENTITY xnsidebar.label "X-notifier">

@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Ellenőrzés most">
+<!ENTITY check-now-key "E">
+<!ENTITY enable "Engedélyezés">
+<!ENTITY enable-key "N">
+<!ENTITY xnotifier-window "X-notifier ablak">
+<!ENTITY xnotifier-window-key "a">
+<!ENTITY xnotifier-sidebar "X-notifier oldalsáv">
+<!ENTITY xnotifier-sidebar-key "o">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Beállítások">
+<!ENTITY options-key "b">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier Beállítások">
+<!ENTITY accounts "Fiókok">
+<!ENTITY username "Felhasználónév">
+<!ENTITY url "URL">
+<!ENTITY password "Jelszó">
+<!ENTITY alias "Megjelenítendő név">
+<!ENTITY check-interval0 "Ellenőrzés">
+<!ENTITY check-interval1 "percenként">
+<!ENTITY check-onstartup "Ellenőrzés induláskor">
+<!ENTITY host "Szolgáltató">
+<!ENTITY default "Alapértelmezett">
+<!ENTITY add "Hozzáadás">
+<!ENTITY delete "Törlés">
+<!ENTITY import "Importálás">
+<!ENTITY export "Exportálás">
+<!ENTITY export-passwd "Adjon meg egy jelszót az exportált fájlhoz">
+<!ENTITY enter-passwd "Írja be jelszavát :">
+<!ENTITY reenter-passwd "Ismételje meg jelszavát :">
+<!ENTITY autologin "Automatikus bejelentkezés engedélyezése">
+<!ENTITY autologin-default "Automatikus bejelentkezés az alapértelmezett fiókba">
+<!ENTITY multisession "Több fiók egyidejű használata">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Szerver">
+<!ENTITY locale "Helyi">
+<!ENTITY inbox-only "Csak a &quot;Beérkezett levelek&quot; mappába érkező üzenetek esetén figyelmeztessen">
+<!ENTITY include-spam "Spam megjelenítése">
+<!ENTITY show-folders "Mappák megjelenítése">
+<!ENTITY show-labels "Címkék megjelenítése">
+<!ENTITY auto-open "Automatikus megnyitás">
+<!ENTITY general "Általános">
+<!ENTITY reset-counter "Számláló lenullázása a levelek megnyitásakor (ikonra kattintás esetén)">
+<!ENTITY default-check-interval0 "Alapértelmezett ellenőrzés:">
+<!ENTITY default-check-interval1 "percek">
+<!ENTITY msg-open "Levelek megnyitása">
+<!ENTITY new-tab "Új lapon">
+<!ENTITY new-window "Új ablakban">
+<!ENTITY reuse-tab "Reuse opened tab">
+<!ENTITY reload-tab "Lap újratöltése">
+<!ENTITY new-message-arrive "Levelek érkezésekor">
+<!ENTITY show-notification "Felugró ablak figyelmeztessen">
+<!ENTITY auto-hide-notification "Figyelmeztetés automatikus elrejtése">
+<!ENTITY play-sound "Hangjelzés használata">
+<!ENTITY scripts "Szkriptek">
+<!ENTITY get-scripts "Szkriptek letöltése">
+<!ENTITY advanced "Haladó...">
+<!ENTITY interface "Kezelőfelület">
+<!ENTITY show-statusbar-icon "Ikon megjelenítése az állapotsoron">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "X-notifier ablak megjelenítése a Firefox elindulásakor">
+<!ENTITY popup-menu "Felugró menü">
+<!ENTITY show-captcha-dialog "Megerősítést kérő ablak megjelenítése bejelentkezéskor">
+<!ENTITY captcha-title "X-notifier - Bejelentkezés megerősítése">
+<!ENTITY captcha-text "Fentebb látható szöveg">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Megnyitás">
+<!ENTITY none "Nincs">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

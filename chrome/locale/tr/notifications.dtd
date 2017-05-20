@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Yeni Postalar İçin Sesli Uyarı">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Yeni Posta Uyarı Sesi">
+<!ENTITY preview.label "Dinle">
+<!ENTITY preview.accesskey "D">
+<!ENTITY systemsound.label "Öntanımlı ses dosyasını kullan">
+<!ENTITY systemsound.accesskey "Ö">
+<!ENTITY customsound.label "Kişisel .wav dosyası">
+<!ENTITY customsound.accesskey "K">
+<!ENTITY browse.label "Gözat..">
+<!ENTITY browse.accesskey "G">

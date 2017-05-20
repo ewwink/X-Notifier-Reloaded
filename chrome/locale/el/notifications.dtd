@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Ήχος νέου μηνύματος">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Ορίστε ήχο για νέο μήνυμα">
+<!ENTITY preview.label "Προεπισκόπηση ήχου">
+<!ENTITY preview.accesskey "Π">
+<!ENTITY systemsound.label "Προκαθορισμένος ήχος συστήματος για νέο μήνυμα">
+<!ENTITY systemsound.accesskey "θ">
+<!ENTITY customsound.label "Αρχείο Custom.wav">
+<!ENTITY customsound.accesskey "Α">
+<!ENTITY browse.label "Εξερεύνηση...">
+<!ENTITY browse.accesskey "Ε">

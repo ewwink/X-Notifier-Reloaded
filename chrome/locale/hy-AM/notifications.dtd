@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Նոր նամակի ձայնը">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Ընտրեք նոր նամակի ձայնը">
+<!ENTITY preview.label "Լսել ձայնը">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "Համակարգային ձայնը">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Ընտրել .wav ֆայլ">
+<!ENTITY customsound.accesskey "C">
+<!ENTITY browse.label "Ընտրել">
+<!ENTITY browse.accesskey "B">

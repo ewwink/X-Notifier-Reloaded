@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "צליל דואר חדש">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "הגדר צליל עבור דואר חדש">
+<!ENTITY preview.label "תצוגה מקדימה של צליל">
+<!ENTITY preview.accesskey "ק">
+<!ENTITY systemsound.label "צליל דואר חדש המוגדר כברירת מחדל במערכת ההפעלה">
+<!ENTITY systemsound.accesskey "ל">
+<!ENTITY customsound.label "קובץ .wav מותאם אישית">
+<!ENTITY customsound.accesskey "מ">
+<!ENTITY browse.label "עיון...">
+<!ENTITY browse.accesskey "ע">

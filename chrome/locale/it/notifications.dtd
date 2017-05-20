@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Suono per nuovo messaggio di posta">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Configura suono per nuovo messaggio di posta">
+<!ENTITY preview.label "Anteprima suono">
+<!ENTITY preview.accesskey "A">
+<!ENTITY systemsound.label "Suono di sistema per nuovo messaggio">
+<!ENTITY systemsound.accesskey "S">
+<!ENTITY customsound.label "File .wav personalizzato">
+<!ENTITY customsound.accesskey "F">
+<!ENTITY browse.label "Cerca...">
+<!ENTITY browse.accesskey "C">

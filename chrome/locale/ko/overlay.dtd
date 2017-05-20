@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "지금 확인">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "사용하기">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier 창">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier 사이드바">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier 툴바">
+<!ENTITY options "설정">
+<!ENTITY options-key "p">
+<!ENTITY help "도움말">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier 설정">
+<!ENTITY accounts "계정">
+<!ENTITY username "아이디">
+<!ENTITY url "URL">
+<!ENTITY password "비밀번호">
+<!ENTITY alias "별명">
+<!ENTITY check-interval0 "확인 간격">
+<!ENTITY check-interval1 "분">
+<!ENTITY check-onstartup "시작할 때 확인">
+<!ENTITY host "호스트">
+<!ENTITY default "기본값">
+<!ENTITY add "추가">
+<!ENTITY delete "삭제">
+<!ENTITY import "들여오기">
+<!ENTITY export "내보내기">
+<!ENTITY export-passwd "내보내기 파일의 비밀번호를 입력하세요">
+<!ENTITY enter-passwd "비밀번호 입력 :">
+<!ENTITY reenter-passwd "비밀번호 재입력 :">
+<!ENTITY autologin "자동 로그인 사용">
+<!ENTITY autologin-default "기본 계정 자동 로그인">
+<!ENTITY multisession "다중 로그인 사용">
+<!ENTITY keep-session "링크에서 세션 유지">
+<!ENTITY server "서버">
+<!ENTITY locale "로케일">
+<!ENTITY inbox-only "받은 편지함만 알림">
+<!ENTITY include-spam "스팸 포함">
+<!ENTITY show-folders "폴더 보기">
+<!ENTITY show-labels "라벨 보기">
+<!ENTITY auto-open "자동으로 열기">
+<!ENTITY general "일반">
+<!ENTITY reset-counter "메시지 열 때 카운터 초기화">
+<!ENTITY default-check-interval0 "기본 확인 간격">
+<!ENTITY default-check-interval1 "분">
+<!ENTITY msg-open "메시지 열기">
+<!ENTITY new-tab "새 탭에">
+<!ENTITY new-window "새 창에">
+<!ENTITY reuse-tab "열려있는 탭 재사용">
+<!ENTITY reload-tab "탭 새로 고침">
+<!ENTITY new-message-arrive "새 메일이 도착했을 때">
+<!ENTITY show-notification "알림창을 보임">
+<!ENTITY auto-hide-notification "알림창 자동으로 숨기기">
+<!ENTITY play-sound "소리 재생">
+<!ENTITY scripts "스크립트">
+<!ENTITY get-scripts "스크립트 받기">
+<!ENTITY advanced "고급설정...">
+<!ENTITY interface "인터페이스">
+<!ENTITY show-statusbar-icon "상태표시줄 아이콘 보이기">
+<!ENTITY show-tabmenu "탭 메뉴 보이기">
+<!ENTITY startup-open-win "시작할 때 웹메일 알림이 창 열기">
+<!ENTITY popup-menu "팝업 메뉴">
+<!ENTITY show-captcha-dialog "로그인 확인창 보이기">
+<!ENTITY captcha-title "X-notifier - 로그인 확인">
+<!ENTITY captcha-text "위에 보이는 글자">
+<!ENTITY verification-code "인증 코드">
+<!ENTITY open "열기">
+<!ENTITY none "없음">
+<!ENTITY link "링크">
+<!ENTITY show-text "이름 보이기">
+<!ENTITY customize "사용자 지정...">
+<!ENTITY xnsidebar.label "X-notifier">

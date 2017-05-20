@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "So de missatge nou">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Configura el so per als missatges nous">
+<!ENTITY preview.label "Previsualitza">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "So del sistema per als missatges nous">
+<!ENTITY systemsound.accesskey "i">
+<!ENTITY customsound.label "Fitxer .wav personalitzat">
+<!ENTITY customsound.accesskey "F">
+<!ENTITY browse.label "Explora...">
+<!ENTITY browse.accesskey "E">

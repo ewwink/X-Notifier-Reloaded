@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "立即检查邮件">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "启用此扩展">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier 窗口">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier 边栏">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier 工具栏">
+<!ENTITY options "选项">
+<!ENTITY options-key "p">
+<!ENTITY help "帮助">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier 选项">
+<!ENTITY accounts "账户">
+<!ENTITY username "用户名">
+<!ENTITY url "URL">
+<!ENTITY password "密码">
+<!ENTITY alias "别名">
+<!ENTITY check-interval0 "检查邮件间隔">
+<!ENTITY check-interval1 "分钟">
+<!ENTITY check-onstartup "启动时检查邮件">
+<!ENTITY host "主机">
+<!ENTITY default "默认">
+<!ENTITY add "添加">
+<!ENTITY delete "删除">
+<!ENTITY import "导入">
+<!ENTITY export "导出">
+<!ENTITY export-passwd "为导出文件输入密码">
+<!ENTITY enter-passwd "输入密码 :">
+<!ENTITY reenter-passwd "再次输入密码 :">
+<!ENTITY autologin "启用自动登录">
+<!ENTITY autologin-default "自动登录默认帐户">
+<!ENTITY multisession "使用多账户登录">
+<!ENTITY keep-session "为新链接使用所选账户">
+<!ENTITY server "服务器">
+<!ENTITY locale "语言">
+<!ENTITY inbox-only "只提示收件箱">
+<!ENTITY include-spam "包含垃圾邮件">
+<!ENTITY show-folders "显示文件夹">
+<!ENTITY show-labels "显示标签">
+<!ENTITY auto-open "自动打开">
+<!ENTITY general "一般">
+<!ENTITY reset-counter "打开邮件后重置计数器">
+<!ENTITY default-check-interval0 "默认检查邮件间隔">
+<!ENTITY default-check-interval1 "分钟">
+<!ENTITY msg-open "打开邮件">
+<!ENTITY new-tab "在新标签页内">
+<!ENTITY new-window "在新窗口内">
+<!ENTITY reuse-tab "使用已有标签页">
+<!ENTITY reload-tab "重新载入标签页">
+<!ENTITY new-message-arrive "新邮件到达时">
+<!ENTITY show-notification "显示提示窗口">
+<!ENTITY auto-hide-notification "自动隐藏通知">
+<!ENTITY play-sound "播放声音">
+<!ENTITY scripts "脚本">
+<!ENTITY get-scripts "获取脚本">
+<!ENTITY advanced "高级...">
+<!ENTITY interface "界面">
+<!ENTITY show-statusbar-icon "显示状态栏图标">
+<!ENTITY show-tabmenu "显示标签菜单">
+<!ENTITY startup-open-win "启动时打开 X-notifier 窗口">
+<!ENTITY popup-menu "弹出菜单">
+<!ENTITY show-captcha-dialog "显示登录验证窗口">
+<!ENTITY captcha-title "X-notifier - 登录验证">
+<!ENTITY captcha-text "上面的文字">
+<!ENTITY verification-code "验证码">
+<!ENTITY open "打开">
+<!ENTITY none "无">
+<!ENTITY link "链接">
+<!ENTITY show-text "显示文字">
+<!ENTITY customize "定制...">
+<!ENTITY xnsidebar.label "X-notifier">

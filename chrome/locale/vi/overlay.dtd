@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Kiểm tra ngay">
+<!ENTITY check-now-key "K">
+<!ENTITY enable "Enable">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "Cửa sổ X-notifier">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "Thanh lề X-notifier">
+<!ENTITY xnotifier-sidebar-key "o">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Tùy chọn">
+<!ENTITY options-key "y">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Tùy chỉnh X-notifier">
+<!ENTITY accounts "Tài khoản WebMail">
+<!ENTITY username "Tên đăng nhập">
+<!ENTITY url "URL">
+<!ENTITY password "Mật khẩu">
+<!ENTITY alias "Biệt danh">
+<!ENTITY check-interval0 "Khoảng thời gian kiểm tra">
+<!ENTITY check-interval1 "phút">
+<!ENTITY check-onstartup "Kiểm tra khi khởi động">
+<!ENTITY host "Host">
+<!ENTITY default "Mặc định">
+<!ENTITY add "Thêm">
+<!ENTITY delete "Xóa">
+<!ENTITY import "Nhập">
+<!ENTITY export "Xuất">
+<!ENTITY export-passwd "Enter password for exported file">
+<!ENTITY enter-passwd "Enter password :">
+<!ENTITY reenter-passwd "Re-enter password :">
+<!ENTITY autologin "Kích hoạt Đăng nhập Tự động">
+<!ENTITY autologin-default "Tài khoản mặc định cho 'Tự động Đăng nhập'">
+<!ENTITY multisession "Use multiple login">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Máy chủ">
+<!ENTITY locale "Locale">
+<!ENTITY inbox-only "Chỉ thông báo hộp thư đến">
+<!ENTITY include-spam "Include spam">
+<!ENTITY show-folders "Hiện thư mục">
+<!ENTITY show-labels "Hiện nhãn">
+<!ENTITY auto-open "Open automatically">
+<!ENTITY general "Tổng quát">
+<!ENTITY reset-counter "Reset counter when opening messages">
+<!ENTITY default-check-interval0 "Khoảng thời gian kiểm tra mặc định">
+<!ENTITY default-check-interval1 "phút">
+<!ENTITY msg-open "Mở thư">
+<!ENTITY new-tab "Trong một thẻ mới">
+<!ENTITY new-window "Trong một cửa sổ mới">
+<!ENTITY reuse-tab "Reuse opened tab">
+<!ENTITY reload-tab "Reload the tab">
+<!ENTITY new-message-arrive "Khi có thư mới">
+<!ENTITY show-notification "Hiện một cửa sổ thông báo">
+<!ENTITY auto-hide-notification "Auto hide notification">
+<!ENTITY play-sound "Mở một đoạn âm thanh">
+<!ENTITY scripts "Mã kịch bản">
+<!ENTITY get-scripts "Get scripts">
+<!ENTITY advanced "Nâng cao...">
+<!ENTITY interface "Giao diện">
+<!ENTITY show-statusbar-icon "Hiện biểu tượng trên thanh trạng thái">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "Mở cửa sổ X-notifier khi Firefox khởi động">
+<!ENTITY popup-menu "Trình đơn Popup">
+<!ENTITY show-captcha-dialog "Hiện cửa sổ xác minh đăng nhập">
+<!ENTITY captcha-title "X-notifier - Xác minh đăng nhập">
+<!ENTITY captcha-text "Dòng chữ bạn thấy ở trên">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Mở">
+<!ENTITY none "None">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

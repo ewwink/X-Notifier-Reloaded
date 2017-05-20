@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://xnotifier/content/preferences.css" type="text/css"?>
+
+<!DOCTYPE prefwindow [
+  <!ENTITY % notificationsDTD SYSTEM "chrome://xnotifier/locale/notifications.dtd">
+  %notificationsDTD;
+]>
+
+<prefwindow id="SoundNotificationsDialog" type="child"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            dlgbuttons="accept,cancel"
+            style="width: &window.width; !important;"
+            title="&notificationsDialog.title;">
+
+  <prefpane id="NotificationsDialogPane" onpaneload="gNotificationsDialog.init();">
+    <script type="application/x-javascript" src="chrome://xnotifier/content/notifications.js"/>
+
+    <preferences>
+      <preference id="pref-customSound" name="extensions.xnotifier.customSound" type="bool"/>
+      <preference id="pref-soundUrl" name="extensions.xnotifier.soundUrl" type="string"/>
+    </preferences>
+	
+    <stringbundle id="bundlePreferences" src="chrome://xnotifier/locale/overlay.properties"/>
+    <groupbox>
+      <caption label="&soundNotification.caption;"/>
+        <radiogroup id="newMailNotificationType" preference="pref-customSound" orient="vertical">
+          <radio value="false"
+                 label="&systemsound.label;"
+                 accesskey="&systemsound.accesskey;" id="system"/>
+          <radio value="true" label="&customsound.label;"
+                 accesskey="&customsound.accesskey;" id="custom"/>
+        </radiogroup>
+
+        <vbox>
+          <spacer flex="1"/>
+          <hbox class="indent">
+            <filefield id="soundUrlLocation" flex="1" preference="pref-soundUrl"
+                       preference-editable="true"
+                       onsyncfrompreference="return gNotificationsDialog.readSoundLocation();"/>
+            <button id="browse" label="&browse.label;"
+                    accesskey="&browse.accesskey;" oncommand="gNotificationsDialog.browseForSoundFile();"/>
+          </hbox>
+
+          <separator class="thin"/>
+
+          <hbox align="right">
+            <button id="preview" label="&preview.label;"
+                    accesskey="&preview.accesskey;" oncommand="gNotificationsDialog.previewSound();"/>
+          </hbox>
+
+        </vbox>
+    </groupbox>
+
+    <separator/>
+  </prefpane>
+</prefwindow>

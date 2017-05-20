@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "立即檢查郵件">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "使用此擴充套件">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "Webmail Notifier視窗">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "Webmail Notifier側邊欄">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "選項">
+<!ENTITY options-key "p">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Webmail Notifier設定">
+<!ENTITY accounts "電子郵件帳號">
+<!ENTITY username "帳號">
+<!ENTITY url "URL">
+<!ENTITY password "密碼">
+<!ENTITY alias "別名">
+<!ENTITY check-interval0 "自動檢查間隔">
+<!ENTITY check-interval1 "分鐘">
+<!ENTITY check-onstartup "啟動時執行檢查">
+<!ENTITY host "主機">
+<!ENTITY default "預設">
+<!ENTITY add "建立">
+<!ENTITY delete "刪除">
+<!ENTITY import "匯入">
+<!ENTITY export "匯出">
+<!ENTITY export-passwd "為匯出檔輸入密碼">
+<!ENTITY enter-passwd "輸入密碼 :">
+<!ENTITY reenter-passwd "再次輸入密碼 :">
+<!ENTITY autologin "啟動時自動登入">
+<!ENTITY autologin-default "自動登入預設帳號">
+<!ENTITY multisession "使用多帳號登入">
+<!ENTITY keep-session "強制新連結使用所選帳號">
+<!ENTITY server "伺服器">
+<!ENTITY locale "語言">
+<!ENTITY inbox-only "只提示收件夾">
+<!ENTITY include-spam "包含垃圾郵件">
+<!ENTITY show-folders "顯示郵件夾">
+<!ENTITY show-labels "顯示標籤">
+<!ENTITY auto-open "自動打開">
+<!ENTITY general "一般">
+<!ENTITY reset-counter "打開郵件後重置計數器">
+<!ENTITY default-check-interval0 "預設的檢查時間間隔">
+<!ENTITY default-check-interval1 "分鐘">
+<!ENTITY msg-open "打開郵件">
+<!ENTITY new-tab "在新的分頁">
+<!ENTITY new-window "在新視窗">
+<!ENTITY reuse-tab "使用已有分頁">
+<!ENTITY reload-tab "重新載入分頁">
+<!ENTITY new-message-arrive "收到新郵件時">
+<!ENTITY show-notification "顯示提示視窗">
+<!ENTITY auto-hide-notification "自動隱藏通知">
+<!ENTITY play-sound "播放音效">
+<!ENTITY scripts "腳本">
+<!ENTITY get-scripts "取得腳本">
+<!ENTITY advanced "進階設定">
+<!ENTITY interface "介面">
+<!ENTITY show-statusbar-icon "顯示狀態欄圖示">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "啟動火狐時開啟電子郵件視窗">
+<!ENTITY popup-menu "提示項目">
+<!ENTITY show-captcha-dialog "顯示登入驗證視窗">
+<!ENTITY captcha-title "Webmail Notifier - 登入驗證">
+<!ENTITY captcha-text "上面的文字">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "開啟">
+<!ENTITY none "None">
+<!ENTITY link "連結">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "Webmail Notifier">

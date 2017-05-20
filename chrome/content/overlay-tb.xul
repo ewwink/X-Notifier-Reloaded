@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://xnotifier/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://xnotifier/locale/overlay.dtd">
+<overlay id="xn-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="overlay-tb.js"/>
+  <script src="tooltip.js"/>
+
+  <popupset id="mainPopupSet">
+    <menupopup id="xnotifier-context-menu">
+      <menuseparator id="xnotifier-menu-sep"/>
+      <menuitem label="&check-now;"
+                accesskey="&check-now-key;"
+                oncommand="com.tobwithu.xnotifier.onCheckNow()" id="xnotifier-context-menu-check-now"/>
+      <menuitem label="&enable;"
+                accesskey="&enable-key;"
+                autocheck="true"
+                checked="true"
+                type="checkbox"
+                oncommand="com.tobwithu.xnotifier.onEnabled()" id="xnotifier-context-menu-enabled"/>
+      <menuitem id="xnotifier-window" label="&xnotifier-window;"
+                accesskey="&xnotifier-window-key;"
+                oncommand="com.tobwithu.xnotifier.onOpenXN()"/>
+      <menuseparator/>
+      <menuitem label="&options;"
+                accesskey="&options-key;"
+                oncommand="com.tobwithu.xnotifier.onPreferences()"/>
+      <menuitem label="&help;"
+                accesskey="&help-key;"
+                onclick="com.tobwithu.xnotifier.onHelp(event)"/>
+      <menuitem id="xnotifier-log" label="Log"
+                oncommand="com.tobwithu.xnotifier.onLog()" collapsed="true"/>
+    </menupopup>
+    <tooltip id="xnotifier-tooltip" orient="vertical">
+      <description value="&x-notifier;" style="font-weight: bold"/>
+      <vbox id="xnotifier-tooltip-text">
+      </vbox>
+    </tooltip>
+  </popupset>
+  <statusbar id="status-bar">
+    <statusbarpanel id="xnotifier-statusbar" label=""
+                    context="xnotifier-context-menu"
+                    tooltip="xnotifier-tooltip"
+                    onclick="com.tobwithu.xnotifier.onClick(event)"
+                    oncontextmenu="com.tobwithu.xnotifier.onContextMenu()"
+                    enabled="true"
+                    newMsg="false"/>
+  </statusbar>
+  <toolbarpalette id="MailToolbarPalette">
+		<toolbarbutton id="xnotifier-toolbar-button"
+				            class="toolbarbutton-1 chromeclass-toolbar-additional"
+		                label="&x-notifier;"
+                    value=""
+                    context="xnotifier-context-menu"
+                    tooltip="xnotifier-tooltip"
+                    onclick="com.tobwithu.xnotifier.onClick(event)"
+                    oncontextmenu="com.tobwithu.xnotifier.onContextMenu()"
+                    enabled="true"
+                    newMsg="false"
+		/>
+	</toolbarpalette>
+</overlay>

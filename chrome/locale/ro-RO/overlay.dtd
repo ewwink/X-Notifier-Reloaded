@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Verifică acum">
+<!ENTITY check-now-key "V">
+<!ENTITY enable "Activează">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "Fereastră X-notifier">
+<!ENTITY xnotifier-window-key "F">
+<!ENTITY xnotifier-sidebar "Bară laterală X-notifier">
+<!ENTITY xnotifier-sidebar-key "S">
+<!ENTITY xnotifier-toolbar "Bară unelte X-notifier">
+<!ENTITY options "Preferinţe">
+<!ENTITY options-key "P">
+<!ENTITY help "Ajutor">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Preferinţe X-notifier">
+<!ENTITY accounts "Conturi">
+<!ENTITY username "Utilizator">
+<!ENTITY url "URL">
+<!ENTITY password "Parolă">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Interval verificare">
+<!ENTITY check-interval1 "minute">
+<!ENTITY check-onstartup "Verifică la pornire">
+<!ENTITY host "Gazdă">
+<!ENTITY default "Implicit">
+<!ENTITY add "Adaugă">
+<!ENTITY delete "Şterge">
+<!ENTITY import "Import">
+<!ENTITY export "Export">
+<!ENTITY export-passwd "Introdu parola pentru fişierul exportat">
+<!ENTITY enter-passwd "Introdu parola:">
+<!ENTITY reenter-passwd "Re-introdu parola:">
+<!ENTITY autologin "Activează autentificarea automată">
+<!ENTITY autologin-default "Autentificare automată a contului implicit">
+<!ENTITY multisession "Utilizare autentificare multiplă">
+<!ENTITY keep-session "Păstrare sesiune pentru link-uri">
+<!ENTITY server "Server">
+<!ENTITY locale "Limbă">
+<!ENTITY inbox-only "Verifică numai inbox-ul">
+<!ENTITY include-spam "Includere spam">
+<!ENTITY show-folders "Afişare directoare">
+<!ENTITY show-labels "Afişare etichete">
+<!ENTITY auto-open "Deschide automat">
+<!ENTITY general "General">
+<!ENTITY reset-counter "Resetare contor la deschiderea mesajelor">
+<!ENTITY default-check-interval0 "Interval implicit de verificare">
+<!ENTITY default-check-interval1 "minute">
+<!ENTITY msg-open "Deschide mesaje">
+<!ENTITY new-tab "Într-o filă nouă">
+<!ENTITY new-window "Într-o fereastră nouă">
+<!ENTITY reuse-tab "Reutilizare fila deschisă">
+<!ENTITY reload-tab "Reîncarcă filă">
+<!ENTITY new-message-arrive "Când primesc un mesaj nou">
+<!ENTITY show-notification "Afişează o fereastră de alertă">
+<!ENTITY auto-hide-notification "Ascunde automat notificarea">
+<!ENTITY play-sound "Redă un sunet">
+<!ENTITY scripts "Script">
+<!ENTITY get-scripts "Descarcă script-uri">
+<!ENTITY advanced "Avansat">
+<!ENTITY interface "Interfaţă">
+<!ENTITY show-statusbar-icon "Afișare iconiţă în statusbar">
+<!ENTITY show-tabmenu "Afişare meniu filă">
+<!ENTITY startup-open-win "Deschide fereastra X-notifier când porneşte Firefox">
+<!ENTITY popup-menu "Meniu Popup">
+<!ENTITY show-captcha-dialog "Afişează fereastra pentru verificare autentificare">
+<!ENTITY captcha-title "X-notifier - Verificare autentificare">
+<!ENTITY captcha-text "Textul afişat deasupra">
+<!ENTITY verification-code "Cod de verificare">
+<!ENTITY open "Deschide">
+<!ENTITY none "Nici unul">
+<!ENTITY link "Link">
+<!ENTITY show-text "Afişare text">
+<!ENTITY customize "Personalizare...">
+<!ENTITY xnsidebar.label "X-notifier">

@@ -1,0 +1,153 @@
+#xnotifier-statusbar {
+  -moz-binding: url('chrome://xnotifier/content/overlay.xml#statusbarpanel-iconic-text');
+  list-style-image: url("chrome://xnotifier/skin/button.png");
+}
+#xnotifier-statusbar[newMsg="true"] .statusbarpanel-icon {
+  -moz-image-region: rect(24px 16px 40px 0px);
+}
+#xnotifier-statusbar[newMsg="false"] .statusbarpanel-icon {
+  -moz-image-region: rect(24px 32px 40px 16px);
+}
+#xnotifier-statusbar[newMsg="true"] > .statusbarpanel-text {
+  margin: 0 0 0 4px;
+}
+#xnotifier-statusbar[newMsg="false"] > .statusbarpanel-text {
+  margin: 0px !important;
+}
+#xnotifier-statusbar[enabled="true"] .statusbarpanel-icon2 {
+  display:none;
+}
+#xnotifier-statusbar[enabled="false"] .statusbarpanel-icon2 {
+  -moz-image-region: rect(24px 48px 40px 32px);
+}
+
+#xnotifier-toolbar-button {
+  list-style-image: url("chrome://xnotifier/skin/button.png");
+  -moz-image-region: rect(0px 24px 20px 0px);
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"], toolbarpaletteitem[place="palette"] > #xnotifier-toolbar-button {
+  -moz-image-region: rect(40px 32px 72px 0px);
+}
+toolbar #xnotifier-toolbar-button , #xnotifier-toolbar-button[cui-areatype="menu-panel"]{
+  -moz-binding: url('chrome://xnotifier/content/overlay.xml#xnotifier-toolbarbutton');
+}
+toolbar #xnotifier-toolbar-button .xnotifier-toolbar-value
+{
+ margin:0px 0px -3px 0px;
+ text-align:right;
+}
+toolbar #xnotifier-toolbar-button .xnotifier-toolbar-ani
+{
+ margin:0px 0px -3px 1px;
+ text-align:left;
+}
+toolbar #xnotifier-toolbar-button #xnotifier-toolbar-ani-wrapper{
+  overflow:hidden;
+  max-width:26px;
+  margin:0px -1px;
+  font-size:12px;
+}
+toolbar[iconsize="small"] #xnotifier-toolbar-button #xnotifier-toolbar-ani-wrapper{
+  max-width:18px;
+  font-size:11px;
+}
+toolbar #xnotifier-toolbar-button .xnotifier-toolbar-value,
+toolbar #xnotifier-toolbar-button .xnotifier-toolbar-ani,
+#xnotifier-toolbar-button[cui-areatype="menu-panel"] .xnotifier-toolbar-value,
+#xnotifier-toolbar-button[cui-areatype="menu-panel"] .xnotifier-toolbar-ani{
+ padding: 0px;
+ color:white;
+ font-weight:bold;
+ text-shadow:0 0 2px #b00014,0 0 2px #b00014,0 0 2px #b00014,0 0 2px #b00014,0 0 2px #b00014,
+ -1px -1px 0 #b00014,0px -1px 0 #b00014,1px -1px 0 #b00014,
+ -1px 0px 0 #b00014,                  1px 0px 0 #b00014,
+ -1px 1px 0 #b00014,0px 1px 0 #b00014,1px 1px 0 #b00014;
+}
+#navigator-toolbox[iconsize=large] > #nav-bar[iconsize="small"] #xnotifier-toolbar-button .xnotifier-toolbar-value{
+ margin-right:-4px;
+}
+toolbar:not([iconsize="small"]) #xnotifier-toolbar-button .xnotifier-toolbar-value{
+ font-size:12px;
+}
+toolbar #xnotifier-toolbar-button[newMsg="true"]{
+  -moz-image-region: rect(0px 24px 20px 0px);
+}
+toolbar #xnotifier-toolbar-button[newMsg="false"]{
+  -moz-image-region: rect(0px 48px 20px 24px);
+}
+toolbar #xnotifier-toolbar-button[enabled="true"] .toolbarbutton-icon2{
+  display:none;
+}
+toolbar #xnotifier-toolbar-button[enabled="false"] .toolbarbutton-icon2{
+  -moz-image-region: rect(0px 72px 20px 48px);
+}
+
+#xnotifier-toolbar-button[cui-areatype="menu-panel"] .xnotifier-toolbar-value
+{
+ margin:0px 0px 0px 0px;
+ text-align:right;
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"] .xnotifier-toolbar-ani
+{
+ margin:0px 0px 0px 1px;
+ text-align:left;
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"] #xnotifier-toolbar-ani-wrapper{
+  overflow:hidden;
+  max-width:32px;
+  margin:0px 0px;
+  font-size:12px;
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"][newMsg="true"]{
+  -moz-image-region: rect(40px 32px 72px 0px);
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"][newMsg="false"]{
+  -moz-image-region: rect(40px 64px 72px 32px);
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"][enabled="true"] .toolbarbutton-icon2{
+  display:none;
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"][enabled="false"] .toolbarbutton-icon2{
+  -moz-image-region: rect(40px 96px 72px 64px);
+}
+#xnotifier-toolbar-button[cui-areatype="menu-panel"] .toolbarbutton-text{
+  line-height: 1.1;
+  max-height: 2.2em;
+}
+
+toolbar[iconsize="small"] #xnotifier-toolbar-button .xnotifier-toolbar-value{
+ font-size:11px;
+}
+
+toolbar[iconsize="small"] #xnotifier-toolbar-button[newMsg="true"]{
+  -moz-image-region: rect(24px 16px 40px 0px);
+}
+toolbar[iconsize="small"] #xnotifier-toolbar-button[newMsg="false"]{
+  -moz-image-region: rect(24px 32px 40px 16px);
+}
+toolbar[iconsize="small"] #xnotifier-toolbar-button[enabled="true"] .toolbarbutton-icon2{
+  display:none;
+}
+toolbar[iconsize="small"] #xnotifier-toolbar-button[enabled="false"] .toolbarbutton-icon2{
+  -moz-image-region: rect(24px 48px 40px 32px);
+}
+tab[xnsid]:not([xnsid="-1"])  .tab-text{
+  text-decoration: underline !important;
+}
+#xnotifier-context-menu .menu-description{
+  text-align:right;
+  padding-right:6px;
+}
+
+toolbar .xnotifier-bookmark-button[newMsg="true"] .toolbarbutton-text{
+ font-weight:bold;
+}
+toolbar .xnotifier-bookmakr-button[newMsg="false"] .toolbarbutton-text{
+ font-weight:normal;
+}
+toolbar .xnotifier-bookmark-button[newMsg="true"] .toolbarbutton-icon{
+ opacity:1;
+}
+toolbar .xnotifier-bookmark-button[newMsg="false"] .toolbarbutton-icon{
+ opacity:0.4;
+}

@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Comprobar agora">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Activar">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "Xanela do notificador">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "Barra lateral">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "Barra de ferramentas">
+<!ENTITY options "Opcións">
+<!ENTITY options-key "p">
+<!ENTITY help "Axuda">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Opcións do notificador">
+<!ENTITY accounts "Contas">
+<!ENTITY username "Nome do usuario">
+<!ENTITY url "URL">
+<!ENTITY password "Contrasinal">
+<!ENTITY alias "Alcume">
+<!ENTITY check-interval0 "Intervalo de comprobación">
+<!ENTITY check-interval1 "minutos">
+<!ENTITY check-onstartup "Comprobar no inicio">
+<!ENTITY host "Servidor">
+<!ENTITY default "Predeterminado">
+<!ENTITY add "Engadir">
+<!ENTITY delete "Eliminar">
+<!ENTITY import "Importar">
+<!ENTITY export "Exportar">
+<!ENTITY export-passwd "Introducir o contrasinal do ficheiro exportado">
+<!ENTITY enter-passwd "Introducir o contrasinal:">
+<!ENTITY reenter-passwd "Reintroducir o contrasinal:">
+<!ENTITY autologin "Activar o acceso automático">
+<!ENTITY autologin-default "Conta predefinida para acceso automático">
+<!ENTITY multisession "Usar acceso múltiple">
+<!ENTITY keep-session "Manter a sesión para as ligazóns">
+<!ENTITY server "Servidor">
+<!ENTITY locale "Localización">
+<!ENTITY inbox-only "Só notificar a caixa de entrada">
+<!ENTITY include-spam "Incluír spam">
+<!ENTITY show-folders "Mostrar os cartafoles">
+<!ENTITY show-labels "Mostrar as etiquetas">
+<!ENTITY auto-open "Abrir automaticamente">
+<!ENTITY general "Xeral">
+<!ENTITY reset-counter "Restabelecer o contador ao abrir as mensaxes">
+<!ENTITY default-check-interval0 "Intervalo de comprobación predefinido">
+<!ENTITY default-check-interval1 "minutos">
+<!ENTITY msg-open "Abrir correos">
+<!ENTITY new-tab "Nunha nova lapela">
+<!ENTITY new-window "Nunha nova xanela">
+<!ENTITY reuse-tab "Reutilizar a lapela aberta">
+<!ENTITY reload-tab "Recargar a lapela">
+<!ENTITY new-message-arrive "Cando chegue unha nova mensaxe">
+<!ENTITY show-notification "Mostrar a xanela de alerta">
+<!ENTITY auto-hide-notification "Ocultar o aviso automaticamente">
+<!ENTITY play-sound "Reproducir un son">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Obter scripts">
+<!ENTITY advanced "Avanzado...">
+<!ENTITY interface "Interface">
+<!ENTITY show-statusbar-icon "Mostrar a icona na barra de extensións">
+<!ENTITY show-tabmenu "Mostrar o menú de lapela">
+<!ENTITY startup-open-win "Abrir a xanela do notificador ao iniciar">
+<!ENTITY popup-menu "Menú emerxente">
+<!ENTITY show-captcha-dialog "Mostrar a xanela de comprobación de acceso">
+<!ENTITY captcha-title "X-notifier - Comprobación de acceso">
+<!ENTITY captcha-text "Texto que ve enriba">
+<!ENTITY verification-code "Código de comprobación">
+<!ENTITY open "Abrir">
+<!ENTITY none "Ningún">
+<!ENTITY link "Ligazón">
+<!ENTITY show-text "Mostrar o texto">
+<!ENTITY customize "Personalizar...">
+<!ENTITY xnsidebar.label "Notificador WebMail">

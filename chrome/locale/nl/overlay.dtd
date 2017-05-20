@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Nu controleren">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Inschakelen">
+<!ENTITY enable-key "I">
+<!ENTITY xnotifier-window "X-notifier-venster">
+<!ENTITY xnotifier-window-key "W">
+<!ENTITY xnotifier-sidebar "X-notifier-zijbalk">
+<!ENTITY xnotifier-sidebar-key "z">
+<!ENTITY xnotifier-toolbar "X-notifier-werkbalk">
+<!ENTITY options "Opties">
+<!ENTITY options-key "p">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier-opties">
+<!ENTITY accounts "Accounts">
+<!ENTITY username "Gebruikersnaam">
+<!ENTITY url "URL">
+<!ENTITY password "Wachtwoord">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Controle-interval">
+<!ENTITY check-interval1 "minuten">
+<!ENTITY check-onstartup "Controleren bij opstarten">
+<!ENTITY host "Host">
+<!ENTITY default "Standaard">
+<!ENTITY add "Toevoegen">
+<!ENTITY delete "Verwijderen">
+<!ENTITY import "Importeren">
+<!ENTITY export "Exporteren">
+<!ENTITY export-passwd "Voer wachtwoord in voor geëxporteerd bestand">
+<!ENTITY enter-passwd "Voer wachtwoord in:">
+<!ENTITY reenter-passwd "Voer wachtwoord nogmaals in:">
+<!ENTITY autologin "Automatisch inloggen inschakelen">
+<!ENTITY autologin-default "Standaardaccount voor automatisch aanmelden">
+<!ENTITY multisession "Meerdere aanmeldingen gebruiken">
+<!ENTITY keep-session "Sessie voor koppelingen behouden">
+<!ENTITY server "Server">
+<!ENTITY locale "Taal">
+<!ENTITY inbox-only "Alleen berichten over Postvak IN">
+<!ENTITY include-spam "Inclusief ongewenste post">
+<!ENTITY show-folders "Mappen weergeven">
+<!ENTITY show-labels "Labels weergeven">
+<!ENTITY auto-open "Automatisch openen">
+<!ENTITY general "Algemeen">
+<!ENTITY reset-counter "Teller resetten bij openen berichten">
+<!ENTITY default-check-interval0 "Standaard controle-interval">
+<!ENTITY default-check-interval1 "minuten">
+<!ENTITY msg-open "Berichten openen">
+<!ENTITY new-tab "In een nieuw tabblad">
+<!ENTITY new-window "In een nieuw venster">
+<!ENTITY reuse-tab "Geopend tabblad opnieuw gebruiken">
+<!ENTITY reload-tab "Tabblad opnieuw laden">
+<!ENTITY new-message-arrive "Wanneer nieuwe berichten binnenkomen">
+<!ENTITY show-notification "Waarschuwingsvenster weergeven">
+<!ENTITY auto-hide-notification "Notificatie automatisch verbergen">
+<!ENTITY play-sound "Geluid afspelen">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Scripts ophalen">
+<!ENTITY advanced "Geavanceerd…">
+<!ENTITY interface "Interface">
+<!ENTITY show-statusbar-icon "Statusbalkpictogram weergeven">
+<!ENTITY show-tabmenu "Tabbladmenu weergeven">
+<!ENTITY startup-open-win "X-notifier-venster openen wanneer Firefox start">
+<!ENTITY popup-menu "Pop-upmenu">
+<!ENTITY show-captcha-dialog "Aanmeldingsverificatievenster weergeven">
+<!ENTITY captcha-title "X-notifier - Aanmeldingsverificatie">
+<!ENTITY captcha-text "De tekst die u hierboven ziet">
+<!ENTITY verification-code "Verificatiecode">
+<!ENTITY open "Openen">
+<!ENTITY none "Geen">
+<!ENTITY link "Koppeling">
+<!ENTITY show-text "Tekst weergeven">
+<!ENTITY customize "Aanpassen…">
+<!ENTITY xnsidebar.label "X-notifier">

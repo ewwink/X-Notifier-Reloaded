@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://xnotifier/locale/overlay.dtd">
+
+<overlay id="xn-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         >
+  <script src="tooltip.js"/>
+  <script src="const.js"/>  
+  <script src="xn-overlay.js"/>
+  <vbox id="placesView" flex="1">
+    <tree id="placesList" class="sidebar-placesTree" flex="1" seltype="cell" hidecolumnpicker="true" onclick="xnSb.onTreeClicked(event)">
+      <treecols>
+        <treecol id="col0" flex="32" primary="true" hideheader="true"/>
+        <treecol id="col1" flex="10" hideheader="true"/>      
+      </treecols>
+      <treechildren>
+      </treechildren>  
+    </tree>  
+    <tooltip id="xnotifier-tooltip" orient="vertical">
+      <description value="&x-notifier;" style="font-weight: bold"/>
+      <vbox id="xnotifier-tooltip-text">
+      </vbox>
+    </tooltip>    
+    <toolbox id="xnotifier-toolbox">
+      <toolbar>
+        <spacer flex="1"/> 
+        <toolbarbutton label="&open;" onclick="xnSb.openViews(event)"/>      
+        <spacer flex="1"/>
+        <toolbarbutton label="&check-now;" oncommand="xnSb.main.checkAll(false)" tooltip="xnotifier-tooltip"/>
+        <spacer flex="1"/>
+        <toolbarbutton label="&options;" oncommand="xnSb.main.openOptions()"/>
+        <spacer flex="1"/>
+      </toolbar>
+     </toolbox>
+   </vbox>
+</overlay>

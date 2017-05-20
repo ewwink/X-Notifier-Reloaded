@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+          xmlns:xbl="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="statusbarpanel-iconic-text">
+    <content>
+      <xul:stack>
+      <xul:image class="statusbarpanel-icon" xbl:inherits="src"/>
+      <xul:image class="statusbarpanel-icon2" xbl:inherits="src"/>
+      </xul:stack>
+      <xul:label class="statusbarpanel-text" xbl:inherits="value=label,crop"/>
+    </content>
+  </binding>
+  <binding id="xnotifier-toolbarbutton" extends="chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton">
+    <content>
+      <xul:stack class="toolbarbutton-icon">
+      <xul:vbox align="center" pack="center">
+      <xul:image id="xnotifier-toolbarbutton-icon" xbl:inherits="validate,src=image,toolbarmode,buttonstyle" flex="1"/>
+      </xul:vbox>
+      <xul:vbox align="center" pack="center">
+      <xul:image id="xnotifier-toolbarbutton-icon2" class="toolbarbutton-icon2" xbl:inherits="validate,src=image,toolbarmode,buttonstyle" flex="1"/>
+      </xul:vbox>
+      <xul:vbox id="xnotifier-toolbar-ani-wrapper" align="start" pack="end" flex="1">
+      <xul:label id="xnotifier-toolbarbutton-ani" class="xnotifier-toolbar-ani" crop="none" xbl:inherits="value=ani"/>
+      </xul:vbox>
+      <xul:vbox align="end" pack="end" flex="1">
+      <xul:label id="xnotifier-toolbarbutton-text" class="xnotifier-toolbar-value" xbl:inherits="value"/>
+      </xul:vbox>
+      </xul:stack>
+      <xul:label class="toolbarbutton-text" flex="1" xbl:inherits="value=label,accesskey"/>
+    </content>
+  </binding>
+</bindings>
+

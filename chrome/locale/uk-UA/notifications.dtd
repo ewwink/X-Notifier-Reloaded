@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Мелодія нового листа">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Вибрати мелодію для Нових листів">
+<!ENTITY preview.label "Попереднє програвання">
+<!ENTITY preview.accesskey "П">
+<!ENTITY systemsound.label "Системна мелодія">
+<!ENTITY systemsound.accesskey "м">
+<!ENTITY customsound.label "Ваш власний .wav файл">
+<!ENTITY customsound.accesskey "ф">
+<!ENTITY browse.label "Вибрати...">
+<!ENTITY browse.accesskey "В">

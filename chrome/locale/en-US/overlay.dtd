@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Check Now">
+<!ENTITY check-now-key "C">
+<!ENTITY enable "Enable">
+<!ENTITY enable-key "E">
+<!ENTITY xnotifier-window "X-notifier window">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier sidebar">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "X-notifier Toolbar">
+<!ENTITY options "Options">
+<!ENTITY options-key "p">
+<!ENTITY help "Help">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier Options">
+<!ENTITY accounts "Accounts">
+<!ENTITY username "Username">
+<!ENTITY url "URL">
+<!ENTITY password "Password">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Check interval">
+<!ENTITY check-interval1 "minutes">
+<!ENTITY check-onstartup "Check on startup">
+<!ENTITY host "Host">
+<!ENTITY default "Default">
+<!ENTITY add "Add">
+<!ENTITY delete "Delete">
+<!ENTITY import "Import">
+<!ENTITY export "Export">
+<!ENTITY export-passwd "Enter password for exported file">
+<!ENTITY enter-passwd "Enter password :">
+<!ENTITY reenter-passwd "Re-enter password :">
+<!ENTITY autologin "Enable auto login">
+<!ENTITY autologin-default "Auto login default account">
+<!ENTITY multisession "Use multiple login">
+<!ENTITY keep-session "Keep session for links">
+<!ENTITY server "Server">
+<!ENTITY locale "Locale">
+<!ENTITY inbox-only "Notify inbox only">
+<!ENTITY include-spam "Include spam">
+<!ENTITY show-folders "Show folders">
+<!ENTITY show-labels "Show labels">
+<!ENTITY auto-open "Open automatically">
+<!ENTITY general "General">
+<!ENTITY reset-counter "Reset counter when opening messages">
+<!ENTITY default-check-interval0 "Default check interval">
+<!ENTITY default-check-interval1 "minutes">
+<!ENTITY msg-open "Open messages">
+<!ENTITY new-tab "In a new tab">
+<!ENTITY new-window "In a new window">
+<!ENTITY reuse-tab "Reuse opened tab">
+<!ENTITY reload-tab "Reload the tab">
+<!ENTITY new-message-arrive "When new messages arrive">
+<!ENTITY show-notification "Show an alert window">
+<!ENTITY auto-hide-notification "Auto hide notification">
+<!ENTITY play-sound "Play a sound">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Get scripts">
+<!ENTITY advanced "Advanced...">
+<!ENTITY interface "Interface">
+<!ENTITY show-statusbar-icon "Show statusbar icon">
+<!ENTITY show-tabmenu "Show tab menu">
+<!ENTITY startup-open-win "Open X-notifier window on startup">
+<!ENTITY popup-menu "Popup Menu">
+<!ENTITY show-captcha-dialog "Show login verification window">
+<!ENTITY captcha-title "X-notifier - Login verification">
+<!ENTITY captcha-text "Text you see above">
+<!ENTITY verification-code "Verification code">
+<!ENTITY open "Open"><!ENTITY bookmark "Bookmark this page">
+<!ENTITY none "None">
+<!ENTITY link "Link">
+<!ENTITY show-text "Show text">
+<!ENTITY customize "Customize...">
+<!ENTITY xnsidebar.label "X-notifier">

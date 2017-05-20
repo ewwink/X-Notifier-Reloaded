@@ -1,0 +1,37 @@
+.alertImageBox
+{
+  padding-top: 2px;
+}
+
+.alertTitle
+{
+  font-weight: bold;
+  padding-bottom:5px !important;
+}
+.alertText[clickable="true"] {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.boldText
+{
+  font-weight: bold;
+}
+#alertImage {
+  list-style-image: url("chrome://xnotifier/skin/icon.png") !important;
+  width:32px;
+  height:32px;
+  max-height:none !important;
+}
+.tab-close-button {
+  padding: 4px 2px;
+  margin: 0px;
+}
+
+.tab-close-button > .toolbarbutton-icon {
+  margin: 0px;
+  -moz-padding-end: 2px !important;
+  -moz-padding-start: 2px !important;
+}
+.tab-close-button > .toolbarbutton-text {
+  display:none;
+}

@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Preveri zdaj">
+<!ENTITY check-now-key "z">
+<!ENTITY enable "Omogoči">
+<!ENTITY enable-key "O">
+<!ENTITY xnotifier-window "Okno Obvestilnika WebMail">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "Stranska vrstica Obvestilnika WebMail">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "Orodna vrstica Obvestilnika WebMail">
+<!ENTITY options "Možnosti">
+<!ENTITY options-key "m">
+<!ENTITY help "Pomoč">
+<!ENTITY help-key "H">
+<!ENTITY options-title "Možnosti Obvestilnika WebMail">
+<!ENTITY accounts "Računi">
+<!ENTITY username "Uporabniško ime">
+<!ENTITY url "URL">
+<!ENTITY password "Geslo">
+<!ENTITY alias "Vzdevek">
+<!ENTITY check-interval0 "Interval preverjanja">
+<!ENTITY check-interval1 "minut">
+<!ENTITY check-onstartup "Preveri ob zagonu">
+<!ENTITY host "Gostitelj">
+<!ENTITY default "Privzeto">
+<!ENTITY add "Dodaj">
+<!ENTITY delete "Izbriši">
+<!ENTITY import "Uvozi">
+<!ENTITY export "Izvozi">
+<!ENTITY export-passwd "Vnesite geslo za izvoženo datoteko">
+<!ENTITY enter-passwd "Vnesite geslo:">
+<!ENTITY reenter-passwd "Ponovno vnesite geslo:">
+<!ENTITY autologin "Omogoči samoprijavo">
+<!ENTITY autologin-default "Samoprijavi v privzeti račun">
+<!ENTITY multisession "Uporabi prijavo v več računov">
+<!ENTITY keep-session "Ohrani sejo za povezave">
+<!ENTITY server "Strežnik">
+<!ENTITY locale "Jezik">
+<!ENTITY inbox-only "Obvesti le o dohodni pošti">
+<!ENTITY include-spam "Vključi neželeno pošto">
+<!ENTITY show-folders "Pokaži mape">
+<!ENTITY show-labels "Pokaži oznake">
+<!ENTITY auto-open "Odpri samodejno">
+<!ENTITY general "Splošno">
+<!ENTITY reset-counter "Ponastavi števec ob odpiranju sporočil">
+<!ENTITY default-check-interval0 "Privzeti interval preverjanja">
+<!ENTITY default-check-interval1 "minut">
+<!ENTITY msg-open "Odpri pošto">
+<!ENTITY new-tab "V novem zavihku">
+<!ENTITY new-window "V novem oknu">
+<!ENTITY reuse-tab "Recikliraj odprti zavihek">
+<!ENTITY reload-tab "Ponovno naloži zavihek">
+<!ENTITY new-message-arrive "Ko prispe novo sporočilo">
+<!ENTITY show-notification "Pokaži okno z opozorilom">
+<!ENTITY auto-hide-notification "Samodejno skrij obvestilo">
+<!ENTITY play-sound "Predvajaj zvok">
+<!ENTITY scripts "Skripti">
+<!ENTITY get-scripts "Pridobi skripte">
+<!ENTITY advanced "Napredno ...">
+<!ENTITY interface "Vmesnik">
+<!ENTITY show-statusbar-icon "Pokaži ikono v vrstici stanja">
+<!ENTITY show-tabmenu "Pokaži meni zavihka">
+<!ENTITY startup-open-win "Odpri okno Obvestilnika WebMail, ko se zažene Firefox">
+<!ENTITY popup-menu "Pojavni meni">
+<!ENTITY show-captcha-dialog "Pokaži okno preverjanja prijave">
+<!ENTITY captcha-title "Obvestilnik WebMail - preverjanje prijave">
+<!ENTITY captcha-text "Besedilo, ki ga vidite zgoraj">
+<!ENTITY verification-code "Verifikacijska koda">
+<!ENTITY open "Odpri">
+<!ENTITY none "Brez">
+<!ENTITY link "Povezava">
+<!ENTITY show-text "Pokaži besedilo">
+<!ENTITY customize "Prilagodi ...">
+<!ENTITY xnsidebar.label "Obvestilnik WebMail">

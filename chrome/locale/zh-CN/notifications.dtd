@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "新邮件提示音">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "设置新邮件提示音">
+<!ENTITY preview.label "预览音效">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "系统新邮件提示音">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "自定义.wav文件">
+<!ENTITY customsound.accesskey "C">
+<!ENTITY browse.label "浏览...">
+<!ENTITY browse.accesskey "B">

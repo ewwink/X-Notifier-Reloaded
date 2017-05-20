@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "&quot;Neue Mail&quot; Ton">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Neuen Mail-Ton angeben">
+<!ENTITY preview.label "Ton abspielen">
+<!ENTITY preview.accesskey "T">
+<!ENTITY systemsound.label "Systemton: Neue Mail">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Eigene *.wav Datei verwenden">
+<!ENTITY customsound.accesskey "w">
+<!ENTITY browse.label "Durchsuchen...">
+<!ENTITY browse.accesskey "s">

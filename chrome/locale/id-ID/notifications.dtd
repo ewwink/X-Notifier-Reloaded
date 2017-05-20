@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Suara Email Baru">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Ubah Suara untuk Emai Baru">
+<!ENTITY preview.label "Putar Suara">
+<!ENTITY preview.accesskey "v">
+<!ENTITY systemsound.label "Suara Email Baru OS">
+<!ENTITY systemsound.accesskey "y">
+<!ENTITY customsound.label "Ubah Berkas *.wav">
+<!ENTITY customsound.accesskey "C">
+<!ENTITY browse.label "Jelajah...">
+<!ENTITY browse.accesskey "B">

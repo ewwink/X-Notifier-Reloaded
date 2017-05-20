@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Нов звук за Пошта">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Конфигурирај Звук за Нови Пораки">
+<!ENTITY preview.label "Прегледај го Звукот">
+<!ENTITY preview.accesskey "д">
+<!ENTITY systemsound.label "Звук на Системот за Нови Пораки">
+<!ENTITY systemsound.accesskey "и">
+<!ENTITY customsound.label "Сопствена .wav датотека">
+<!ENTITY customsound.accesskey "С">
+<!ENTITY browse.label "Прелистај">
+<!ENTITY browse.accesskey "П">

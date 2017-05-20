@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Sunet mesaj nou">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Configurare sunet pentru mesaj nou">
+<!ENTITY preview.label "Ascultă sunet">
+<!ENTITY preview.accesskey "A">
+<!ENTITY systemsound.label "Sunet sistem pentru mesaj nou">
+<!ENTITY systemsound.accesskey "S">
+<!ENTITY customsound.label "Fişier .wav">
+<!ENTITY customsound.accesskey "F">
+<!ENTITY browse.label "Căutare...">
+<!ENTITY browse.accesskey "C">

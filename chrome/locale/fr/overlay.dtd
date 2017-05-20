@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Vérifier maintenant">
+<!ENTITY check-now-key "v">
+<!ENTITY enable "Activer">
+<!ENTITY enable-key "a">
+<!ENTITY xnotifier-window "Fenêtre X-notifier">
+<!ENTITY xnotifier-window-key "f">
+<!ENTITY xnotifier-sidebar "Panneau latéral X-notifier">
+<!ENTITY xnotifier-sidebar-key "p">
+<!ENTITY xnotifier-toolbar "Barre d'outils X-notifier">
+<!ENTITY options "Options">
+<!ENTITY options-key "p">
+<!ENTITY help "Aide">
+<!ENTITY help-key "a">
+<!ENTITY options-title "Préférences de X-notifier">
+<!ENTITY accounts "Comptes">
+<!ENTITY username "Nom d'utilisateur">
+<!ENTITY url "URL">
+<!ENTITY password "Mot de passe">
+<!ENTITY alias "Alias">
+<!ENTITY check-interval0 "Intervalle de vérification">
+<!ENTITY check-interval1 "minutes">
+<!ENTITY check-onstartup "Vérifier au démarrage">
+<!ENTITY host "Hôte">
+<!ENTITY default "Par défaut">
+<!ENTITY add "Ajouter">
+<!ENTITY delete "Supprimer">
+<!ENTITY import "Importer">
+<!ENTITY export "Exporter">
+<!ENTITY export-passwd "Indiquer le mot de passe pour le fichier exporté">
+<!ENTITY enter-passwd "Taper votre mot de passe:">
+<!ENTITY reenter-passwd "Retaper votre mot de passe:">
+<!ENTITY autologin "Activer la connexion automatique">
+<!ENTITY autologin-default "Connexion automatique au compte par défaut">
+<!ENTITY multisession "Utilisez connexion multiples">
+<!ENTITY keep-session "Conserver la session pour les liens">
+<!ENTITY server "Serveur">
+<!ENTITY locale "Langue">
+<!ENTITY inbox-only "Notification uniquement pour le courrier entrant">
+<!ENTITY include-spam "Inclure le spam">
+<!ENTITY show-folders "Afficher les dossiers">
+<!ENTITY show-labels "Afficher les étiquettes">
+<!ENTITY auto-open "Ouvrir automatiquement">
+<!ENTITY general "Générales">
+<!ENTITY reset-counter "Réinitialiser le compteur lors de l'ouverture de messages">
+<!ENTITY default-check-interval0 "Intervalle de vérification par défaut">
+<!ENTITY default-check-interval1 "minutes">
+<!ENTITY msg-open "Messages ouverts">
+<!ENTITY new-tab "Dans un nouvel onglet">
+<!ENTITY new-window "Dans une nouvelle fenêtre">
+<!ENTITY reuse-tab "Réutiliser l'onglet ouvert">
+<!ENTITY reload-tab "Recharger l'onglet">
+<!ENTITY new-message-arrive "Lorsque de nouveaux messages arrivent">
+<!ENTITY show-notification "Afficher une fenêtre d'alerte">
+<!ENTITY auto-hide-notification "Masquer automatiquement les notifications">
+<!ENTITY play-sound "Jouer un son">
+<!ENTITY scripts "Scripts">
+<!ENTITY get-scripts "Obtenir des scripts">
+<!ENTITY advanced "Avancé...">
+<!ENTITY interface "Interface">
+<!ENTITY show-statusbar-icon "Afficher l'icône de la barre d'état">
+<!ENTITY show-tabmenu "Afficher le menu d'onglet">
+<!ENTITY startup-open-win "Ouvrir la fenêtre X-notifier au démarrage de Firefox">
+<!ENTITY popup-menu "Menu popup">
+<!ENTITY show-captcha-dialog "Afficher la fenêtre de vérification pour connexion">
+<!ENTITY captcha-title "X-notifier - vérification pour connexion">
+<!ENTITY captcha-text "Texte que vous voyez ci-dessus">
+<!ENTITY verification-code "Code de vérification">
+<!ENTITY open "Ouvrir">
+<!ENTITY none "Aucun">
+<!ENTITY link "Lien">
+<!ENTITY show-text "Afficher le texte">
+<!ENTITY customize "Personnaliser…">
+<!ENTITY xnsidebar.label "X-notifier">

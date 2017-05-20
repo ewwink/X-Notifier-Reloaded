@@ -1,0 +1,11 @@
+<!ENTITY notificationsDialog.title "Garsas gavus naują el. laišką">
+<!ENTITY window.width "30em">
+<!ENTITY soundNotification.caption "Garso parinkimas gavus naują el. laišką">
+<!ENTITY preview.label "Garso Perklausymas">
+<!ENTITY preview.accesskey "P">
+<!ENTITY systemsound.label "Sisteminis naujo el. laiško garsas">
+<!ENTITY systemsound.accesskey "S">
+<!ENTITY customsound.label "Naudotojo .wav failas">
+<!ENTITY customsound.accesskey "N">
+<!ENTITY browse.label "Parinkti...">
+<!ENTITY browse.accesskey "P">

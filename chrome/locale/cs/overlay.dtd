@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "Zkontrolovat nyní">
+<!ENTITY check-now-key "Z">
+<!ENTITY enable "Zapnout">
+<!ENTITY enable-key "t">
+<!ENTITY xnotifier-window "X-notifier – Okno">
+<!ENTITY xnotifier-window-key "w">
+<!ENTITY xnotifier-sidebar "X-notifier – Postranní lišta">
+<!ENTITY xnotifier-sidebar-key "s">
+<!ENTITY xnotifier-toolbar "Nástrojová lišta X-notifier">
+<!ENTITY options "Možnosti">
+<!ENTITY options-key "M">
+<!ENTITY help "Nápověda">
+<!ENTITY help-key "H">
+<!ENTITY options-title "X-notifier – Předvolby">
+<!ENTITY accounts "Účty">
+<!ENTITY username "Uživatelské jméno">
+<!ENTITY url "URL">
+<!ENTITY password "Heslo">
+<!ENTITY alias "Přezdívka">
+<!ENTITY check-interval0 "Kontrolovat každých">
+<!ENTITY check-interval1 "minut">
+<!ENTITY check-onstartup "Zkontrolovat při spuštění">
+<!ENTITY host "Hostitel">
+<!ENTITY default "Výchozí">
+<!ENTITY add "Přidat">
+<!ENTITY delete "Odstranit">
+<!ENTITY import "Importovat">
+<!ENTITY export "Exportovat">
+<!ENTITY export-passwd "Zadejte heslo pro exportovaný soubor">
+<!ENTITY enter-passwd "Zadejte heslo :">
+<!ENTITY reenter-passwd "Znovu zadejte heslo :">
+<!ENTITY autologin "Zapnout automatické přihlašování">
+<!ENTITY autologin-default "Použít automatické přihlašování pro výchozí účet">
+<!ENTITY multisession "Použít vícenásobné přihlášení">
+<!ENTITY keep-session "Zachovávat relace">
+<!ENTITY server "Server">
+<!ENTITY locale "Lokalizace">
+<!ENTITY inbox-only "Oznamovat pouze zprávy se složce &quot;Doručená pošta&quot;">
+<!ENTITY include-spam "Včetně nevyžádané pošty">
+<!ENTITY show-folders "Zobrazit složky">
+<!ENTITY show-labels "Zobrazit štítky">
+<!ENTITY auto-open "Otevřít automaticky">
+<!ENTITY general "Hlavní">
+<!ENTITY reset-counter "Resetovat počítadlo při otevření zpráv">
+<!ENTITY default-check-interval0 "Výchozí prodleva pro kontrolu pošty:">
+<!ENTITY default-check-interval1 "minut">
+<!ENTITY msg-open "Otevřít zprávy">
+<!ENTITY new-tab "V novém panelu">
+<!ENTITY new-window "V novém okně">
+<!ENTITY reuse-tab "Znovu použít již otevřený panel">
+<!ENTITY reload-tab "Znovu načíst panel">
+<!ENTITY new-message-arrive "Když přijdou nové zprávy">
+<!ENTITY show-notification "Zobrazit upozornění">
+<!ENTITY auto-hide-notification "Automaticky skrýt upozornění">
+<!ENTITY play-sound "Přehrát zvuk">
+<!ENTITY scripts "Skripty">
+<!ENTITY get-scripts "Získat skripty">
+<!ENTITY advanced "Pokročilé...">
+<!ENTITY interface "Zobrazení">
+<!ENTITY show-statusbar-icon "Zobrazit ikonu ve stavovém řádku">
+<!ENTITY show-tabmenu "Zobrazit nabídku panelu">
+<!ENTITY startup-open-win "Otevřít okno doplňku X-notifier po spuštění aplikace Firefox">
+<!ENTITY popup-menu "Nabídka">
+<!ENTITY show-captcha-dialog "Zobrazit okno s ověřením přihlášení">
+<!ENTITY captcha-title "X-notifier - Ověření přihlášení">
+<!ENTITY captcha-text "Text, který vidíte výše">
+<!ENTITY verification-code "Ověřovací kód">
+<!ENTITY open "Otevřít">
+<!ENTITY none "Žádný">
+<!ENTITY link "Odkaz">
+<!ENTITY show-text "Zobrazit text">
+<!ENTITY customize "Vlastní...">
+<!ENTITY xnsidebar.label "X-notifier">

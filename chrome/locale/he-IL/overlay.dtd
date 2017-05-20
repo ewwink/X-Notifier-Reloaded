@@ -1,0 +1,74 @@
+<!ENTITY x-notifier "X-notifier">
+<!ENTITY check-now "בדוק כעת">
+<!ENTITY check-now-key "ב">
+<!ENTITY enable "אפשר">
+<!ENTITY enable-key "א">
+<!ENTITY xnotifier-window "חלון של X-notifier">
+<!ENTITY xnotifier-window-key "ח">
+<!ENTITY xnotifier-sidebar "סרגל צד של X-notifier">
+<!ENTITY xnotifier-sidebar-key "ס">
+<!ENTITY xnotifier-toolbar "סרגל כלים של X-notifier">
+<!ENTITY options "אפשרויות">
+<!ENTITY options-key "פ">
+<!ENTITY help "עזרה">
+<!ENTITY help-key "ע">
+<!ENTITY options-title "הגדרות של X-notifier">
+<!ENTITY accounts "חשבונות">
+<!ENTITY username "שם משתמש">
+<!ENTITY url "URL">
+<!ENTITY password "סיסמה">
+<!ENTITY alias "כינוי">
+<!ENTITY check-interval0 "תדירות בדיקה">
+<!ENTITY check-interval1 "דקות">
+<!ENTITY check-onstartup "בדוק בעת הפעלת הדפדפן">
+<!ENTITY host "מארח">
+<!ENTITY default "ברירת מחדל">
+<!ENTITY add "הוסף">
+<!ENTITY delete "מחק">
+<!ENTITY import "יבא">
+<!ENTITY export "יצא">
+<!ENTITY export-passwd "הזן את הסיסמה עבור הקובץ המיוצא">
+<!ENTITY enter-passwd "הזן סיסמה">
+<!ENTITY reenter-passwd "הזן סיסמה מחדש:">
+<!ENTITY autologin "אפשר התחברות אוטומטית">
+<!ENTITY autologin-default "התחבר אוטומטית לחשבון ברירת מחדל">
+<!ENTITY multisession "השתמש בכניסות מרובות">
+<!ENTITY keep-session "הישאר מחובר בשביל הבדיקות">
+<!ENTITY server "שרת">
+<!ENTITY locale "מיקום">
+<!ENTITY inbox-only "הצג הודעה עבור דואר נכנס בלבד">
+<!ENTITY include-spam "כולל דואר זבל">
+<!ENTITY show-folders "הצג תיקיות">
+<!ENTITY show-labels "הצג תוויות">
+<!ENTITY auto-open "פתח באופן אוטומטי">
+<!ENTITY general "כללי">
+<!ENTITY reset-counter "אפס מונה בעת פתיחת ההודעות">
+<!ENTITY default-check-interval0 "תדירות הבדיקה כברירת מחדל">
+<!ENTITY default-check-interval1 "דקות">
+<!ENTITY msg-open "פתח הודעות דואר">
+<!ENTITY new-tab "בלשונית חדשה">
+<!ENTITY new-window "בחלון חדש">
+<!ENTITY reuse-tab "בלשונית הנוכחית">
+<!ENTITY reload-tab "רענן את הלשונית">
+<!ENTITY new-message-arrive "כשמגיעות הודעות חדשות">
+<!ENTITY show-notification "הצג חלון התראה">
+<!ENTITY auto-hide-notification "הסתר הודעה באופן אוטומטי">
+<!ENTITY play-sound "נגן צליל">
+<!ENTITY scripts "סקריפטים">
+<!ENTITY get-scripts "השג סקריפטים">
+<!ENTITY advanced "מתקדם...">
+<!ENTITY interface "ממשק">
+<!ENTITY show-statusbar-icon "הצג סמל בשורת המצב">
+<!ENTITY show-tabmenu "הצג תפריט לשונית">
+<!ENTITY startup-open-win "הצג את החלון של X-notifier כשהדפדפן נפתח">
+<!ENTITY popup-menu "תפריט מוקפץ">
+<!ENTITY show-captcha-dialog "הצג חלון אימות כניסה">
+<!ENTITY captcha-title "אימות כניסה - X-notifier">
+<!ENTITY captcha-text "טקסט שהינך רואה למעלה">
+<!ENTITY verification-code "קוד אימות">
+<!ENTITY open "פתח">
+<!ENTITY none "כלום">
+<!ENTITY link "קישור">
+<!ENTITY show-text "הצג טקסט">
+<!ENTITY customize "התאם אישית...">
+<!ENTITY xnsidebar.label "X-notifier">
