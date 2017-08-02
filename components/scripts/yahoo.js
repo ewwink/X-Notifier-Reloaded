@@ -1,5 +1,5 @@
 /***********************************************************
-Yahoo
+Yahoo XN 4.1.3 to vs 3 (re-implement cookieManager)
 ***********************************************************/
  var supportInboxOnly=true;
  var supportShowFolders=true;
@@ -16,44 +16,62 @@ function init(){
     this.viewDomain="mail.yahoo.co.jp";
     this.domain="yahoo.co.jp";
     this.loginData[3]+="&.persistent=y";
+    this.cookieDomain="yahoo.co.jp";
+    this.logoutURL="http://login.yahoo.co.jp/config/login?logout=1";
   }else{
-    this.loginData=["https://login.yahoo.com/?.src=ym",
-                        "username","passwd",".persistent=y"];
+    this.loginData=["","username","password","verifyPassword=Sign+in"];
     this.dataURL="https://mail.yahoo.com/";
     this.viewURL="https://mail.yahoo.com/";
     this.viewDomain="mail.yahoo.com";
     this.domain="yahoo.com";
+    this.cookieDomain="yahoo.com";
+    this.logoutURL="https://login.yahoo.com/account/logout?logout=1";
   }
   this.mode=-1;
 }
-function checkLogin(aData,aHttp){
+function checkLogin(aData){
   switch(this.stage){
   case ST_CHECK:
     this.getHtml(this.viewURL);
     return false;
   case ST_CHECK+1:
-    var fnd=aData.match(/<input.+?name=["']passwd["']/);
-    if(!fnd&&aData.match(/logout=1/)){//logged in already
-      this.stage=ST_LOGIN_RES+3;
-      var fnd2=aData.match(/location.href\s*=\s*['"](\S+?refresh_cookie\S+?)['"]/);
-      if(fnd2){
-        this.getHtml(fnd2[1]);
-        return true;
-      }else return this.process(aData,aHttp);
+    var fnd=aData.match(/\/account\/logout\?logout/);    
+    var fnd2=aData.match(/\/config\/login\?logout/);
+    if(fnd||fnd2){
+      if(this.isLoggedIn(aData)){//logged in already
+        this.stage=ST_DATA;
+        return this.process(aData);
+      }
     }
     this.cookieManager.clear();//clear cookies because 'F' is saved
     this.stage=this.initStage;
-    return this.process("");
+    this.getHtml(this.logoutURL);
+    return true;
   }
   this.onError();
   return true;
 }
+function isLoggedIn(aData){
+  if(aData.match(new RegExp("\"yid\":\""+this.user+"\"","i")))return true;//mode 3
+  if(aData.match(new RegExp("\"accounts\".+?\"email\":\""+this.user+"\"","i")))return true;//mode 3
+  if(aData.match(new RegExp("loginId:\""+this.user+"\"","i")))return true;//mode 2
+  if(aData.match(new RegExp("\"defaultID\":\""+this.user+"\"","i")))return true;
+  if(aData.match(new RegExp("\"loggedInAlias\":\""+this.user+"\"","i")))return true;
+  if(aData.match(new RegExp("class=\"uh-name\"\\s+title=\""+this.user+"\"","i")))return true;//basic mode
+  if(aData.match(new RegExp("class=\"uh-name\"\\s+title=\""+this.user+"@yahoo\.","i")))return true;//basic mode
+  if(aData.match(new RegExp("\"jptoppimemail\">"+this.user,"i")))return true; //yahoo japan old
+  return false;
+}
 function process(aData,aHttp){
 if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
-//dout(this.user+" "+this.stage);
   switch(this.stage){
   case ST_PRE:
-    if(this.domain=="yahoo.com"){
+    if(this.domain=="yahoo.co.jp"){
+      this.stage=ST_PRE+10;
+      this.getHtml(this.viewURL);//set cookie for login
+      return true;
+    }else{
+// vs 3 cookieManager code
       var done=false;
       try{
         var s=this.main.prefBranch.getCharPref("accounts.["+this.id+"#"+this.user+"].cookie");
@@ -81,184 +99,44 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
           this.cookieManager.addCookies("http://login."+this.domain,ck);
         }
       }
+// END vs 3 cookieManager code
+      this.getHtml("https://login.yahoo.com/?display=login&done=https%3A%2F%2Fmail.yahoo.com%2F&prefill=0&add=1");
+      return false;
     }
-    this.stage=this.domain=="yahoo.co.jp"?ST_PRE+1:ST_LOGIN;
-    this.getHtml(this.viewURL);//set cookie for login
-    return true;
-  case ST_PRE+1://yahoo.co.jp
+  case ST_PRE+1:
+    var post=this.getForm(aData,"login-username-form");
+    if(post){
+      this.getHtml("https://login.yahoo.com/?display=login&done=https%3A%2F%2Fmail.yahoo.com%2F&prefill=0&&add=1",
+        "username="+this.user+"&"+post,{"X-Requested-With":"XMLHttpRequest"});
+      return false;
+    }
+    break;
+  case ST_PRE+2:
+    var fnd=aData.match(/"location":"(\S+?)"/);
+    if(fnd){
+      this.loginData[LOGIN_URL]=fnd[1];
+      this.stage=ST_LOGIN;
+      this.getHtml(fnd[1]);
+      return true;
+    }
+    break;    
+  case ST_PRE+10://yahoo.co.jp
     var fnd=aData.match(/\(".albatross"\)\[0\].value\s*=\s*"(\S+?)"/);
     if(fnd)this.albatross="&.albatross="+encodeURIComponent(fnd[1]);
     this.stage=ST_LOGIN;
     this.delay(4000);
     return true;
   case ST_LOGIN:
-    if(this.albatross){
+    if(this.albatross){//yahoo.co.jp
       this.getHtml(this.loginData[LOGIN_URL],this.loginData[LOGIN_POST]+this.albatross);
       delete this.albatross;
       return false;
     }
-    var post=this.getForm(aData,"mbr-login-form");
+    var post=this.getForm(aData);
     if(post){
       this.post=post;
-      this.stage=ST_LOGIN_RES+10;
       this.getHtml(this.loginData[LOGIN_URL],this.loginData[LOGIN_POST]+"&"+post);
-      return true;
-    }else{
-      var fnd=aData.match(/"sessionId"\s+value="(\S+?)"/);
-      if(fnd)this.sessionId=fnd[1];
-      var post=this.getForm(aData,"login_form",false,"</fieldset>");
-      post=post.replace(/\.ws=0/,".ws=1");
-      this.post=post;
-      this.getHtml("https://login.yahoo.com/config/login",this.loginData[LOGIN_POST]+"&"+post);
       return false;
-    }
-  case ST_LOGIN_RES:
-    var fnd=aData.match(/"code"\s*:\s*"1213"/);
-    if(fnd&&this.post){
-      if(this.main.prefBranch.getBoolPref("yahoo.showCaptcha")){
-        this.stage=ST_LOGIN_RES+5;
-        this.getHtml("https://login.yahoo.com/captcha/CaptchaWSProxyService.php?action=createlazy&initial_view=&.intl=us&.lang=en-US&sessionId="+this.sessionId+"&login="+this.user+"&rnd="+new Date().getTime());
-        delete this.sessionId;
-        return true;
-      }
-      this.onError();
-      return true;
-    }
-    fnd=aData.match(/"code"\s*:\s*"9999"/);
-    if(fnd&&this.post){//Second sign-in verification
-      var d=JSON.parse(aData);
-      d=JSON.parse(d.challenge_data);
-      this.stage=ST_LOGIN_RES+7;
-      var email;
-      for(var i=0;i<d.challenges.length;i++){
-        if(d.challenges[i].type==4){
-          email=d.challenges[i].data[0][0];
-          break;
-        }
-      }
-      this.post+="&.z="+encodeURIComponent(d.z);
-      this.secondEmail=email;
-      this.getHtml("https://login.yahoo.com/config/login_unlock?z="+encodeURIComponent(d.z)+"&c_type=4&c_idx=0&c_stype=EMAIL&login="+this.user+"&_lang=en-US&_intl=us");
-      return true;
-    }
-    delete this.post;
-    fnd=aData.match(/"status"\s*:\s*"redirect",\s*"url"\s*:\s*"(\S+?)"/);//bt.com
-    if(fnd){
-      this.getHtml(fnd[1]);
-      return false;
-    }
-    this.stage=ST_LOGIN_RES+1;
-  case (ST_LOGIN_RES+1):
-    if(this.domain=="yahoo.com"){
-      var s=this.cookieManager.findCookieString(this.domain,"F");
-      if(s){
-        this.main.prefBranch.setCharPref("accounts.["+this.id+"#"+this.user+"].cookie",aHttp.URI.spec+"\t"+s);
-      }
-      s=this.cookieManager.findCookieString("login."+this.domain,"FS");
-      if(s){
-        this.main.prefBranch.setCharPref("accounts.["+this.id+"#"+this.user+"].cookie2",aHttp.URI.spec+"\t"+s);
-      }
-    }
-    this.stage=ST_LOGIN_RES+2;
-  case (ST_LOGIN_RES+2):
-    this.getHtml(this.dataURL);
-    return false;
-  case (ST_LOGIN_RES+3):
-    var fnd=aData.match(/location.replace\("(\S+?launch\?\S+?)"/);
-    if(fnd){//https everywhere
-      this.dataURL=fnd[1];
-      this.getHtml(this.dataURL);
-      return false;
-    }
-  case (ST_LOGIN_RES+4):
-    var fnd=aData.match(/href="(https?:\/\/\S+?\/neo\/launch\?reason=ignore&rs=1)/);
-    if(fnd){//not supported os or browser
-      this.dataURL=fnd[1];
-      this.viewURL=fnd[1];
-      this.stage=ST_DATA;
-      break;
-    }
-    this.stage=ST_DATA_RES;
-    break;
-  case (ST_LOGIN_RES+5)://captcha
-    aData=aData.replace(/&amp;/g,"&").replace(/&quot;/g,"\"").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&apos;/g,"'");
-    this.post2=this.getForm(aData);
-    var fnd=aData.match(/id="captchaV5ClassicCaptchaImg".+?src="(\S+?)"/);
-    if(this.post2&&fnd){
-      this.openAuthDialog(this.id,this.user,fnd[1]);
-      return false;
-    }
-    break;
-  case (ST_LOGIN_RES+6):
-    if(aData){
-      this.post2=this.post2+"&captchaAnswer="+encodeURIComponent(aData);
-      this.post=this.post.replace(/\.cp=0/,".cp=1");
-      this.stage=ST_LOGIN;
-      this.getHtml(this.loginData[LOGIN_URL],this.loginData[LOGIN_POST]+"&"+this.post+"&"+this.post2);
-      delete this.post2;
-      delete this.post;
-      return false;
-    }
-    break;
-  case (ST_LOGIN_RES+7)://Second sign-in verification
-    this.stage=ST_LOGIN_RES+8;
-    this.openAuthDialog(this.id,this.user+"("+this.secondEmail+")",null);
-    delete this.secondEmail;
-    return true;
-  case (ST_LOGIN_RES+8):
-    if(aData){
-      this.stage=ST_LOGIN;
-      this.post=this.post.replace(/\.cp=0/,".cp=1");
-      this.getHtml(this.loginData[LOGIN_URL],this.loginData[LOGIN_POST]+"&"+this.post+"&.2ndChallenge_email_code="+aData+"&.2ndChallenge_type_in=4");
-      delete this.post;
-      return false;
-    }
-    break;
-  case ST_LOGIN_RES+10:
-    var f=this.getForm(aData,"f",true);
-    if(f){
-      this.getHtml(f[0],f[1]);
-      return false;
-    }else{
-      this.stage=ST_LOGIN_RES+1;
-      return this.process(aData,aHttp);
-    }
-    break;
-  case ST_LOGIN_RES+11:
-    var post=this.getForm(aData,"frmConfirmId");
-    if(post){
-      var fnd=aData.match(/tag="email"[\S\s]+?value="(\S+?)"[\S\s]+?<\/span>(\S+?)<\/label>/);
-      if(fnd){
-        this.post="opt="+fnd[1]+"&"+post;
-        this.secondEmail=fnd[2].replace(/&#(\d+);/g, function(m0,m1){return String.fromCharCode(m1);});
-        this.getHtml("https://login.yahoo.com/ylc",this.post);
-        return false;
-      }
-    }else{
-      this.stage=ST_LOGIN_RES+1;
-      return this.process(aData,aHttp);
-    }
-    break;
-  case ST_LOGIN_RES+12:
-    this.stage=ST_LOGIN_RES+13;
-    this.openAuthDialog(this.id,this.user+"("+this.secondEmail+")",null);
-    delete this.secondEmail;
-    return true;
-  case ST_LOGIN_RES+13:
-    if(aData){
-      this.getHtml("https://login.yahoo.com/ylc",this.post+"&mC="+aData);
-      return false;
-    }
-    break;
-  case ST_LOGIN_RES+14:
-    var fnd=aData.match(/<form.+?name="auto-submit"/);
-    if(fnd){
-      var f=this.getForm(aData,null,true);
-      if(f){
-        this.stage=ST_LOGIN_RES+1;
-        this.getHtml(f[0],f[1]);
-        return true;
-      }
     }
     break;
   }
@@ -268,7 +146,14 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
 function getData(aData){
   var obj={};
   var ar=[];
+  this.count=-1;
+  if(!this.isLoggedIn(aData))return obj;
 
+  if(this.mode==-1||this.mode==3){
+    fnd=aData.match(/,"folders":{[\s\S]+?},"mailboxes"/);
+    if(fnd)this.mode=3;
+    else this.mode=-1;
+  }  
   if(this.mode==-1||this.mode==2){
     fnd=aData.match(/\.folders\s*?=\s*?({[\s\S]+?});/);
     if(fnd)this.mode=2;
@@ -283,6 +168,37 @@ function getData(aData){
     fnd=aData.match(/<ul\s+class="folders">([\S\s]+?)<\/ul>/);
     if(fnd)this.mode=0;
     else this.mode=-1;
+  }
+  if(this.mode==3){
+    fnd=aData.match(/,"folders":({[\s\S]+?}),"mailboxes"/);
+    var num=0;
+    try{
+      var l=JSON.parse(fnd[1]);     
+      for(var i in l){
+        var o=l[i];       
+        var fid=o.types[0];
+        if(!this.includeSpam&&fid=="BULK")continue;
+        if(fid=="CHATS")continue;
+        if(fid=="DRAFT")continue;
+        if(fid=="SENT")continue;
+        if(fid=="TRASH")continue;
+        if(o.types.indexOf("INVISIBLE")!=-1)continue;    
+        var n=o.unread;
+        if(fid=="BULK"){
+          if(this.includeSpam==2)num+=n;
+        }else if(this.inboxOnly){
+            if(fid=="INBOX")num+=n;
+        }else num+=n;
+        if(n>0&&fid!="INBOX"){
+          ar.push({id:o.id,title:o.name,count:n});
+        }
+      }
+    }catch(e){}
+    this.count=num;
+    if(this.showFolders){
+      if(ar)obj.folders=ar;
+    }
+    return obj;  
   }
   if(this.mode==2){
     if(this.includeSpam&&this.spamName==null){
@@ -303,9 +219,9 @@ function getData(aData){
         if(fid=="Trash")continue;
         var n=o.unread;
         if(fid=="%40B%40Bulk"){
-          if(this.includeSpam==2)num+=n;
+        if(this.includeSpam==2)num+=n;
         }else if(this.inboxOnly){
-          if(fid=="Inbox")num+=n;
+            if(fid=="Inbox")num+=n;
         }else num+=n;
         if(n>0&&fid!="Inbox"){
           var fn=fid=="%40B%40Bulk"?this.spamName:unescape(o.folderInfo.name.replace(/\\u/g,"%u"));
@@ -321,7 +237,7 @@ function getData(aData){
   }else if(this.mode==1||this.mode==0){
     fnd=fnd[1];
     if(this.mode==1&&(!this.inboxOnly||this.showFolders)){
-      var fnd2=aData.match(/<div\s+id="customfolders">([\s\S]+?)<\/ol>/);
+    var fnd2=aData.match(/<div\s+id="customfolders">([\s\S]+?)<\/ol>/);
       if(fnd2){
         fnd+=fnd2[1];
       }
@@ -357,7 +273,6 @@ function getData(aData){
       return obj;
     }
   }
-  this.count=-1;
   return obj;
 }
 function getViewURL(aFolder){
