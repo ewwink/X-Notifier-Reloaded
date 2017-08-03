@@ -70,7 +70,7 @@ function process(aData,aHttp) {
     var fnd=aData.match(/\* SEARCH ?(.*)$/m);
     var n=0;
     if(fnd) n=fnd[1]?fnd[1].trim().split(" ").length:0;
-	if(this.inboxOnly){
+    if(this.inboxOnly){
       if(!this.inboxDone){
         this.newData=n;
       }
@@ -113,7 +113,7 @@ function process(aData,aHttp) {
   case ST_DATA+6:
     this.sock.close();
     if(this.count<0){
-		this.reset();
+        this.reset();
     }else this.stage=ST_DATA;
     this.main.setResult(this);
     return true;
