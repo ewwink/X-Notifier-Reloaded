@@ -98,7 +98,7 @@ function Main() {
     this.convertAccounts=true;
 
     var ar=pb.getChildList("",{});
-    for each(var o in ar){
+    for(var o of ar){
       var type=pb.getPrefType(o);
       var o2=o;
       o2=o2.replace(/\.wmn_forums\./,".app_forums.");
@@ -299,9 +299,9 @@ Main.prototype.init=function() {
   this.initScripts(false);
   this.initHandlers(true);
   if(this.prefBranch.getBoolPref("startupOpenXN"))this.openXN();
-  for each(var l in this.listeners){
+  for(var l of this.listeners){
     l.onStateChange(this.MSG_INIT,this.prefBranch.getBoolPref("enabled")?1:0,null);
-    for each(var o in this.handlers){
+    for(var o of this.handlers){
       if(o.enabled){
         l.onStateChange(o.ind,o.calcCount(),o.data);
       }
@@ -323,7 +323,7 @@ Main.prototype.checkFirstrun=function(current){
     if(ver==-1||this.showTbButton){
       delete this.showTbButton;
     ////////////////////////////////////////////
-      for each(var l in this.listeners){
+      for(var l of this.listeners){
         l.onStateChange(this.MSG_SHOWTBBTN,0,null);
       }
     }
@@ -443,7 +443,7 @@ Main.prototype.initHandlers = function(onInit) {
     if(this.loginManager){
       for(var id in this.scripts){
         var logins = this.loginManager.findLogins({},str+id,formSubmitURL, null);
-        for each (var o in logins) {
+        for(var o of logins) {
           this.setPassword(str1+(id.replace(/wmn_forums/,"app_forums")),o.username,o.password);
           this.removePassword(str+id,o.username);
         }
@@ -471,7 +471,7 @@ Main.prototype.initHandlers = function(onInit) {
   if(this.loginManager){
     for(var id in this.scripts){
       var logins = this.loginManager.findLogins({},str+id,formSubmitURL, null);
-      for each (var o in logins) {
+      for(var o of logins) {
         var obj=new Handler(this);
         this.initHandler(obj,id,o.username,o.password);
       }
@@ -527,7 +527,7 @@ Main.prototype.buildTable = function(onInit) {
       var pb=prefService.getBranch("extensions.xnotifier.accounts."+obj.id+"."+obj.user+".");
       var pb2=prefService.getBranch("extensions.xnotifier.accounts.["+obj.id+"#"+obj.user+"].");
       var ar=pb.getChildList("",{});
-      for each(var o in ar){
+      for(var o of ar){
         var type=pb.getPrefType(o);
         var o2=o;
         switch(type){
@@ -639,7 +639,7 @@ dout(obj.id+" "+e);
   }
   var ar0=[];
   var ar1=[];
-  for each(var o in this.handlers){
+  for(var o of this.handlers){
     if(o.order!=null){
       var ind=ar1.length;
       for(var i=0;i<ar1.length;i++){
@@ -652,7 +652,7 @@ dout(obj.id+" "+e);
     }
     else ar0.push(o);
   }
-  for each(var o in ar1)ar0.splice(o.order,0,o);
+  for(var o of ar1)ar0.splice(o.order,0,o);
   this.handlers=ar0;
 
   for(i=0;i<this.handlers.length;++i){
@@ -686,7 +686,7 @@ dout(obj.id+" "+e);
   this.maxLen=0;
   this.groups=[];
   this.groups0=[];
-  for each(var o in this.handlers){
+  for(var o of this.handlers){
     if(o.enabled){
       if(o.user==defaults[o.id])this.hdlTable[o.id].splice(0,0,o);//default account inserted into index 0
       else this.hdlTable[o.id].push(o);
@@ -717,7 +717,7 @@ dout(obj.id+" "+e);
       if(t==null)this.prefBranch.setCharPref(prefStr,o[0].user);
 
       //set account name
-      for each(var obj in o){
+      for(var obj of o){
         if(obj.alias){
           var fnd=obj.alias.match(/(.+?)\/(.*)/);
           if(fnd){
@@ -789,7 +789,7 @@ Main.prototype.getHostIDs = function(count) {
   }
   ar.sort(this.sortFunc);
   var ar2=[];
-  for each(var o in ar)ar2.push(o.id);
+  for(var o of ar)ar2.push(o.id);
   count.value=ar2.length;
   return ar2;
 }
@@ -874,7 +874,7 @@ Main.prototype.addListener = function(aListener) {
   }
   if(aListener){
     aListener.onStateChange(this.MSG_INIT,this.prefBranch.getBoolPref("enabled")?1:0,null);
-    for each(var o in this.handlers){
+    for(var o of this.handlers){
       if(o.enabled){
         o.data.last=o.lastCheck;
         aListener.onStateChange(o.ind,o.calcCount(),o.data);
@@ -902,7 +902,7 @@ Main.prototype.check = function(aIndex) {
 Main.prototype.stopAll = function() {
   this.workTimer.cancel();
   if(this.handlers){
-    for each(var o in this.handlers){
+    for(var o of this.handlers){
       if(o.started)o.stop();
     }
   }
@@ -949,8 +949,8 @@ Main.prototype.checkAll = function(isTimer) {
   if(ar.length>0)this.workTable.push(ar);
   if(this.workTable.length==0)return;
   var showAni=false;
-  for each(var ar in this.workTable){
-    for each(var o in ar){
+  for(var ar of this.workTable){
+    for(var o of ar){
       if(o.count<0){
         showAni=true;
         break;
@@ -967,12 +967,12 @@ Main.prototype.checkAll = function(isTimer) {
                                 Ci.nsITimer.TYPE_ONE_SHOT);
   }
   this.workDone=1;
-  for each(var o in this.workTable[0]){
+  for(var o of this.workTable[0]){
     o.check(isTimer);
   }
 }
 Main.prototype.timerWork = function(aTimer) {
-  for each(var o in this.workTable[this.workDone]){
+  for(var o of this.workTable[this.workDone]){
     o.check(this.isTimer);
   }
   ++this.workDone;
@@ -983,7 +983,7 @@ Main.prototype.timerWork = function(aTimer) {
   }
 }
 Main.prototype.getHandler = function(aID,aUser) {
-  for each(var i in this.handlers){
+  for(var i of this.handlers){
     if(i.id==aID&&i.user==aUser)return i;
   }
   return null;
@@ -1036,7 +1036,7 @@ Main.prototype.setState = function(aCmd,aIndex) {
     aData=o.data;
     aCount=o.calcCount();
     var finished=true;
-    for each(o in this.handlers){
+    for(o of this.handlers){
       if(o.started){
         finished=false;
         break;
@@ -1044,14 +1044,14 @@ Main.prototype.setState = function(aCmd,aIndex) {
     }
     if(finished){
       var total=0;
-      for each(o in this.handlers){
+      for(o of this.handlers){
         if(o.enabled==2&&o.count>0){
           total+=o.calcCount();
         }
       }
       if(total>this.countTotal){
         this.notification();
-        for each(var o in this.handlers){
+        for(var o of this.handlers){
           if(o.enabled==2&&o.autoOpen&&o.count>0&&o.calcCount()>0&&this.isOpenable(o.id,o.user)){
             var pre=o.data.prevCount;
             if(pre==-1||o.count>pre)openList.push(o);
@@ -1075,7 +1075,7 @@ Main.prototype.setState = function(aCmd,aIndex) {
       this.listeners[i].onStateChange(aIndex,aCount,aData);
     }
   }
-  for each(var o in openList)this.openView(o.ind);
+  for(var o of openList)this.openView(o.ind);
 }
 Main.prototype.notification = function() {
   if(this.prefBranch.getBoolPref("showNotification")){
@@ -1087,7 +1087,7 @@ Main.prototype.notification = function() {
     if (!this.mSound)this.mSound = Components.classes["@mozilla.org/sound;1"].createInstance(Ci.nsISound);
     var soundLocation = this.prefBranch.getBoolPref("customSound")?
               this.prefBranch.getCharPref("soundUrl") : "_moz_mailbeep";
-    for each(var o in this.handlers){
+    for(var o of this.handlers){
       if(o.enabled==2){
         if(o.calcCount()>0&&o.sound){
           soundLocation=o.sound;
@@ -1110,7 +1110,7 @@ Main.prototype.notification = function() {
 }
 Main.prototype.openViews = function(openAll){
   var list=[];
-  for each(var o in this.handlers){
+  for(var o of this.handlers){
     if(o.enabled==2){
       if((o.count>0&&o.calcCount()>0&&this.isOpenable(o.id,o.user))
         ||(openAll&&(this.multiSession||this.isDefault(o.id,o.user)))){
@@ -1118,7 +1118,7 @@ Main.prototype.openViews = function(openAll){
       }
     }
   }
-  for each(var o in list)this.openView(o.ind);
+  for(var o of list)this.openView(o.ind);
 }
 Main.prototype.promptPassword = function(o){
   var prompts = Cc["@mozilla.org/embedcomp/prompt-service;1"]
@@ -1283,7 +1283,7 @@ Main.prototype.observe=function(aSubject, aTopic, aData)
       break;
     case "resetCounter":
       this.resetCounter=this.prefBranch.getBoolPref("resetCounter");
-      for each(var o in this.handlers){
+      for(var o of this.handlers){
         if(o.enabled){
           if(!this.resetCounter){
             try{
@@ -1316,7 +1316,7 @@ dout(e);
     break;
   case "http-on-modify-request":
     aSubject.QueryInterface(Ci.nsIHttpChannel);
-    for each(var i in this.handlers){
+    for(var i of this.handlers){
       if(i.enabled){
         if(i.channel==aSubject){
           i.onRequest(aSubject);
@@ -1359,7 +1359,7 @@ dout(e);
     break;
   case "http-on-examine-response":
     aSubject.QueryInterface(Ci.nsIHttpChannel);
-    for each(var i in this.handlers){
+    for(var i of this.handlers){
       if(i.channel==aSubject){
         i.onResponse(aSubject);
         break;
@@ -1397,7 +1397,7 @@ dout(e);
       var str="chrome://xnotifier/";
       if(this.loginManager){
         var logins = this.loginManager.getAllLogins({});
-        for each (var o in logins) {
+        for(var o of logins) {
           if(o.hostname.indexOf(str)==0)this.loginManager.removeLogin(o);
         }
       }else{
@@ -1615,7 +1615,7 @@ password manager
 Main.prototype.getPassword=function(host,user){
   if(this.loginManager){
     var logins = this.loginManager.findLogins({},host,formSubmitURL, null);
-    for each (var o in logins) {
+    for(var o of logins) {
       if (o.username==user) {
         return o.password;
       }
@@ -1642,7 +1642,7 @@ Main.prototype.setPassword=function(host,user,passwd){
     var loginInfo = new nsLoginInfo(host, formSubmitURL, null, user, passwd, "", "");
 
     var logins = this.loginManager.findLogins({},host,formSubmitURL, null);
-    for each (var o in logins) {
+    for(var o of logins) {
       if (o.username==user) {
         this.loginManager.modifyLogin(o,loginInfo);
         return;
@@ -1659,7 +1659,7 @@ Main.prototype.setPassword=function(host,user,passwd){
 Main.prototype.removePassword=function(host,user){
   if(this.loginManager){
     var logins = this.loginManager.findLogins({},host,formSubmitURL, null);
-    for each (var o in logins) {
+    for(var o of logins) {
       if (o.username==user) {
         this.loginManager.removeLogin(o);
         break;
@@ -1676,7 +1676,7 @@ Main.prototype.loadFile=function(name){
                          .getService(Ci.nsIProperties)
                          .get("ProfD", Ci.nsIFile);
   name=name.split("/");
-  for each(var o in name)file.append(o);
+  for(var o of name)file.append(o);
   return this.loadFile0(file);
 }
 
@@ -1737,7 +1737,7 @@ Main.prototype.deleteFile=function(name){
                      .getService(Ci.nsIProperties)
                      .get("ProfD", Ci.nsIFile);
   name=name.split("/");
-  for each(var o in name)file.append(o);
+  for(var o of name)file.append(o);
   if(file.exists()){
     file.remove(false);
   }
@@ -1751,7 +1751,7 @@ Main.prototype.removeHost=function(aHostID){
   }catch(e){
 dout(e);
   }
-  for each(var o in this.handlers){
+  for(var o of this.handlers){
     if(o.id==aHostID){
       this.removePassword("chrome://xnotifier/accounts/"+o.id,o.user);
     }
