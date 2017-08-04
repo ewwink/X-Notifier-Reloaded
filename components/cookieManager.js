@@ -10,7 +10,7 @@ CookieManager.prototype={
       aURI=ioService.newURI(aURI,null,null);
     }
     aCookie=aCookie.split("\n");
-    for each(var o in aCookie){
+    for(var o of aCookie){
       var val=new CookieInfo();
       var ar=o.split(";");
       var t=ar[0].match(/(\S+?)=(.*)/);
@@ -57,7 +57,7 @@ CookieManager.prototype={
     if(!expired)this.cookies.push(val);
   },
   findCookie:function(domain,name){
-    for each(var o in this.cookies){
+    for(var o of this.cookies){
       if(endsWith(o.getDomain(),domain)&&o.name==name){
         return o.value;
       }
@@ -65,7 +65,7 @@ CookieManager.prototype={
     return null;
   },
   findCookieString:function(domain,name){
-    for each(var o in this.cookies){
+    for(var o of this.cookies){
       if(endsWith(o.getDomain(),domain)&&o.name==name){
         return o.toString();
       }
@@ -79,7 +79,7 @@ CookieManager.prototype={
       aURI=ioService.newURI(aURI,null,null);
     }
     var str="";
-    for each(var o in this.cookies){
+    for(var o of this.cookies){
       var domain=o.getDomain();
       if(domain.charAt(0)==".")domain=domain.substring(1);
       if(aURI.host.lastIndexOf(domain)==-1)continue;
@@ -95,7 +95,7 @@ CookieManager.prototype={
   setCookieToBrowser: function(){
     var cm = Components.classes["@mozilla.org/cookiemanager;1"]
               .getService(Ci.nsICookieManager2);
-    for each(var o in this.cookies){
+    for(var o of this.cookies){
 //if(!o.expires)dout(o.name+" "+o.getExpiry());
       try{
         if (cm.cookieExists){
@@ -108,7 +108,7 @@ CookieManager.prototype={
   },
   copyTo:function(dst){
     var ar=[];
-    for each(var a in this.cookies)ar.push(a);
+    for(var a of this.cookies)ar.push(a);
     dst.cookies=ar;
   },
   clear: function(){

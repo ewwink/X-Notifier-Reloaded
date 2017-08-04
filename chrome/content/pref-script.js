@@ -44,7 +44,7 @@ var script={
     this.main=window.arguments[0];
     this.list=this.appMain.getScriptList({});
     this.list.sort();
-    for each(var o in this.list)this.addItem(o,this.appMain.getScriptVal(o,"ver"));
+    for(var o of this.list)this.addItem(o,this.appMain.getScriptVal(o,"ver"));
   },
   onAdd:function(){
     var fp = Components.classes["@mozilla.org/filepicker;1"]

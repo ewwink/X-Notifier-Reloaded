@@ -9,7 +9,7 @@ CookieManager.prototype={
       aURI=ioService.newURI(aURI,null,null);
     }
     aCookie=aCookie.split("\n");
-    for each(var o in aCookie){
+    for(var o of aCookie){
       var val=new CookieInfo();
       var ar=o.split(";");
       var t=ar[0].match(/(\S+?)=(.*)/);
