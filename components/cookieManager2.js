@@ -114,7 +114,9 @@ CookieManager.prototype={
           var domain=ck.host;
           if(domain.charAt(0)==".")domain=domain.substring(1);
           if(!endsWith(host,domain))continue;
-          if(aURI.path.indexOf(ck.path)!=0)continue;
+          // nsIURI.path was renamed to nsIURI.pathQueryRef in bug 1326520
+          var path = 'pathQueryRef' in aURI ? aURI.pathQueryRef : aURI.path;
+          if(path.indexOf(ck.path)!=0)continue;
           if(ck.isSecure&&aURI.scheme!="https")continue;
           if(ck.expires!=0&&ck.expires*1000<new Date())continue;
           var s=ck.name+"="+ck.value;
