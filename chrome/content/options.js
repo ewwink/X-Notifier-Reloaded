@@ -127,7 +127,7 @@ function onAccept() {
   if(accountsChanged){
     var prefService = Components.classes["@mozilla.org/preferences-service;1"]
                               .getService(Components.interfaces.nsIPrefService);
-    for each(var o in arDeleted){//check deleted accounts;
+    for(var o of arDeleted){//check deleted accounts;
       appMain.removePassword(PM_URI+o.id,o.user);
       var s=PREF_BRANCH+"["+o.id+"#"+o.user+"]";
       try{ prefBranch.deleteBranch(s); }catch(e){}
@@ -147,7 +147,7 @@ function onAccept() {
       }
     }
     var def=document.getElementById("updateInterval").value;
-    for each(var o in arAccounts){//check newly added accounts
+    for(var o of arAccounts){//check newly added accounts
       _setInt(o.id,o.user,"enabled",o.enabled);
       if(appMain.getScriptVal(o.id,"supportInboxOnly"))_setBool(o.id,o.user,"inboxOnly",o.inboxOnly);
       if(appMain.getScriptVal(o.id,"supportShowFolders"))_setBool(o.id,o.user,"showFolders",o.showFolders);
@@ -160,7 +160,7 @@ function onAccept() {
       _setInt(o.id,o.user,"order",o.order,null);
     }
     if(accountsChanged){
-      for each(var o in arAccounts){
+      for(var o of arAccounts){
         if(o.isNew){
           appMain.setPassword(PM_URI+o.id,o.user,o.password);
         }
@@ -234,7 +234,7 @@ function onCancel(){
 function _loadDefault(obj){
   arDefault=[];
   var ar=appMain.getHostIDs({});
-  for each(var id in ar){
+  for(var id of ar){
     var s=appMain.getHostName(id);
     if(s==null)continue;
     if(obj)obj.appendItem(s,id);
@@ -244,7 +244,7 @@ function _loadDefault(obj){
   }
 }
 function getAccount(aKey){
-  for each(var o in arAccounts){
+  for(var o of arAccounts){
     if(o.key==aKey)return o;
   }
   return null;
@@ -267,7 +267,7 @@ function setEnabled(disable,aKey){
 }
 
 function checkDefault(){
-  for each(var o in arAccounts){
+  for(var o of arAccounts){
     var em=document.getElementById("is-default"+o.key);
     if(o.enabled){
       if(!arDefault[o.id])arDefault[o.id]=o.user;
@@ -576,14 +576,14 @@ function onImport(){
         }
       }else if(o[1]=="<accounts>"){
         var ar=o[2].split("\n");
-        for each(var t in ar){
+        for(var t of ar){
           t=AesCtr.decrypt(t,param.value,256);
           var ac=t.split("\t");
           _addAcount(ac[0],ac[1],ac[2]);
         }
       }else if(o[1]=="<preferences>"){
         var ar=o[2].split("\n");
-        for each(var t in ar){
+        for(var t of ar){
           var val=t.split("\t");
           var nm=val[0];
           if(nm=="soundUrl"&&nm.indexOf("://")==-1)continue;
@@ -635,14 +635,14 @@ function onExport(){
     var token=Math.random().toString().substring(2);
     str+=AesCtr.encrypt(token,params.out.value,256)+"\r\n";
     var ar=appMain.getScriptList({});
-    for each(var o in ar){
+    for(var o of ar){
       str+="[---"+o+"---]\r\n";
       str+=appMain.loadFile("xnotifier/"+o+".js")+"\r\n";
     }
 
     str+="[---<preferences>---]\r\n";
     var ar=prefBranch.getChildList("extensions.xnotifier.",{});
-    for each(var o in ar){
+    for(var o of ar){
       var type=prefBranch.getPrefType(o);
       var nm=o.replace(/^extensions.xnotifier./,"");
       if(nm=="version")continue;
