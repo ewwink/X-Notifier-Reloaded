@@ -1583,7 +1583,7 @@ Main.prototype.getTabFromWin=function(domWin){
       var tabbrowser=win.getBrowser();
       var ind=tabbrowser.getBrowserIndexForDocument(domWin.top.document);
       if(ind<0)continue;
-      var tab = tabbrowser.mTabContainer.childNodes[ind];
+      var tab = tabbrowser.tabContainer.childNodes[ind];
       if(tab)return tab;
     }
   }catch (e){
