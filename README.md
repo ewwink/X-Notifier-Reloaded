@@ -14,5 +14,9 @@ Pull Request and sugestion are welcome. Mainly I will only fix Gmail and Yahoo, 
 Thanks a lot [tobwithu](http://xnotifier.tobwithu.com)
 
 ## Release History
+- 3.5.25 - August 14 2017: 
+  - Fix Yahoo Login, thanks to @jeroen1956 and @Loirooriol
+  
+
 - 3.5.24: 
   - fixed Gmail bugs: `isLoggedIn -> basic HTML`
