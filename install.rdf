@@ -3,7 +3,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{ca4a1050-ba64-482e-8257-4e2c2fd26fa5}</em:id>
 		<em:type>2</em:type>
-		<em:version>3.5.24</em:version>
+		<em:version>3.5.25</em:version>
     <em:name>X-notifier Reloaded</em:name>
 		<em:description>Notifies your webmails</em:description>
 		<em:creator>Byungwook Kang - mod by ewwink</em:creator>
