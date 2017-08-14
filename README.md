@@ -14,10 +14,21 @@ Notifies your webmails, improvement and fix for X-notifier 3.5.23 because origin
 ## Download and Install
 Available at release page: https://github.com/ewwink/X-Notifier-Reloaded/releases
 
+## Signing The Extension
+- clone or download this repo
+- install 7z
+- create batch script called `create-xpi.bat` like following
+
+```
+"C:\Program Files\7-Zip\7z.exe" a -tzip -mx=9 -mm=Deflate -mfb=258 -mmt=8 "X-Notifier-Reloaded-3.5.25.xpi" chrome/* components/* defaults/* chrome.manifest install.rdf
+pause
+```
+
+- upload and sign your `.xpi` to [Mozilla Developer Hub](https://addons.mozilla.org/en-US/developers/addon/submit/agreement)
+
 ## Get Involved
 Pull Request and sugestion are welcome. Mainly I will only fix Gmail and Yahoo, if you have other problem please go to X-notifier [Forum directly](http://xnotifier.tobwithu.com/dp/forum/1).
 
 ## Credit
 Thanks a lot [tobwithu](http://xnotifier.tobwithu.com)
-
 
