@@ -49,10 +49,14 @@ if(com.tobwithu.xnotifier.p_getBoolPref("multiSession")){
         var browser = gBrowser.getBrowserForTab(event.target);
         browser.addProgressListener(com.tobwithu.xnotifier.main);
     }, false);
-    for(var i=0;i<gBrowser.tabContainer.childNodes.length;i++){
+    /* The following loop allows mail tabs opened by X-Notifier to still work properly after closing
+       and restoring the browser. However, it prevents the optimization achieved in bug 1345090
+       (https://bugzilla.mozilla.org/show_bug.cgi?id=1345090), so the browser takes much more time
+       to restore tabs. That's why it has been commented out. */
+    /*for(var i=0;i<gBrowser.tabContainer.childNodes.length;i++){
       var browser=gBrowser.getBrowserForTab(gBrowser.tabContainer.childNodes[i]);
       browser.addProgressListener(com.tobwithu.xnotifier.main);
-    }
+    }*/
   }
 }
 
