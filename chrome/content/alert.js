@@ -135,7 +135,18 @@ function onAlertLoad()
 
   window.moveTo(x, y);
   if(!autoClose)return;
-  if (prefBranch.getBoolPref("alerts.disableSlidingEffect")) {
+  // Bug 1352069 merged alerts.disableSlidingEffect into toolkit.cosmeticAnimations.enabled
+  var disableAnimation;
+  try {
+    disableAnimation = !prefBranch.getBoolPref("toolkit.cosmeticAnimations.enabled");
+  } catch(err) {
+    try {
+      disableAnimation = prefBranch.getBoolPref("alerts.disableSlidingEffect");
+    } catch(err) {
+      disableAnimation = false;
+    }
+  }
+  if (disableAnimation) {
     setTimeout(closeAlert, ALERT_DURATION_IMMEDIATE);
     return;
   }
