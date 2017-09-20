@@ -53,26 +53,27 @@ var script={
     fp.appendFilter ("Javascript","*.js");
     fp.appendFilters(Ci.nsIFilePicker.filterAll);
 
-    var rv = fp.show();
-    if (rv == Ci.nsIFilePicker.returnOK)
-    {
-      var file=fp.file;
-      var fname = file.leafName;
-      var fnd=fname.match(/(.+)(\.\S+?)$/);
-      if(fnd)fname=fnd[1];
-      var str=this.appMain.loadFile0(file);
-      Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService)
-        .notifyObservers(null, "startupcache-invalidate", null);
-      var inList=this.main.addScript(fname,str);
-      var ver=this.appMain.getScriptVal(fname,"ver");
-      if(!inList){
-        this.list.push(fname);
-        this.addItem(fname,ver);
-      }else{
-        var em=document.getElementById("id"+fname);
-        em.setAttribute("label",fname+(ver?"("+ver+")":""));
+    fp.open(function(rv) {
+      if (rv == Ci.nsIFilePicker.returnOK)
+      {
+        var file=fp.file;
+        var fname = file.leafName;
+        var fnd=fname.match(/(.+)(\.\S+?)$/);
+        if(fnd)fname=fnd[1];
+        var str=this.appMain.loadFile0(file);
+        Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService)
+          .notifyObservers(null, "startupcache-invalidate", null);
+        var inList=this.main.addScript(fname,str);
+        var ver=this.appMain.getScriptVal(fname,"ver");
+        if(!inList){
+          this.list.push(fname);
+          this.addItem(fname,ver);
+        }else{
+          var em=document.getElementById("id"+fname);
+          em.setAttribute("label",fname+(ver?"("+ver+")":""));
+        }
       }
-    }
+    });
   },
   onDelete:function(){
     var obj=document.getElementById("xnotifier-scripts");
