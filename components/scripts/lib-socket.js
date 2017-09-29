@@ -23,7 +23,12 @@ dout(pi.type);*/
   var pump = Components.
     classes["@mozilla.org/network/input-stream-pump;1"].
       createInstance(Components.interfaces.nsIInputStreamPump);
-  pump.init(stream, -1, -1, 0, 0, false);
+  try {
+    // Bug 1402888 removed streamPos and streamLen parameters.
+    pump.init(stream, 0, 0, false);
+  } catch (err) {
+    pump.init(stream, -1, -1, 0, 0, false);
+  }
   pump.asyncRead(this,null);
 }
 SocketReader.prototype.write = function (data) {
