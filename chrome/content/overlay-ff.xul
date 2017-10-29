@@ -23,7 +23,7 @@
                 oncommand="com.tobwithu.xnotifier.onOpenXN()"/>
       <menuitem id="xnotifier-sidebar" label="&xnotifier-sidebar;"
                 accesskey="&xnotifier-sidebar-key;"
-                oncommand="toggleSidebar('xnotifier-viewSidebar');"/>
+                oncommand="SidebarUI.toggle('xnotifier-viewSidebar');"/>
       <menuseparator/>
       <menuitem label="&options;"
                 accesskey="&options-key;"
@@ -106,6 +106,6 @@
                  group="sidebar"
                  sidebarurl="chrome://xnotifier/content/sidebar-ff.xul"
                  sidebartitle="&xnsidebar.label;"
-                 oncommand="toggleSidebar('xnotifier-viewSidebar');" />
+                 oncommand="SidebarUI.toggle('xnotifier-viewSidebar');" />
   </broadcasterset>
 </overlay>
