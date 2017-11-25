@@ -1685,7 +1685,7 @@ Main.prototype.loadFile0=function(file){
   try {
     var fis = Components.classes["@mozilla.org/network/file-input-stream;1"]
                           .createInstance(Ci.nsIFileInputStream);
-    fis.init(file, 0x01, 0664, 0);
+    fis.init(file, 0x01, 0o664, 0);
     var is = Components.classes["@mozilla.org/intl/converter-input-stream;1"]
                        .createInstance(Ci.nsIConverterInputStream);
     is.init(fis, "UTF-8", 1024, Ci.nsIConverterInputStream.DEFAULT_REPLACEMENT_CHARACTER);
@@ -1710,7 +1710,7 @@ Main.prototype.saveFile=function(name,str,append){
     file.append(name[i]);
     if(i<name.length-1){
       if(!file.exists()){
-        file.create(Ci.nsIFile.DIRECTORY_TYPE,0755);
+        file.create(Ci.nsIFile.DIRECTORY_TYPE,0o755);
       }
     }
   }
@@ -1720,7 +1720,7 @@ Main.prototype.saveFile0=function(file,str,append){
   try{
     var fos = Components.classes["@mozilla.org/network/file-output-stream;1"]
                           .createInstance(Ci.nsIFileOutputStream);
-    fos.init(file, 0x02 | 0x08 |(append?0x10:0x20), 0664, 0);
+    fos.init(file, 0x02 | 0x08 |(append?0x10:0x20), 0o664, 0);
     var os = Components.classes["@mozilla.org/intl/converter-output-stream;1"]
                        .createInstance(Ci.nsIConverterOutputStream);
     os.init(fos, "UTF-8", 0, 0x0000);
