@@ -1,6 +1,6 @@
-/***************************************************************
-Live(Hotmail) 4.1.7 fix to vs 3.5.26 
-***************************************************************/
+/***********************************************************
+Live(Hotmail)
+***********************************************************/
 var hostString="hotmail.com";
 var supportInboxOnly=true;
 var supportShowFolders=true;
@@ -49,7 +49,7 @@ function checkLogin(aData){
           return true;
         }else{
           if(fnd3)this.viewURL="https://outlook.live.com/mail/";
-          else this.viewURL="https://outlook.live.com/owa/";
+          else this.viewURL="https://outlook.live.com/owa/#path=/mail";
           this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
           this.getHtml(this.dataURL);
           return false;
@@ -196,7 +196,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     if(fnd){
       this.isNew=2;
       this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
-      this.viewURL="https://outlook.live.com/owa/";
+      this.viewURL="https://outlook.live.com/owa/#path=/mail";
       this.mailHost=this.viewURL;
       this.stage=ST_DATA;
       break;
