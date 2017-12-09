@@ -175,7 +175,7 @@ function getData(aData){
     else this.mode=-1;
   }
   if(this.mode==3){
-    fnd=aData.match(/,"folders":({[\s\S]+?}),"mailboxes"/);
+    fnd=aData.match(/,"folders":({[\s\S]+?}),"savedSearches"/);
     var num=0;
     try{
       var l=JSON.parse(fnd[1]);     
