@@ -1,9 +1,6 @@
 /***********************************************************
 Live(Hotmail)
 ***********************************************************/
-var name="Hotmail";
-var ver="2017-09-10";
-
 var hostString="hotmail.com";
 var supportInboxOnly=true;
 var supportShowFolders=true;
@@ -12,14 +9,14 @@ var supportIncludeSpam=true;
 function init(){
   this.initStage=ST_PRE;
   this.loginData=["","login","passwd","KMSI=1&LoginOptions=1"];
-  this.dataURL="https://mail.live.com/default.aspx?rru=inbox";
-  this.viewURL="https://mail.live.com/default.aspx?rru=inbox";
+  this.dataURL="https://outlook.live.com/owa/?nlp=1";
+  this.viewURL="https://outlook.live.com/owa/?nlp=1";
   this.viewDomain="outlook.live.com";
   if(this.password.length>16)this.password=this.password.substring(0,16);
 
   this.cookieDomain="live.com";
 
-  this.logoutURL="https://login.live.com/logout.srf";
+  this.logoutURL="https://outlook.live.com/owa/logoff.owa";
 }
 function getIconURL(){
   return "https://outlook.live.com/mail/favicon.ico";
@@ -47,7 +44,7 @@ function checkLogin(aData){
         var fnd4=aData.match(/window\.clientId/);
         if(!fnd3&&!fnd4){
           this.cookieManager.clear();
-          this.stage=this.initStage;
+          this.stage=(ST_LOGIN_RES+9);
           this.getHtml(this.logoutURL);
           return true;
         }else{
@@ -71,9 +68,9 @@ function checkLogin(aData){
       this.stage=ST_DATA_RES;
       return this.process(aData);      
     }else{
-      this.viewURL="https://mail.live.com/default.aspx?rru=inbox";
+      this.viewURL="https://outlook.live.com/owa/?nlp=1";
       this.cookieManager.clear();
-      this.stage=this.initStage;
+      this.stage=(ST_LOGIN_RES+9);
       this.getHtml(this.logoutURL);
       return true;      
     }
@@ -92,7 +89,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
       this.cookieManager.addCookies(s[0],s[1]);
     }catch(e){}
 // END vs 3 cookieManager code
-    this.getHtml("https://mail.live.com");
+    this.getHtml("https://outlook.live.com/owa/?nlp=1");
     return false;
   case ST_PRE_RES:
     var fnd=aData.match(/urlPost:\'([\s\S]+?)\'/);
@@ -273,8 +270,13 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
       delete this.authURL;
       return true;
     }
-    break;    
-// vs 3 cookieManager code
+    break;
+  case (ST_LOGIN_RES+9)://new beta is not logged out with getHtml(logoutURL);
+    this.stage=this.initStage;
+    this.getHtml("https://login.live.com/logout.srf");
+    return true;
+
+	// vs 3 cookieManager code
   case (ST_LOGIN_RES+10)://2-step verification
     this.stage=ST_LOGIN_RES;
     var ck=this.cookieManager.findCookieString("login.live.com","SDIDC");

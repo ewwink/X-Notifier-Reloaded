@@ -1,5 +1,5 @@
 /***********************************************************
-Yahoo XN 4.1.3 to vs 3 (re-implement cookieManager)
+Yahoo
 ***********************************************************/
  var supportInboxOnly=true;
  var supportShowFolders=true;
@@ -32,6 +32,11 @@ function init(){
 function checkLogin(aData){
   switch(this.stage){
   case ST_CHECK:
+    if(this.cookies){
+      this.stage=ST_DATA;
+      this.setCookies();
+      return true;
+    }
     this.getHtml(this.viewURL);
     return false;
   case ST_CHECK+1:
@@ -170,7 +175,7 @@ function getData(aData){
     else this.mode=-1;
   }
   if(this.mode==3){
-    fnd=aData.match(/,"folders":({[\s\S]+?}),"mailboxes"/);
+    fnd=aData.match(/,"folders":({[\s\S]+?}),"savedSearches"/);
     var num=0;
     try{
       var l=JSON.parse(fnd[1]);     
@@ -219,9 +224,9 @@ function getData(aData){
         if(fid=="Trash")continue;
         var n=o.unread;
         if(fid=="%40B%40Bulk"){
-        if(this.includeSpam==2)num+=n;
+          if(this.includeSpam==2)num+=n;
         }else if(this.inboxOnly){
-            if(fid=="Inbox")num+=n;
+          if(fid=="Inbox")num+=n;
         }else num+=n;
         if(n>0&&fid!="Inbox"){
           var fn=fid=="%40B%40Bulk"?this.spamName:unescape(o.folderInfo.name.replace(/\\u/g,"%u"));
@@ -237,7 +242,7 @@ function getData(aData){
   }else if(this.mode==1||this.mode==0){
     fnd=fnd[1];
     if(this.mode==1&&(!this.inboxOnly||this.showFolders)){
-    var fnd2=aData.match(/<div\s+id="customfolders">([\s\S]+?)<\/ol>/);
+      var fnd2=aData.match(/<div\s+id="customfolders">([\s\S]+?)<\/ol>/);
       if(fnd2){
         fnd+=fnd2[1];
       }
@@ -276,6 +281,10 @@ function getData(aData){
   return obj;
 }
 function getViewURL(aFolder){
+  if((this.mode==3)&&aFolder&&this.dataURLCopy){
+    var url=this.dataURLCopy+"/folders/"+encodeURIComponent(aFolder);
+    return url;
+  }
   if((this.mode==2||this.mode==0)&&aFolder&&this.dataURLCopy){
     var url=this.dataURLCopy+"&fid="+encodeURIComponent(aFolder);
     return url;
