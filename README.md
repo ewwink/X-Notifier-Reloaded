@@ -1,4 +1,4 @@
-# X-Notifier-Reloaded 3.5.25
+# X-Notifier-Reloaded 3.5.26
 Notifies your webmails, improvement and fix for X-notifier 3.5.23 because original author has been abandoned this version. 
 
 ## Requirement
@@ -6,6 +6,9 @@ Notifies your webmails, improvement and fix for X-notifier 3.5.23 because origin
 - Firefox Nightly 57 with `extensions.legacy.enabled = true` and `extensions.allow-non-mpc-extensions = true`.
 
 ## Release History
+- 3.5.26: 
+  - Fix Yahoo Count
+  
 - 3.5.25 - August 14 2017: 
   - Fix Yahoo Login, thanks to @jeroen1956
   - Compatibility with Firefox 57, thanks to @Loirooriol
