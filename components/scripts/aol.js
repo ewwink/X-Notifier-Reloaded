@@ -15,7 +15,7 @@ function init(){
   if(this.server){
     var ar=this.server.toLowerCase().split("-");
     if(ar.length==2){
-      this.lang=this.server;
+      this.lang=ar[0]+"-"+ar[1];
       this.locale=ar[1];
     }else{
       this.lang=this.server+"-"+this.server;
@@ -31,7 +31,7 @@ function init(){
 }
 
 function getIconURL(){
-  return "https://s.aolcdn.com/webmail-static/webmail/180406.1320/aol/en-us/images/favicon.ico";
+  return "https://s.aolcdn.com/webmail-static/webmail/180514.1519/aol/en-us/images/favicon.ico";
 }
 
 function checkLogin(aData){
