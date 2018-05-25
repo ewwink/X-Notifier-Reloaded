@@ -44,6 +44,7 @@ const ST_LOGIN       = 200;
 const ST_LOGIN_RES   = 201;
 const ST_DATA        = 300;
 const ST_DATA_RES    = 301;
+const ST_LOGOUT      = 400;
 
 const LOGIN_URL      = 0;
 const LOGIN_ID       = 1;
