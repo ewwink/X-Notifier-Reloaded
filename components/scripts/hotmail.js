@@ -44,12 +44,12 @@ function checkLogin(aData){
         var fnd4=aData.match(/window\.clientId/);
         if(!fnd3&&!fnd4){
           this.cookieManager.clear();
-          this.stage=(ST_LOGIN_RES+9);
+          this.stage=ST_LOGOUT;
           this.getHtml(this.logoutURL);
           return true;
         }else{
           if(fnd3)this.viewURL="https://outlook.live.com/mail/";
-          else this.viewURL="https://outlook.live.com/owa/#path=/mail";
+          else this.viewURL="https://outlook.live.com/owa/";
           this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
           this.getHtml(this.dataURL);
           return false;
@@ -70,7 +70,7 @@ function checkLogin(aData){
     }else{
       this.viewURL="https://outlook.live.com/owa/?nlp=1";
       this.cookieManager.clear();
-      this.stage=(ST_LOGIN_RES+9);
+      this.stage=ST_LOGOUT;
       this.getHtml(this.logoutURL);
       return true;      
     }
@@ -196,7 +196,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     if(fnd){
       this.isNew=2;
       this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
-      this.viewURL="https://outlook.live.com/owa/#path=/mail";
+      this.viewURL="https://outlook.live.com/owa/";
       this.mailHost=this.viewURL;
       this.stage=ST_DATA;
       break;
@@ -271,12 +271,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
       return true;
     }
     break;
-  case (ST_LOGIN_RES+9)://new beta is not logged out with getHtml(logoutURL);
-    this.stage=this.initStage;
-    this.getHtml("https://login.live.com/logout.srf");
-    return true;
-
-	// vs 3 cookieManager code
+// vs 3 cookieManager code
   case (ST_LOGIN_RES+10)://2-step verification
     this.stage=ST_LOGIN_RES;
     var ck=this.cookieManager.findCookieString("login.live.com","SDIDC");
@@ -285,6 +280,10 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     }
     return this.process(aData,aHttp);
 // END vs 3 cookieManager code
+  case ST_LOGOUT://new beta is not logged out with getHtml(logoutURL);
+    this.stage=this.initStage;
+    this.getHtml("https://login.live.com/logout.srf");
+    return true;
   }
   return this.baseProcess(aData,aHttp);
 }
