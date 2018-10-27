@@ -21,7 +21,6 @@ function init(){
       this.lang=this.server+"-"+this.server;
       this.locale=this.server;
     }
-	this.viewURL+="webmail-std/"+encodeURIComponent(this.lang)+"/suite";
   }else{
     this.lang="en-us";
     this.locale="us";
@@ -31,7 +30,7 @@ function init(){
 }
 
 function getIconURL(){
-  return "https://s.aolcdn.com/webmail-static/webmail/180514.1519/aol/en-us/images/favicon.ico";
+  return "https://mail.aol.com/favicon.ico";
 }
 
 function checkLogin(aData){
@@ -130,7 +129,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     else if(this.lang=="de")this.getHtml("https://mail.aol.de");
     else if(this.lang=="jp")this.getHtml("https://mail.aol.jp");
     else this.getHtml("https://mail.aol.com");*/
-    this.getHtml("https://login.aol.com/?"+"&intl="+this.locale+"&lang="+this.lang+"&src=fp-"+this.locale);
+    this.getHtml("https://login.aol.com/?"+"&intl="+this.locale+"&lang="+this.lang);
     return false;
   case ST_PRE_RES:
     var form=this.getForm(aData,"login-username-form");
@@ -154,10 +153,16 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     }
     break;
   case ST_LOGIN_RES:
-    var fnd=aData.match(/userId\s*=\s*"(\S+?)"/);
+    if(aData==null){//Firefox's tracking protection
+      this.getHtml("https://mail.aol.com/");
+      return false;
+    }      
+  case ST_LOGIN_RES+1:
+    var fnd=aData.match(/"UserUID"\s*:\s*"(\S+?)"/);
+    var fnd2=aData.match(/"ViewNewOld"\s*:\s*true/);
     if(fnd){
       this.dataURL=["https://mail.aol.com/webmail/rpc/v1/en-us?transport=xmlhttp&user="+fnd[1]+"&a=GetMessageList",
-          "requests="+encodeURIComponent('[{"folder":"Inbox","start":0,"count":100,"indexStart":0,"indexMax":100,"index":true,"info":true,"rows":true,"sort":"received","tcs":false,"sortDir":"descending","search":"false","searchIn":"seen","subSearch":"","seen":[],"returnfoldername":true,"import":false,"action":"GetMessageList"}]"')+"&automatic=false"];
+          "requests="+encodeURIComponent('[{"folder":"'+(fnd2?'NewMail':'Inbox')+'","start":0,"count":100,"indexStart":0,"indexMax":100,"index":true,"info":true,"rows":true,"sort":"received","tcs":false,"sortDir":"descending","search":"false","searchIn":"seen","subSearch":"","seen":[],"returnfoldername":true,"import":false,"action":"GetMessageList"}]"')+"&automatic=false"];
       this.stage=ST_DATA;
     }else{
       this.onError();
