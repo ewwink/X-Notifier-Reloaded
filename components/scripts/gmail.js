@@ -143,7 +143,7 @@ function getCount(aData){
   var fnd;
   if(this.UI==2){
     if(this.inboxOnly)fnd=aData.match(this.useInboxCount||this.enableCategory==2?/"ld",\[[\S\s]*?\["\^i",(\d+)/:/"ld",\[\["\^ig?",(\d+)/);
-    else fnd=aData.match(/\["ti",.+?,(\d+)/);
+    if(!fnd)fnd=aData.match(/\["ti",.+?,(\d+)/);
     if(fnd){
       if(this.includeSpam){
         var fnd2=aData.match(/"ld",\[\[[\S\s]+?"\^s",(\d+)/);
