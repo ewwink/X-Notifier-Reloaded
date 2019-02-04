@@ -40,16 +40,16 @@ function checkLogin(aData){
         this.stage=ST_LOGIN_RES;
         return this.process(aData);
       }else{
-        var fnd3=aData.match(/clientId:\s*?'(\S+?)'/);
+        var fnd3=aData.match(/"clientId":\s*?"(\S+?)"/);
         var fnd4=aData.match(/window\.clientId/);
         if(!fnd3&&!fnd4){
           this.cookieManager.clear();
-          this.stage=(ST_LOGIN_RES+9);
+          this.stage=ST_LOGOUT;
           this.getHtml(this.logoutURL);
           return true;
         }else{
           if(fnd3)this.viewURL="https://outlook.live.com/mail/";
-          else this.viewURL="https://outlook.live.com/owa/#path=/mail";
+          else this.viewURL="https://outlook.live.com/owa/";
           this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
           this.getHtml(this.dataURL);
           return false;
@@ -70,7 +70,7 @@ function checkLogin(aData){
     }else{
       this.viewURL="https://outlook.live.com/owa/?nlp=1";
       this.cookieManager.clear();
-      this.stage=(ST_LOGIN_RES+9);
+      this.stage=ST_LOGOUT;
       this.getHtml(this.logoutURL);
       return true;      
     }
@@ -95,7 +95,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     var fnd=aData.match(/urlPost:\'([\s\S]+?)\'/);
     if(fnd){
       this.loginData[LOGIN_URL]=fnd[1];
-      fnd=aData.match(/PPFT[\s\S]+?value=\"(\S+?)\"/);
+      fnd=aData.match(/"PPFT"[\s\S]+?value=\"(\S+?)\"/);
       if(fnd){
         this.stage=ST_LOGIN;
         this.getHtml(this.loginData[LOGIN_URL],this.loginData[LOGIN_POST]+"&PPFT="+encodeURIComponent(fnd[1]));
@@ -109,7 +109,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     if(fnd){//2-step verification
       var fnd2=aData.match(/urlPost:'(\S+?)'/);
       var fnd3=aData.match(/data:'([^}]+?)',type:([^}]+?),[^}]*?display:'([^}]+?)',[^}]*?otcSent:([^,]+?),[^}]*?isSADef:true,isVoiceDef:(\S+?)[,}]/);
-      var fnd5=aData.match(/,g:'(\S+?)'/);
+      var fnd5=aData.match(/,G:'(\S+?)'/);
       if(fnd2&&fnd3&&fnd5){
         this.form=[fnd2[1],
                   "login="+encodeURIComponent(fnd5[1])+"&type="+(fnd3[2]=="10"?19:18)
@@ -183,7 +183,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     }    
     ++this.stage;
   case ST_LOGIN_RES+3:
-    var fnd=aData.match(/clientId:\s*?'(\S+?)'/);//new beta  
+    var fnd=aData.match(/"clientId":\s*?"(\S+?)"/);//new beta
     if(fnd){
       this.isNew=2;
       this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
@@ -196,7 +196,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     if(fnd){
       this.isNew=2;
       this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
-      this.viewURL="https://outlook.live.com/owa/#path=/mail";
+      this.viewURL="https://outlook.live.com/owa/";
       this.mailHost=this.viewURL;
       this.stage=ST_DATA;
       break;
@@ -271,12 +271,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
       return true;
     }
     break;
-  case (ST_LOGIN_RES+9)://new beta is not logged out with getHtml(logoutURL);
-    this.stage=this.initStage;
-    this.getHtml("https://login.live.com/logout.srf");
-    return true;
-
-	// vs 3 cookieManager code
+// vs 3 cookieManager code
   case (ST_LOGIN_RES+10)://2-step verification
     this.stage=ST_LOGIN_RES;
     var ck=this.cookieManager.findCookieString("login.live.com","SDIDC");
@@ -285,6 +280,10 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     }
     return this.process(aData,aHttp);
 // END vs 3 cookieManager code
+  case ST_LOGOUT: //new beta is not logged out with getHtml(logoutURL);
+    this.stage=this.initStage;
+    this.getHtml("https://login.live.com/logout.srf");
+    return true;
   }
   return this.baseProcess(aData,aHttp);
 }

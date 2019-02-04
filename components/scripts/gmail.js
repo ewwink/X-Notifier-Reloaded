@@ -13,6 +13,7 @@ function init(){
   this.viewDomain="(mail|accounts).google.com";
   this.dataURL=this.baseURL;
   this.viewURL=this.baseURL;
+  this.logoutURL="https://accounts.google.com/Logout";
 }
 function getIconURL(){
   return "https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon2.ico";
@@ -37,7 +38,10 @@ function checkLogin(aData){
   return true;
 }
 function isLoggedIn(aData){
-  var reg=new RegExp("\"\\/mail(?:\\/u\\/(\\d+))?\",\\S+?,\"(\\S+?)\"");
+  var user=this.user.indexOf("@")==-1?this.user+"@\\S+?":this.user;
+  user=user.replace(/@googlemail.com/,"@(?:g|google)mail.com");
+  var isCurrent=true;
+  var reg=new RegExp("\"\\/mail(?:\\/u\\/(\\d+))?\",\\S+?,\"(\\S+?)\",\""+user+"\"","i");
   var fnd=aData.match(reg);
   var fnd2=aData.match(/GM_ACTION_TOKEN="(\S+?)"/);
   if(fnd&&fnd2){
@@ -54,13 +58,13 @@ function isLoggedIn(aData){
     return 1;
   }
   //basic HTML
-  /*fnd=aData.match(/<base href="(\S+?)">/);
+  fnd=aData.match(/<base href="(\S+?)">/);
   if(fnd){
     this.viewURL=fnd[1];
     this.dataURL=fnd[1]+"?s=q&q=is%3Aunread"+(this.inboxOnly?"+in%3Ainbox":"");
     this.UI=0;
     return 1;
-  }*/
+  }
   return -1;
 }
 function process(aData,aHttp) {
@@ -87,12 +91,19 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     var form=this.getForm(aData,"challenge",true);
     if(form){//2-step verification
       this.form=form;
-      this.stage=ST_LOGIN_RES+2;
+      this.stage=ST_LOGIN_RES+3;
       this.openAuthDialog(this.id,this.user,null);
       return true;
     }
     ++this.stage;
   case ST_LOGIN_RES+1:
+    var fnd=aData.match(/action="ChromeLoginPrompt"/);
+    if(fnd){
+      this.getHtml(this.viewURL);
+      return false;
+    }
+    ++this.stage;
+  case ST_LOGIN_RES+2:
     if(this.isLoggedIn(aData)==1){
       if(this.enableCategory||this.smList){
         var fnd=aData.match(/\["sld",\[(\[[\s\S]+?\])\]/);
@@ -104,19 +115,21 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
             var fn=unescape(o[2].replace(/\\u/g,"%u"))
             this.smartlabel[o[1]]=fn;
           }
-        }
+		}
+      }else{
+        this.smartlabel={"^smartlabel_promo":"Promotions","^smartlabel_notification":"Updates","^smartlabel_social":"Social","^smartlabel_group":"Forums","^smartlabel_personal":"Personal"};
       }
       this.stage=ST_DATA;
     }
     break;
-  case (ST_LOGIN_RES+2)://2-step verification
+  case (ST_LOGIN_RES+3)://2-step verification
     if(aData){
       this.getHtml("https://accounts.google.com/"+this.form[0],this.form[1]+"&Pin="+encodeURIComponent(aData)+"&TrustDevice=on");
       delete this.form;
       return false;
     }
     break;
-  case (ST_LOGIN_RES+3)://2-step verification
+  case (ST_LOGIN_RES+4)://2-step verification
     var ck=this.cookieManager.findCookieString("accounts.google.com","SMSV");
     if(ck){
       this.main.prefBranch.setCharPref("accounts.["+this.id+"#"+this.user+"].cookie",aHttp.URI.spec+"\t"+ck);
@@ -130,7 +143,7 @@ function getCount(aData){
   var fnd;
   if(this.UI==2){
     if(this.inboxOnly)fnd=aData.match(this.useInboxCount||this.enableCategory==2?/"ld",\[[\S\s]*?\["\^i",(\d+)/:/"ld",\[\["\^ig?",(\d+)/);
-    else fnd=aData.match(/\["ti",.+?,(\d+)/);
+    if(!fnd)fnd=aData.match(/\["ti",.+?,(\d+)/);
     if(fnd){
       if(this.includeSpam){
         var fnd2=aData.match(/"ld",\[\[[\S\s]+?"\^s",(\d+)/);
@@ -173,6 +186,19 @@ function getCount(aData){
     }
   }
 }
+function getViewURL(aFolder){
+  if(aFolder){
+    if(aFolder=="Spam"){
+      if(this.UI==2)return this.viewURL+"#spam";
+      else return this.viewURL+"?s=m";
+    }
+    if(this.UI==2){
+      if(aFolder.indexOf("#category/")==0)return this.viewURL+aFolder;
+      else return this.viewURL+"#label/"+encodeURIComponent(aFolder);
+    }else return this.viewURL+"?s=l&l="+encodeURIComponent(aFolder);
+  }
+  return this.viewURL;
+}
 function getData(aData){
   var obj={};
   if(!this.showFolders)return obj;
@@ -189,7 +215,7 @@ function getData(aData){
       list=list.concat(o);
       d=fnd[3];
     }
-   
+    
     fnd=null;
     for(var i=0;i<list.length;i++){
       if(list[i][0]=="ld"){
@@ -241,17 +267,4 @@ function getData(aData){
   }
   if(ar)obj.folders=ar;
   return obj;
-}
-function getViewURL(aFolder){
-  if(aFolder){
-    if(aFolder=="Spam"){
-      if(this.UI==2)return this.viewURL+"#spam";
-      else return this.viewURL+"?s=m";
-    }
-    if(this.UI==2){
-      if(aFolder.indexOf("#category/")==0)return this.viewURL+aFolder;
-      else return this.viewURL+"#label/"+encodeURIComponent(aFolder);
-    }else return this.viewURL+"?s=l&l="+encodeURIComponent(aFolder);
-  }
-  return this.viewURL;
 }
