@@ -41,6 +41,9 @@ function checkLogin(aData){
         return this.process(aData);
       }else{
         var fnd3=aData.match(/"clientId":\s*?"(\S+?)"/);
+        if(!fnd3){
+          fnd3=aData.match(/window\.bootstrapOptions/);//new version 2019-08-05
+        }
         var fnd4=aData.match(/window\.clientId/);
         if(!fnd3&&!fnd4){
           this.cookieManager.clear();
@@ -50,7 +53,7 @@ function checkLogin(aData){
         }else{
           if(fnd3)this.viewURL="https://outlook.live.com/mail/";
           else this.viewURL="https://outlook.live.com/owa/";
-          this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
+          this.dataURL=["https://outlook.live.com/owa/0/sessiondata.ashx?app=Mail",""];
           this.getHtml(this.dataURL);
           return false;
         }
@@ -108,8 +111,8 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     var fnd=aData.match(/sFT:'(\S+?)'/);
     if(fnd){//2-step verification
       var fnd2=aData.match(/urlPost:'(\S+?)'/);
-      var fnd3=aData.match(/data:'([^}]+?)',type:([^}]+?),[^}]*?display:'([^}]+?)',[^}]*?otcSent:([^,]+?),[^}]*?isSADef:true,isVoiceDef:(\S+?)[,}]/);
-      var fnd5=aData.match(/,G:'(\S+?)'/);
+      var fnd3=aData.match(/"data":"([^}]+?)","type":([^}]+?),[^}]*?"display":"([^}]+?)",[^}]*?"otcSent":([^,]+?),[^}]*?"isSADef":true,"isVoiceDef":(\S+?)[,}]/);
+      var fnd5=aData.match(/,g:'(\S+?)'/);
       if(fnd2&&fnd3&&fnd5){
         this.form=[fnd2[1],
                   "login="+encodeURIComponent(fnd5[1])+"&type="+(fnd3[2]=="10"?19:18)
@@ -184,10 +187,13 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     ++this.stage;
   case ST_LOGIN_RES+3:
     var fnd=aData.match(/"clientId":\s*?"(\S+?)"/);//new beta
+    if(!fnd){
+      fnd=aData.match(/window\.bootstrapOptions/);//new version 2019-08-05
+    }
     if(fnd){
       this.isNew=2;
-      this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
-      this.viewURL="https://outlook.live.com/mail/";
+      this.dataURL=["https://outlook.live.com/owa/0/sessiondata.ashx?app=Mail",""];
+      this.viewURL="https://outlook.live.com/mail/inbox";
       this.mailHost=this.viewURL;
       this.stage=ST_DATA;
       break;
@@ -195,7 +201,7 @@ if(this.debug)dlog(this.id+"\t"+this.user+"\t"+this.stage,aData);
     fnd=aData.match(/window\.clientId/);
     if(fnd){
       this.isNew=2;
-      this.dataURL=["https://outlook.live.com/owa/sessiondata.ashx?appcacheclient=0","appcacheclient=0"];
+      this.dataURL=["https://outlook.live.com/owa/0/sessiondata.ashx?app=Mail",""];
       this.viewURL="https://outlook.live.com/owa/";
       this.mailHost=this.viewURL;
       this.stage=ST_DATA;
